@@ -231,26 +231,13 @@ function renderUI() {
   });
   totalKeywordsVal.textContent = `${totalKeywords}개`;
 
-  renderTabs();
   renderGrid();
 }
 
 function renderTabs() {
-  const platforms = trendData.platforms;
-  tabsContainer.innerHTML = '';
-
-  Object.entries(platforms).forEach(([key, info]) => {
-    const btn = document.createElement('button');
-    btn.className = `tab-btn ${currentTab === key ? 'active' : ''}`;
-    btn.innerHTML = `<span>${info.icon || '📌'}</span><span>${info.name}</span>`;
-    btn.addEventListener('click', () => {
-      currentTab = key;
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderGrid();
-    });
-    tabsContainer.appendChild(btn);
-  });
+  if (tabsContainer) {
+    tabsContainer.style.display = 'none';
+  }
 }
 
 function renderGrid() {
@@ -259,14 +246,8 @@ function renderGrid() {
   const platforms = trendData.platforms;
   trendsGrid.innerHTML = '';
 
-  // Determine which platforms to display
-  let targets = [];
-  if (currentTab === 'all') {
-    // Show all separate platform cards
-    targets = Object.keys(platforms).filter(k => k !== 'all');
-  } else {
-    targets = [currentTab];
-  }
+  // Always display all individual platform cards simultaneously
+  const targets = Object.keys(platforms).filter(k => k !== 'all');
 
   let totalRendered = 0;
 

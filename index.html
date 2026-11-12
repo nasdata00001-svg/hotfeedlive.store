@@ -84,19 +84,16 @@
       </div>
     </section>
 
-    <!-- Controls: Search & Platform Tabs -->
+    <!-- Controls: Keyword Search -->
     <div class="controls-bar">
       <div class="search-box">
         <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" id="searchInput" class="search-input" placeholder="키워드 검색 (예: 현대차, 파업, 미사일, 아이돌...)" autocomplete="off">
+        <input type="text" id="searchInput" class="search-input" placeholder="실시간 키워드 통합 검색 (예: 엔비디아, 야구, 여행, 뉴스...)" autocomplete="off">
       </div>
-
-      <nav class="tabs-scroll" id="tabsContainer">
-        <!-- Tabs injected dynamically via JS -->
-      </nav>
+      <div id="tabsContainer" style="display:none;"></div>
     </div>
 
     <!-- Main Trend Cards Grid -->
@@ -105,6 +102,51 @@
         실시간 트렌드 데이터를 불러오고 있습니다...
       </div>
     </main>
+
+    <!-- Legal Free Anime & Media Hub Section -->
+    <section class="sources-card" style="margin-top: 36px; border-color: rgba(168, 85, 247, 0.3);">
+      <div class="sources-header">
+        <span class="sources-badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">MEDIA HUB</span>
+        <h3>🎬 공식 무료 애니메이션 & 미디어 스트리밍</h3>
+      </div>
+      <p class="sources-desc">
+        국내외 저작권사 및 대형 미디어사가 공식 운영하는 무료 시청 채널 및 합법 OTT 스트리밍 허브입니다.
+      </p>
+
+      <div class="sources-grid">
+        <a href="https://www.youtube.com/@MuseKorea" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
+          <span class="source-icon">📺</span>
+          <div>
+            <h4>뮤즈 코리아 (Muse Korea)</h4>
+            <p>공식 유튜브 채널 · 최신 인기 애니메이션 풀버전 무료 스트리밍</p>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@AniOneKorea" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
+          <span class="source-icon">✨</span>
+          <div>
+            <h4>애니원 코리아 (Ani-One Korea)</h4>
+            <p>대원미디어 공식 채널 · 분기별 신작 애니 에피소드 무료 방영</p>
+          </div>
+        </a>
+
+        <a href="https://laftel.net" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
+          <span class="source-icon">🍿</span>
+          <div>
+            <h4>라프텔 (Laftel)</h4>
+            <p>국내 1위 애니 플랫폼 · 무료관 및 에피소드 무료 맛보기</p>
+          </div>
+        </a>
+
+        <a href="https://serieson.naver.com" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
+          <span class="source-icon">🎬</span>
+          <div>
+            <h4>네이버 시리즈온 무료관</h4>
+            <p>네이버 공식 VOD · 정기 갱신되는 무료 애니메이션 & 영화관</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- Data Sources & Service Information -->
     <section class="sources-card">
