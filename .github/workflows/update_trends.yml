@@ -1,0 +1,33 @@
+name: Hourly Trends Collector & Auto Deploy
+
+on:
+  schedule:
+    # 매 시간 정각(0분)마다 자동 실행 (UTC 기준)
+    - cron: '0 * * * *'
+  workflow_dispatch: # 수동 실행 버튼 지원
+
+jobs:
+  update-trends:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Trend Collector
+        run: |
+          python collector.py
+
+      - name: Commit and Push if Changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add trends.json trends_data.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Update real-time trends [$(date '+%Y-%m-%d %H:%M:%S')]" && git push)

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TREND PULSE | 실시간 핫검색어 & 포털 실검 대시보드</title>
+  <meta name="description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 다음 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo-badge">🔥</div>
+        <div class="brand-text">
+          <h1>TREND PULSE</h1>
+          <p>대한민국 대형 플랫폼 1시간 주기 실시간 검색어 & 핫토픽</p>
+        </div>
+      </div>
+
+      <div class="header-status">
+        <!-- Language Selector -->
+        <div class="lang-selector-wrapper">
+          <button id="langBtn" class="lang-btn" title="언어 선택 / Translate">
+            <span class="lang-icon">🌐</span>
+            <span id="currentLangLabel">Language</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="langDropdown" class="lang-dropdown">
+            <div class="lang-dropdown-header">접속 국가별 전체 페이지 번역</div>
+            <button class="lang-option active" data-lang="ko" data-name="한국어">🇰🇷 한국어 (기본)</button>
+            <button class="lang-option" data-lang="en" data-name="English">🇺🇸 English</button>
+            <button class="lang-option" data-lang="ja" data-name="日本語">🇯🇵 日本語</button>
+            <button class="lang-option" data-lang="zh-CN" data-name="简体中文">🇨🇳 简体中文</button>
+            <button class="lang-option" data-lang="vi" data-name="Tiếng Việt">🇻🇳 Tiếng Việt</button>
+            <button class="lang-option" data-lang="es" data-name="Español">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="fr" data-name="Français">🇫🇷 Français</button>
+            <div class="lang-dropdown-divider"></div>
+            <a id="extTranslateLink" href="#" target="_blank" class="lang-ext-link">
+              <span>🚀 구글 번역 새창으로 열기</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sync-badge">
+          <span class="pulse-dot"></span>
+          <span>다음 갱신: <strong id="timerDisplay">60:00</strong></span>
+        </div>
+        <button id="btnRefresh" class="btn-refresh" title="수집 엔진 즉시 재실행">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+          <span id="btnRefreshText">지금 갱신</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero / Status Banner -->
+    <section class="hero-banner">
+      <div class="hero-left">
+        <h2>⚡ 실시간 통합 트렌드 허브</h2>
+        <p id="lastUpdatedText">마지막 동기화: 불러오는 중...</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-val" id="totalPlatformsVal">6</div>
+          <div class="stat-lbl">감지 플랫폼</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="totalKeywordsVal">-</div>
+          <div class="stat-lbl">수집 키워드</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">1시간</div>
+          <div class="stat-lbl">크론 갱신주기</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls: Search & Platform Tabs -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="키워드 검색 (예: 현대차, 파업, 미사일, 아이돌...)" autocomplete="off">
+      </div>
+
+      <nav class="tabs-scroll" id="tabsContainer">
+        <!-- Tabs injected dynamically via JS -->
+      </nav>
+    </div>
+
+    <!-- Main Trend Cards Grid -->
+    <main class="trends-grid" id="trendsGrid">
+      <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-dim);">
+        실시간 트렌드 데이터를 불러오고 있습니다...
+      </div>
+    </main>
+
+    <!-- Architecture & Deployment Guide for the User -->
+    <section class="guide-card">
+      <h3>🚀 도메인 연결 & 1시간 자동 호스팅 가이드</h3>
+      <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+        이 프로젝트는 <strong>Vercel (또는 Cloudflare Pages)</strong>과 <strong>GitHub Actions</strong>를 이용해 서버 비용 0원으로 1시간마다 전 플랫폼 실검을 크롤링하여 자동 배포할 수 있도록 설계되었습니다.
+      </p>
+
+      <div class="guide-steps">
+        <div class="guide-box">
+          <h4>1. 도메인 구매</h4>
+          <p>
+            <strong>가비아</strong>, <strong>호스팅KR</strong>, <strong>Cloudflare</strong>에서 원하는 도메인(예: <code>trend-pulse.com</code>)을 구매합니다. (연 1~2만원 내외)
+          </p>
+        </div>
+
+        <div class="guide-box">
+          <h4>2. 호스팅 배포 (Vercel)</h4>
+          <p>
+            GitHub에 이 코드를 올린 후 <strong>Vercel</strong>에 무료 연동하면 초고속 글로벌 CDN으로 배포됩니다. 구매한 도메인을 Vercel Settings에서 CNAME/A 레코드로 등록합니다.
+          </p>
+        </div>
+
+        <div class="guide-box">
+          <h4>3. 1시간 자동 발신 (GitHub Actions)</h4>
+          <p>
+            프로젝트에 포함된 <code>.github/workflows/trend_cron.yml</code>이 1시간마다 <code>collector.py</code>를 실행해 <code>trends.json</code>을 자동 갱신하고 push합니다.
+          </p>
+        </div>
+
+        <div class="guide-box">
+          <h4>4. 독립 서버 (VPS) 운영 시</h4>
+          <p>
+            AWS Lightsail(월 $3.5)이나 가상서버에 배포 시 내장된 <code>server.py</code>를 <code>nohup</code> 또는 <code>systemd</code>로 띄우면 내부 스케줄러가 1시간마다 자동 작동합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 TREND PULSE · 실시간 검색어 데이터는 공공 RSS 및 각 플랫폼 공개 인덱스를 기반으로 수집됩니다.</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toastIcon">📋</span>
+    <span id="toastMsg">클립보드에 복사되었습니다!</span>
+  </div>
+
+  <!-- Hidden Google Translate Element for In-Page Translation -->
+  <div id="google_translate_element" style="display:none;"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'ko',
+        includedLanguages: 'ko,en,ja,zh-CN,vi,es,fr,de,th,ru',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="trends_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
