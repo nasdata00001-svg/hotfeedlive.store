@@ -16,6 +16,7 @@ import re
 import datetime
 import os
 import sys
+import html
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -195,37 +196,75 @@ def collect_naver_news_topics():
         print(f"[!] Naver news parse error: {e}", file=sys.stderr)
     return results
 
-def collect_daum_topics():
-    """다음 모바일 랭킹/포커스 이슈"""
+def collect_nate_pann():
+    """네이트판 실시간 랭킹 톡 (국내 대형 커뮤니티 핫이슈)"""
     results = []
-    url = "https://m.daum.net"
-    html = fetch_url(url)
-    if not html:
-        return results
+    url = "https://pann.nate.com/talk/ranking"
     try:
-        matches = re.findall(r'<strong class="tit_thumb">([^<]+)</strong>', html)
-        if not matches:
-            matches = re.findall(r'class="link_txt"[^>]*>([^<]+)</a>', html)
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            page = resp.read().decode("utf-8", errors="ignore")
+        items = re.findall(r'<a href="(/talk/\d+)"[^>]*title="([^"]+)"', page)
         seen = set()
         rank = 1
-        for title in matches:
-            t = title.strip().replace("&quot;", '"').replace("&apos;", "'").replace("&amp;", "&")
-            if len(t) < 4 or t in seen:
-                continue
-            seen.add(t)
-            results.append({
-                "rank": rank,
-                "keyword": t,
-                "change": "hot",
-                "traffic": "포커스",
-                "url": f"https://search.daum.net/search?q={urllib.parse.quote(t)}",
-                "news": []
-            })
-            rank += 1
-            if rank > 10:
-                break
+        for href, title in items:
+            clean_t = html.unescape(title).strip()
+            if clean_t and clean_t not in seen and len(clean_t) >= 3:
+                seen.add(clean_t)
+                results.append({
+                    "rank": rank,
+                    "keyword": clean_t,
+                    "change": "hot",
+                    "traffic": "커뮤니티",
+                    "url": "https://pann.nate.com" + href,
+                    "news": []
+                })
+                rank += 1
+                if rank > 15:
+                    break
     except Exception as e:
-        print(f"[!] Daum parse error: {e}", file=sys.stderr)
+        print(f"[!] Nate Pann parse error: {e}", file=sys.stderr)
+    return results
+
+def collect_google_news():
+    """구글 뉴스 대한민국 주요 속보 (신뢰할 수 있는 언론사 종합 피드)"""
+    results = []
+    url = "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            tree = ET.fromstring(resp.read())
+        items = tree.findall(".//item")
+        seen = set()
+        rank = 1
+        for item in items:
+            title_node = item.find("title")
+            link_node = item.find("link")
+            if title_node is None or not title_node.text:
+                continue
+            t = html.unescape(title_node.text).strip()
+            outlet = "주요속보"
+            if " - " in t:
+                parts = t.rsplit(" - ", 1)
+                t = parts[0].strip()
+                outlet = parts[1].strip()
+            
+            if t and t not in seen and len(t) >= 4:
+                seen.add(t)
+                link = link_node.text.strip() if link_node is not None and link_node.text else "https://news.google.com"
+                results.append({
+                    "rank": rank,
+                    "keyword": t,
+                    "change": "new",
+                    "traffic": outlet,
+                    "url": link,
+                    "news": []
+                })
+                rank += 1
+                if rank > 15:
+                    break
+    except Exception as e:
+        print(f"[!] Google News parse error: {e}", file=sys.stderr)
     return results
 
 def collect_all():
@@ -239,10 +278,8 @@ def collect_all():
     twitter = collect_twitter_trends()
     nate = collect_nate_trends()
     naver = collect_naver_news_topics()
-    daum = collect_daum_topics()
-    
-    # Meta / Facebook note:
-    # 페이스북은 2018년 이후 트렌딩/실검 서비스를 공식 폐지하여, X 및 인스타 버즈 키워드와 통합 제공
+    community = collect_nate_pann()
+    gnews = collect_google_news()
     
     payload = {
         "updated_at": now_str,
@@ -251,7 +288,7 @@ def collect_all():
             "all": {
                 "name": "전체 종합 (TOP 통합)",
                 "icon": "🔥",
-                "items": (signal[:5] + twitter[:5] + google[:5])
+                "items": (signal[:3] + twitter[:3] + google[:3] + community[:3] + gnews[:3])
             },
             "twitter": {
                 "name": "X (구 트위터)",
@@ -272,7 +309,7 @@ def collect_all():
                 "items": google
             },
             "nate": {
-                "name": "네이트 (Nate)",
+                "name": "네이트 실검 (Nate)",
                 "icon": "🔴",
                 "description": "네이트 포털 실시간 이슈 키워드 순위",
                 "items": nate
@@ -283,11 +320,17 @@ def collect_all():
                 "description": "현재 가장 많이 조회되는 뉴스 헤드라인",
                 "items": naver
             },
-            "daum": {
-                "name": "다음 이슈 (Daum)",
-                "icon": "🟡",
-                "description": "다음 포털 주요 실시간 뉴스 토픽",
-                "items": daum
+            "community": {
+                "name": "커뮤니티 핫토픽",
+                "icon": "💬",
+                "description": "국내 대형 커뮤니티(네이트판) 실시간 인기글",
+                "items": community
+            },
+            "google_news": {
+                "name": "주요 언론 속보",
+                "icon": "⚡",
+                "description": "국내 주요 언론사 실시간 헤드라인 속보 (구글 뉴스)",
+                "items": gnews
             }
         }
     }

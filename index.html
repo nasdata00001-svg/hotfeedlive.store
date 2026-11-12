@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TREND PULSE | 실시간 핫검색어 & 포털 실검 대시보드</title>
-  <meta name="description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 다음 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
+  <title>HOTFEED LIVE | 실시간 핫검색어 & 포털 실검 대시보드</title>
+  <meta name="description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 커뮤니티 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
       <div class="brand">
         <div class="logo-badge">🔥</div>
         <div class="brand-text">
-          <h1>TREND PULSE</h1>
+          <h1>HOTFEED LIVE</h1>
           <p>대한민국 대형 플랫폼 1시간 주기 실시간 검색어 & 핫토픽</p>
         </div>
       </div>
@@ -106,47 +106,74 @@
       </div>
     </main>
 
-    <!-- Architecture & Deployment Guide for the User -->
-    <section class="guide-card">
-      <h3>🚀 도메인 연결 & 1시간 자동 호스팅 가이드</h3>
-      <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
-        이 프로젝트는 <strong>Vercel (또는 Cloudflare Pages)</strong>과 <strong>GitHub Actions</strong>를 이용해 서버 비용 0원으로 1시간마다 전 플랫폼 실검을 크롤링하여 자동 배포할 수 있도록 설계되었습니다.
+    <!-- Data Sources & Service Information -->
+    <section class="sources-card">
+      <div class="sources-header">
+        <span class="sources-badge">LIVE HUB</span>
+        <h3>📊 실시간 데이터 출처 및 수집 안내</h3>
+      </div>
+      <p class="sources-desc">
+        HOTFEED LIVE는 주요 포털, 검색 엔진, 소셜 미디어 및 공공 피드의 공개 인덱스를 1시간마다 자동 집계하여 대한민국 실시간 화제 이슈를 한눈에 확인할 수 있도록 제공하는 독립 대시보드입니다.
       </p>
 
-      <div class="guide-steps">
-        <div class="guide-box">
-          <h4>1. 도메인 구매</h4>
-          <p>
-            <strong>가비아</strong>, <strong>호스팅KR</strong>, <strong>Cloudflare</strong>에서 원하는 도메인(예: <code>trend-pulse.com</code>)을 구매합니다. (연 1~2만원 내외)
-          </p>
+      <div class="sources-grid">
+        <div class="source-item">
+          <span class="source-icon">𝕏</span>
+          <div>
+            <h4>X (구 트위터)</h4>
+            <p>대한민국 실시간 트렌드 및 바이럴 해시태그</p>
+          </div>
         </div>
 
-        <div class="guide-box">
-          <h4>2. 호스팅 배포 (Vercel)</h4>
-          <p>
-            GitHub에 이 코드를 올린 후 <strong>Vercel</strong>에 무료 연동하면 초고속 글로벌 CDN으로 배포됩니다. 구매한 도메인을 Vercel Settings에서 CNAME/A 레코드로 등록합니다.
-          </p>
+        <div class="source-item">
+          <span class="source-icon">🟢</span>
+          <div>
+            <h4>네이버 실검 (Signal)</h4>
+            <p>포털 검색 및 뉴스 빅데이터 실시간 급상승 키워드</p>
+          </div>
         </div>
 
-        <div class="guide-box">
-          <h4>3. 1시간 자동 발신 (GitHub Actions)</h4>
-          <p>
-            프로젝트에 포함된 <code>.github/workflows/trend_cron.yml</code>이 1시간마다 <code>collector.py</code>를 실행해 <code>trends.json</code>을 자동 갱신하고 push합니다.
-          </p>
+        <div class="source-item">
+          <span class="source-icon">🌐</span>
+          <div>
+            <h4>구글 트렌드 (Google)</h4>
+            <p>구글 코리아 일간 및 실시간 급상승 검색어</p>
+          </div>
         </div>
 
-        <div class="guide-box">
-          <h4>4. 독립 서버 (VPS) 운영 시</h4>
-          <p>
-            AWS Lightsail(월 $3.5)이나 가상서버에 배포 시 내장된 <code>server.py</code>를 <code>nohup</code> 또는 <code>systemd</code>로 띄우면 내부 스케줄러가 1시간마다 자동 작동합니다.
-          </p>
+        <div class="source-item">
+          <span class="source-icon">🔴</span>
+          <div>
+            <h4>네이트 실검 (Nate)</h4>
+            <p>네이트 포털 실시간 이슈 및 검색 순위</p>
+          </div>
         </div>
+
+        <div class="source-item">
+          <span class="source-icon">💬</span>
+          <div>
+            <h4>커뮤니티 핫토픽</h4>
+            <p>대형 커뮤니티(네이트판) 실시간 인기 톡·이슈 게시글</p>
+          </div>
+        </div>
+
+        <div class="source-item">
+          <span class="source-icon">⚡</span>
+          <div>
+            <h4>주요 언론 속보</h4>
+            <p>국내 주요 방송사·언론사 실시간 헤드라인 속보</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sources-disclaimer">
+        ※ 본 서비스에서 제공되는 모든 키워드 및 뉴스 정보는 각 원본 플랫폼의 공개 RSS 및 오픈 인덱스를 기반으로 매시간 정각 자동 수집되며, 트렌드 분석 목적으로만 제공됩니다. 모든 권리는 각 원작성자 및 플랫폼에 귀속됩니다.
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>© 2026 TREND PULSE · 실시간 검색어 데이터는 공공 RSS 및 각 플랫폼 공개 인덱스를 기반으로 수집됩니다.</p>
+      <p>© 2026 HOTFEED LIVE (hotfeedlive.store) · 대한민국 실시간 검색어 & 핫토픽 허브</p>
     </footer>
   </div>
 

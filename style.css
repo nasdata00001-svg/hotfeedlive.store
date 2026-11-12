@@ -618,60 +618,95 @@ body { top: 0px !important; }
   transform: translateY(0);
 }
 
-/* Guide Section in UI */
-.guide-card {
+/* Sources Section in UI */
+.sources-card {
   margin-top: 48px;
-  background: linear-gradient(180deg, rgba(31, 41, 55, 0.5) 0%, rgba(17, 24, 39, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(31, 41, 55, 0.4) 0%, rgba(17, 24, 39, 0.7) 100%);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 28px;
   backdrop-filter: blur(12px);
 }
 
-.guide-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 16px;
+.sources-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: #a855f7;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-.guide-steps {
+.sources-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.sources-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.sources-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sources-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
 }
 
-.guide-box {
-  background: rgba(17, 24, 39, 0.6);
+.source-item {
+  background: rgba(17, 24, 39, 0.5);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: border-color 0.2s ease;
 }
 
-.guide-box h4 {
-  font-size: 14px;
+.source-item:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.source-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.source-item h4 {
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: var(--text-main);
 }
 
-.guide-box p {
-  font-size: 12px;
+.source-item p {
+  font-size: 11px;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.5;
+  margin: 0;
 }
 
-.guide-box code {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: monospace;
+.sources-disclaimer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-subtle);
   font-size: 11px;
-  color: #38bdf8;
+  color: var(--text-dim);
+  line-height: 1.6;
 }
 
 /* Footer */
