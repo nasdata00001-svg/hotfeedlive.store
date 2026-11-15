@@ -1,5 +1,5 @@
 window.INITIAL_TRENDS = {
-  "updated_at": "2026-11-15 19:41:42",
+  "updated_at": "2026-11-15 20:36:14",
   "next_update_in_seconds": 3600,
   "platforms": {
     "all": {
@@ -16,92 +16,92 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 2,
-          "keyword": "김유정 100일 거짓말",
+          "keyword": "젠슨 황 복귀 청원 진행",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9C%A0%EC%A0%95%20100%EC%9D%BC%20%EA%B1%B0%EC%A7%93%EB%A7%90",
+          "url": "https://search.naver.com/search.naver?query=%EC%A0%A0%EC%8A%A8%20%ED%99%A9%20%EB%B3%B5%EA%B7%80%20%EC%B2%AD%EC%9B%90%20%EC%A7%84%ED%96%89",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "박현주, 황 복귀 청원 동참",
+          "keyword": "한국 야구, APBC 3회 준우승",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%B0%95%ED%98%84%EC%A3%BC%2C%20%ED%99%A9%20%EB%B3%B5%EA%B7%80%20%EC%B2%AD%EC%9B%90%20%EB%8F%99%EC%B0%B8",
+          "url": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%20%EC%95%BC%EA%B5%AC%2C%20APBC%203%ED%9A%8C%20%EC%A4%80%EC%9A%B0%EC%8A%B9",
           "news": []
         },
         {
           "rank": 1,
-          "keyword": "#아미트친소",
+          "keyword": "부정행위",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%EC%95%84%EB%AF%B8%ED%8A%B8%EC%B9%9C%EC%86%8C",
+          "url": "https://x.com/search?q=%EB%B6%80%EC%A0%95%ED%96%89%EC%9C%84",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "위시 천일",
+          "keyword": "#MMATOP10_PLAVE",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%9C%84%EC%8B%9C%20%EC%B2%9C%EC%9D%BC",
+          "url": "https://x.com/search?q=%23MMATOP10_PLAVE",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "꼬들 1780",
+          "keyword": "코르티스",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201780",
+          "url": "https://x.com/search?q=%EC%BD%94%EB%A5%B4%ED%8B%B0%EC%8A%A4",
           "news": []
         },
         {
           "rank": 1,
-          "keyword": "빙그레",
+          "keyword": "필라데피아 대 인디애나",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EB%B9%99%EA%B7%B8%EB%A0%88",
+          "traffic": "200+",
+          "url": "https://www.google.com/search?q=%ED%95%84%EB%9D%BC%EB%8D%B0%ED%94%BC%EC%95%84%20%EB%8C%80%20%EC%9D%B8%EB%94%94%EC%95%A0%EB%82%98",
           "news": [
             {
-              "title": "“한국인은 언제든 먹잖아요”에 우유 양보…빙그레도 나섰다 [잇슈#태그]",
-              "url": "https://news.kbs.co.kr/news/view.do?ncd=8713167"
+              "title": "76ers' Joel Embiid out vs. Pacers due to plantar fascia management",
+              "url": "https://www.espn.com/nba/story/_/id/50484216/76ers-joel-embiid-vs-pacers-due-plantar-fascia-management"
             },
             {
-              "title": "“뚱바 양보한 시민 찾습니다”…빙그레, 수소문 끝에 ‘명예 앰배서더’ 위촉",
-              "url": "https://www.donga.com/news/Society/article/all/20261113/135023432/1"
+              "title": "LeBron James Returns For Sixers As Back-To-Back Looms",
+              "url": "https://sports.yahoo.com/articles/lebron-james-returns-sixers-back-193834268.html"
             }
           ]
         },
         {
           "rank": 2,
-          "keyword": "아파트",
+          "keyword": "로스앤젤레스 fc",
           "change": "new",
-          "traffic": "5000+",
-          "url": "https://www.google.com/search?q=%EC%95%84%ED%8C%8C%ED%8A%B8",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
           "news": [
             {
-              "title": "강남 집값 내리는데 경기 규제지역은 상승…연말 토허제 ‘딜레마’",
-              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=01889286645646048"
+              "title": "\"손흥민 이적료 없이 다시 이적 가능\" 토트넘 깜짝 복귀 성사되나...내년 1월 협상 가능 선수로 등장, \"본격적인 카운트다운 시작\"",
+              "url": "https://www.sportschosun.com/football/2026-11-14/202611140100095190008917"
             },
             {
-              "title": "\"이제 와서 2억 더 내라고?\"…서초 아파트 주민들 '날벼락' [김용우의 각개전투]",
-              "url": "https://www.hankyung.com/article/202611146307i"
+              "title": "'맙소사' 손흥민 충격 이적? LA FC와 결별 가능성 등장...스페인 매체 'FA 이적 가능성' 언급, \"이적료 없이 떠날 수 있다\"",
+              "url": "https://mydaily.co.kr/page/view/2026111521553874736"
             }
           ]
         },
         {
           "rank": 3,
-          "keyword": "스포츠조선",
+          "keyword": "김민식",
           "change": "new",
           "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%A1%B0%EC%84%A0",
+          "url": "https://www.google.com/search?q=%EA%B9%80%EB%AF%BC%EC%8B%9D",
           "news": [
             {
-              "title": "김민하 착시현상 뭐길래? 살구빛 '누드톤' 의상으로 존재감 과시",
-              "url": "https://www.chosun.com/entertainments/broadcast/2026/11/15/GU3TQNJVMQYWIM3DMUYDEOJUGA/"
+              "title": "SSG 떠난 ‘우승 포수’ 김민식, LG행 초읽기…계약 마무리 단계",
+              "url": "https://www.munhwa.com/article/11631439"
             },
             {
-              "title": "'정형화 거부' 김민하, 밀착 의상 입고 파격 변신",
-              "url": "https://www.newsis.com/view/NISX20261115_0003868658"
+              "title": "방출 면한 155㎞ 파이어볼러, 강속구와 건강을 바꿨나… 모두가 한숨, 잔혹사 언제 끊어지나",
+              "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019883"
             }
           ]
         },
@@ -131,26 +131,26 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 1,
-          "keyword": "노동부 “올해 국가자격시험 AI 부정행위 전수조사…제보도 받을 것”",
+          "keyword": "세무사 시험도 ‘AI 커닝’, 공정성 무너져… 수능 사흘앞 비상",
           "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BQWlFTXUzMFRnbTNMekFmaVNDSlFQSk5tUUlXMjB6bkR2cVZyNmVRWFYycmZCSjJaamZsWkxnNm9LN2JkdzBXQ1o4SUpQMGphTWh4ajl2bEpyaFVkSXFXN2N5a1g?oc=5",
+          "traffic": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BWGtXS2UxVUxkSXZUOVNEaFJfVmNNV0w5OXFjQXc2X1dOUmliUTd0TFZyRS1RNktqYmthX3ZIbTVGOFI1OENqVHBiUWpGd3lVX1hITVIwR184YTZrN1ZUQUNfQ3JxRUM0bGF4a2lmVkVUREdqdWc?oc=5",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "대법원 ‘내란 혐의’ 첫 판단 나오나…한덕수 구속만료 전 선고 가능성",
+          "keyword": "미중러 정상 핵담판… ‘新 얄타회담’ 그림자",
           "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9KMzZYc2hGOHdua3ppYUVVdktaeHY1eXl6T2FyYzdjRGtfNzJkUTRnVkxqZlgxTTMyTXdnUE1qcXdldlFNbS1QR1NqYmtBS1ZQZXNrMUZGRzhfTGtsMW9OZWpCaDRmdmZOd29MRUFSQS12UQ?oc=5",
+          "traffic": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PSkRINWpaZFJDaElCbTFvOUt6RHhkMGZXZXNXOXNZaXVBVjlERDEyRVl6R1NjS1EzQ1ozRVVQeG95MmVDd05DZHR5dzAxSlBNaEtZal82UE4wdENOaVp2b056cHJwckRzOUhUcTUyT0xmcEtoalhj0gFmQVVfeXFMTjJmbTc2Z01MeVBtWWpQY3dsOFpCYndJTHdtQjZjQ1F2MWpPQjBEX096Z2pkbUo0Vi1FZElmWmZZbUZuX1lzVVg1cEpoYU55aVU1Z2ppV2M0S1k2bVhZUFUyS0ljODBB?oc=5",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "김민석, ‘발언 논란’ 최민희 징계 속도…중징계 땐 친명-친청 전면전",
+          "keyword": "대법원 ‘내란 혐의’ 첫 판단 나오나…한덕수 구속만료 전 선고 가능성",
           "change": "new",
           "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsN1JMcklvMHhyM01lbWZldERKRzNVekdFRFA2d2NhQU50MENZRS1uckEyWDlLd2pZNVgwcmprN2I0UU1rVDNKZ1lSWW5BQzQ5OEh1Q25MYnNYYUdEamtIN2JuZEZ6SXBXeE9VZURJcWpLV1dI?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9KMzZYc2hGOHdua3ppYUVVdktaeHY1eXl6T2FyYzdjRGtfNzJkUTRnVkxqZlgxTTMyTXdnUE1qcXdldlFNbS1QR1NqYmtBS1ZQZXNrMUZGRzhfTGtsMW9OZWpCaDRmdmZOd29MRUFSQS12UQ?oc=5",
           "news": []
         }
       ]
@@ -162,66 +162,66 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "#아미트친소",
+          "keyword": "부정행위",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%EC%95%84%EB%AF%B8%ED%8A%B8%EC%B9%9C%EC%86%8C",
+          "url": "https://x.com/search?q=%EB%B6%80%EC%A0%95%ED%96%89%EC%9C%84",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "위시 천일",
+          "keyword": "#MMATOP10_PLAVE",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%9C%84%EC%8B%9C%20%EC%B2%9C%EC%9D%BC",
+          "url": "https://x.com/search?q=%23MMATOP10_PLAVE",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "꼬들 1780",
+          "keyword": "코르티스",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201780",
+          "url": "https://x.com/search?q=%EC%BD%94%EB%A5%B4%ED%8B%B0%EC%8A%A4",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "나르시스",
+          "keyword": "초소형 카메라",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EB%82%98%EB%A5%B4%EC%8B%9C%EC%8A%A4",
+          "url": "https://x.com/search?q=%EC%B4%88%EC%86%8C%ED%98%95%20%EC%B9%B4%EB%A9%94%EB%9D%BC",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "유우시가",
+          "keyword": "#제이크_생일축하_열락남겨놔",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%9C%A0%EC%9A%B0%EC%8B%9C%EA%B0%80",
+          "url": "https://x.com/search?q=%23%EC%A0%9C%EC%9D%B4%ED%81%AC_%EC%83%9D%EC%9D%BC%EC%B6%95%ED%95%98_%EC%97%B4%EB%9D%BD%EB%82%A8%EA%B2%A8%EB%86%94",
           "news": []
         },
         {
           "rank": 6,
-          "keyword": "수능 연기",
+          "keyword": "밀리언셀러",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%88%98%EB%8A%A5%20%EC%97%B0%EA%B8%B0",
+          "url": "https://x.com/search?q=%EB%B0%80%EB%A6%AC%EC%96%B8%EC%85%80%EB%9F%AC",
           "news": []
         },
         {
           "rank": 7,
-          "keyword": "#ForSureHEisComing",
+          "keyword": "#FuseStay_ByMinkyun",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23ForSureHEisComing",
+          "url": "https://x.com/search?q=%23FuseStay_ByMinkyun",
           "news": []
         },
         {
           "rank": 8,
-          "keyword": "#뭣도없어도_계속듣고싶은_엔젤바이트",
+          "keyword": "연말무대",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%EB%AD%A3%EB%8F%84%EC%97%86%EC%96%B4%EB%8F%84_%EA%B3%84%EC%86%8D%EB%93%A3%EA%B3%A0%EC%8B%B6%EC%9D%80_%EC%97%94%EC%A0%A4%EB%B0%94%EC%9D%B4%ED%8A%B8",
+          "url": "https://x.com/search?q=%EC%97%B0%EB%A7%90%EB%AC%B4%EB%8C%80",
           "news": []
         },
         {
@@ -234,50 +234,50 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 10,
-          "keyword": "#포핸즈_블루레이_발매기원",
+          "keyword": "수상소감",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%ED%8F%AC%ED%95%B8%EC%A6%88_%EB%B8%94%EB%A3%A8%EB%A0%88%EC%9D%B4_%EB%B0%9C%EB%A7%A4%EA%B8%B0%EC%9B%90",
+          "url": "https://x.com/search?q=%EC%88%98%EC%83%81%EC%86%8C%EA%B0%90",
           "news": []
         },
         {
           "rank": 11,
-          "keyword": "#강비오가_너무_좋았어",
+          "keyword": "유우시온",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%EA%B0%95%EB%B9%84%EC%98%A4%EA%B0%80_%EB%84%88%EB%AC%B4_%EC%A2%8B%EC%95%98%EC%96%B4",
+          "url": "https://x.com/search?q=%EC%9C%A0%EC%9A%B0%EC%8B%9C%EC%98%A8",
           "news": []
         },
         {
           "rank": 12,
-          "keyword": "코르티스",
+          "keyword": "음주운전",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%BD%94%EB%A5%B4%ED%8B%B0%EC%8A%A4",
+          "url": "https://x.com/search?q=%EC%9D%8C%EC%A3%BC%EC%9A%B4%EC%A0%84",
           "news": []
         },
         {
           "rank": 13,
-          "keyword": "엔시티위시",
+          "keyword": "위시 천일",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%97%94%EC%8B%9C%ED%8B%B0%EC%9C%84%EC%8B%9C",
+          "url": "https://x.com/search?q=%EC%9C%84%EC%8B%9C%20%EC%B2%9C%EC%9D%BC",
           "news": []
         },
         {
           "rank": 14,
-          "keyword": "라스타트",
+          "keyword": "#BounpremFminSeoul",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EB%9D%BC%EC%8A%A4%ED%83%80%ED%8A%B8",
+          "url": "https://x.com/search?q=%23BounpremFminSeoul",
           "news": []
         },
         {
           "rank": 15,
-          "keyword": "탈뮤 가능성",
+          "keyword": "레드라인",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%ED%83%88%EB%AE%A4%20%EA%B0%80%EB%8A%A5%EC%84%B1",
+          "url": "https://x.com/search?q=%EB%A0%88%EB%93%9C%EB%9D%BC%EC%9D%B8",
           "news": []
         }
       ]
@@ -297,38 +297,30 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 2,
-          "keyword": "김유정 100일 거짓말",
+          "keyword": "젠슨 황 복귀 청원 진행",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9C%A0%EC%A0%95%20100%EC%9D%BC%20%EA%B1%B0%EC%A7%93%EB%A7%90",
+          "url": "https://search.naver.com/search.naver?query=%EC%A0%A0%EC%8A%A8%20%ED%99%A9%20%EB%B3%B5%EA%B7%80%20%EC%B2%AD%EC%9B%90%20%EC%A7%84%ED%96%89",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "박현주, 황 복귀 청원 동참",
+          "keyword": "한국 야구, APBC 3회 준우승",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%B0%95%ED%98%84%EC%A3%BC%2C%20%ED%99%A9%20%EB%B3%B5%EA%B7%80%20%EC%B2%AD%EC%9B%90%20%EB%8F%99%EC%B0%B8",
+          "url": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%20%EC%95%BC%EA%B5%AC%2C%20APBC%203%ED%9A%8C%20%EC%A4%80%EC%9A%B0%EC%8A%B9",
           "news": []
         },
         {
           "rank": 4,
           "keyword": "이란 미군기지 드론 공격",
-          "change": "-",
+          "change": "s",
           "traffic": "실시간",
           "url": "https://search.naver.com/search.naver?query=%EC%9D%B4%EB%9E%80%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%93%9C%EB%A1%A0%20%EA%B3%B5%EA%B2%A9",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "문무 첫 방송 시청률 4.7%",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%AC%B8%EB%AC%B4%20%EC%B2%AB%20%EB%B0%A9%EC%86%A1%20%EC%8B%9C%EC%B2%AD%EB%A5%A0%204.7%25",
-          "news": []
-        },
-        {
-          "rank": 6,
           "keyword": "변요한 티파니 너무 사랑스러워",
           "change": "n",
           "traffic": "실시간",
@@ -336,35 +328,43 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
+          "rank": 6,
+          "keyword": "김유정 100일 거짓말",
+          "change": "s",
+          "traffic": "실시간",
+          "url": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%9C%A0%EC%A0%95%20100%EC%9D%BC%20%EA%B1%B0%EC%A7%93%EB%A7%90",
+          "news": []
+        },
+        {
           "rank": 7,
-          "keyword": "빙그레",
+          "keyword": "로스앤젤레스 fc",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%B9%99%EA%B7%B8%EB%A0%88",
+          "url": "https://search.naver.com/search.naver?query=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
           "news": []
         },
         {
           "rank": 8,
-          "keyword": "한일전 13연패 수렁",
-          "change": "n",
+          "keyword": "스페이스X 우주선 회수",
+          "change": "+",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%9D%BC%EC%A0%84%2013%EC%97%B0%ED%8C%A8%20%EC%88%98%EB%A0%81",
+          "url": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4X%20%EC%9A%B0%EC%A3%BC%EC%84%A0%20%ED%9A%8C%EC%88%98",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "아파트",
-          "change": "-",
+          "keyword": "문무 드라마 첫 방송 시청률 4.7%",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%95%84%ED%8C%8C%ED%8A%B8",
+          "url": "https://search.naver.com/search.naver?query=%EB%AC%B8%EB%AC%B4%20%EB%93%9C%EB%9D%BC%EB%A7%88%20%EC%B2%AB%20%EB%B0%A9%EC%86%A1%20%EC%8B%9C%EC%B2%AD%EB%A5%A0%204.7%25",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "음주운전 고경표 식스센스 편집없다",
+          "keyword": "굽네치킨 2세 부당 지원 의혹",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%9D%8C%EC%A3%BC%EC%9A%B4%EC%A0%84%20%EA%B3%A0%EA%B2%BD%ED%91%9C%20%EC%8B%9D%EC%8A%A4%EC%84%BC%EC%8A%A4%20%ED%8E%B8%EC%A7%91%EC%97%86%EB%8B%A4",
+          "url": "https://search.naver.com/search.naver?query=%EA%B5%BD%EB%84%A4%EC%B9%98%ED%82%A8%202%EC%84%B8%20%EB%B6%80%EB%8B%B9%20%EC%A7%80%EC%9B%90%20%EC%9D%98%ED%98%B9",
           "news": []
         }
       ]
@@ -376,6 +376,91 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
+          "keyword": "필라데피아 대 인디애나",
+          "change": "new",
+          "traffic": "200+",
+          "url": "https://www.google.com/search?q=%ED%95%84%EB%9D%BC%EB%8D%B0%ED%94%BC%EC%95%84%20%EB%8C%80%20%EC%9D%B8%EB%94%94%EC%95%A0%EB%82%98",
+          "news": [
+            {
+              "title": "76ers' Joel Embiid out vs. Pacers due to plantar fascia management",
+              "url": "https://www.espn.com/nba/story/_/id/50484216/76ers-joel-embiid-vs-pacers-due-plantar-fascia-management"
+            },
+            {
+              "title": "LeBron James Returns For Sixers As Back-To-Back Looms",
+              "url": "https://sports.yahoo.com/articles/lebron-james-returns-sixers-back-193834268.html"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "keyword": "로스앤젤레스 fc",
+          "change": "new",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
+          "news": [
+            {
+              "title": "\"손흥민 이적료 없이 다시 이적 가능\" 토트넘 깜짝 복귀 성사되나...내년 1월 협상 가능 선수로 등장, \"본격적인 카운트다운 시작\"",
+              "url": "https://www.sportschosun.com/football/2026-11-14/202611140100095190008917"
+            },
+            {
+              "title": "'맙소사' 손흥민 충격 이적? LA FC와 결별 가능성 등장...스페인 매체 'FA 이적 가능성' 언급, \"이적료 없이 떠날 수 있다\"",
+              "url": "https://mydaily.co.kr/page/view/2026111521553874736"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "keyword": "김민식",
+          "change": "new",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EA%B9%80%EB%AF%BC%EC%8B%9D",
+          "news": [
+            {
+              "title": "SSG 떠난 ‘우승 포수’ 김민식, LG행 초읽기…계약 마무리 단계",
+              "url": "https://www.munhwa.com/article/11631439"
+            },
+            {
+              "title": "방출 면한 155㎞ 파이어볼러, 강속구와 건강을 바꿨나… 모두가 한숨, 잔혹사 언제 끊어지나",
+              "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019883"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "keyword": "스페인 대 잉글랜드",
+          "change": "new",
+          "traffic": "2000+",
+          "url": "https://www.google.com/search?q=%EC%8A%A4%ED%8E%98%EC%9D%B8%20%EB%8C%80%20%EC%9E%89%EA%B8%80%EB%9E%9C%EB%93%9C",
+          "news": [
+            {
+              "title": "“스페인에 인종차별 있다고 한 적 없다”…투헬, 기자들에 격분",
+              "url": "https://sports.khan.co.kr/article/202611150849003"
+            },
+            {
+              "title": "'야말 쉬어, 이강인 친구들이 끝냈다' 바에나-푸빌 연속골 폭발! 스페인, 체코 원정 2-0 완파..43경기 연속 무패 행진 질주",
+              "url": "https://www.chosun.com/sports/world-football/2026/11/13/GVTGIZRYG5STSOJWGM4DIZRVMQ/"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "keyword": "공매도",
+          "change": "new",
+          "traffic": "500+",
+          "url": "https://www.google.com/search?q=%EA%B3%B5%EB%A7%A4%EB%8F%84",
+          "news": [
+            {
+              "title": "“보스 돌려줘” 12만명 젠슨 황 복귀 청원…“타락한 실리콘밸리”",
+              "url": "https://www.hani.co.kr/arti/international/international_general/1287402.html"
+            },
+            {
+              "title": "복귀 청원 15만 넘겨 vs \"겸손은 연기, 폭언 일삼아\"",
+              "url": "https://www.ytn.co.kr/_cs/_ln_0104_202611160415444633_005.html"
+            }
+          ]
+        },
+        {
+          "rank": 6,
           "keyword": "빙그레",
           "change": "new",
           "traffic": "100+",
@@ -392,27 +477,10 @@ window.INITIAL_TRENDS = {
           ]
         },
         {
-          "rank": 2,
-          "keyword": "아파트",
-          "change": "new",
-          "traffic": "5000+",
-          "url": "https://www.google.com/search?q=%EC%95%84%ED%8C%8C%ED%8A%B8",
-          "news": [
-            {
-              "title": "강남 집값 내리는데 경기 규제지역은 상승…연말 토허제 ‘딜레마’",
-              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=01889286645646048"
-            },
-            {
-              "title": "\"이제 와서 2억 더 내라고?\"…서초 아파트 주민들 '날벼락' [김용우의 각개전투]",
-              "url": "https://www.hankyung.com/article/202611146307i"
-            }
-          ]
-        },
-        {
-          "rank": 3,
+          "rank": 7,
           "keyword": "스포츠조선",
           "change": "new",
-          "traffic": "100+",
+          "traffic": "200+",
           "url": "https://www.google.com/search?q=%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%A1%B0%EC%84%A0",
           "news": [
             {
@@ -426,7 +494,7 @@ window.INITIAL_TRENDS = {
           ]
         },
         {
-          "rank": 4,
+          "rank": 8,
           "keyword": "한일전",
           "change": "new",
           "traffic": "5000+",
@@ -437,21 +505,21 @@ window.INITIAL_TRENDS = {
               "url": "https://www.chosun.com/sports/baseball/2026/11/15/236G5T6ILFDGNOMZQAC3BJM7M4/"
             },
             {
-              "title": "韓야구, 日에 13연패 수렁…2015년 이후 한 번도 못 이겼다",
-              "url": "https://www.donga.com/news/Inter/article/all/20261115/135029058/1"
+              "title": "'3연속 준우승' 최원호 감독 \"韓 젊은 투수들 국제대회서 경쟁력 확인\" [APBC] - 머니투데이",
+              "url": "https://www.mt.co.kr/sports/2026/11/16/2026111523234932942"
             }
           ]
         },
         {
-          "rank": 5,
+          "rank": 9,
           "keyword": "퇴직금",
           "change": "new",
-          "traffic": "200+",
+          "traffic": "500+",
           "url": "https://www.google.com/search?q=%ED%87%B4%EC%A7%81%EA%B8%88",
           "news": [
             {
-              "title": "가입자 192만 ‘노란우산’서도 정보 유출 정황",
-              "url": "https://www.donga.com/news/Economy/article/all/20261115/135027882/2"
+              "title": "가입자 192만 ‘노란우산’, 주민번호·전화번호 등 유출 가능성",
+              "url": "https://news.kbs.co.kr/news/view.do?ncd=8712930"
             },
             {
               "title": "[사설] 뚫리지 않은 곳이 없다",
@@ -460,7 +528,7 @@ window.INITIAL_TRENDS = {
           ]
         },
         {
-          "rank": 6,
+          "rank": 10,
           "keyword": "입양",
           "change": "new",
           "traffic": "500+",
@@ -475,74 +543,6 @@ window.INITIAL_TRENDS = {
               "url": "https://www.chosun.com/entertainments/broadcast/2026/11/15/HE3TSNRSGAYTANZTGI2TEMDGMU/"
             }
           ]
-        },
-        {
-          "rank": 7,
-          "keyword": "알렉산더 즈베레프",
-          "change": "new",
-          "traffic": "1000+",
-          "url": "https://www.google.com/search?q=%EC%95%8C%EB%A0%89%EC%82%B0%EB%8D%94%20%EC%A6%88%EB%B2%A0%EB%A0%88%ED%94%84",
-          "news": [
-            {
-              "title": "즈베레프, 험난한 조 편성 속 호다르와 첫판… 알카라스는 '비교적 수월'",
-              "url": "https://www.tennis.co.kr/news/articleView.html?idxno=54294"
-            },
-            {
-              "title": "ATP 파이널 2026 예측: 알카라스 1위 후보",
-              "url": "https://ko.laodong.vn/tennis/nhan-dinh-atp-finals-2026-alcaraz-ung-vien-so-1-1800096.ldo"
-            }
-          ]
-        },
-        {
-          "rank": 8,
-          "keyword": "부고",
-          "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=%EB%B6%80%EA%B3%A0",
-          "news": [
-            {
-              "title": "[부고] 이개호(국회의원)씨 모친상",
-              "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=315395"
-            },
-            {
-              "title": "[부고] 이개호 씨(더불어민주당 국회의원) 모친상",
-              "url": "https://www.news1.kr/politics/assembly/6354431"
-            }
-          ]
-        },
-        {
-          "rank": 9,
-          "keyword": "박현주",
-          "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EB%B0%95%ED%98%84%EC%A3%BC",
-          "news": [
-            {
-              "title": "“보스 돌려줘” 12만명 젠슨 황 복귀 청원…“타락한 실리콘밸리”",
-              "url": "https://www.hani.co.kr/arti/international/international_general/1287402.html"
-            },
-            {
-              "title": "창업자 한 명에 매달린 빅테크… '열쇠' 빠지자 뻥 뚫린 경영 - 머니투데이",
-              "url": "https://www.mt.co.kr/world/2026/11/16/2026111519385397101"
-            }
-          ]
-        },
-        {
-          "rank": 10,
-          "keyword": "수상함",
-          "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EC%88%98%EC%83%81%ED%95%A8",
-          "news": [
-            {
-              "title": "HD현대, 美 안두릴과 600t급 무인 군함 건조… 내년 美 해군 수주 도전",
-              "url": "https://www.chosun.com/economy/industry-company/2026/11/15/VWBYOVIHRJCPHMJ2TI4KVG5NJI/"
-            },
-            {
-              "title": "사람 대신 AI 승조원… 한미 무인군함 첫선 - 머니투데이",
-              "url": "https://www.mt.co.kr/industry/2026/11/16/2026111519590590555"
-            }
-          ]
         }
       ]
     },
@@ -553,42 +553,42 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "AI 부정행위",
+          "keyword": "문무",
           "change": "up",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=AI%20%EB%B6%80%EC%A0%95%ED%96%89%EC%9C%84",
+          "url": "https://search.daum.net/nate?q=%EB%AC%B8%EB%AC%B4",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "멜론뮤직어워드 레드카펫 참석",
+          "keyword": "굽네치킨 2세 의혹",
           "change": "up",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EB%A9%9C%EB%A1%A0%EB%AE%A4%EC%A7%81%EC%96%B4%EC%9B%8C%EB%93%9C%20%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB%20%EC%B0%B8%EC%84%9D",
+          "url": "https://search.daum.net/nate?q=%EA%B5%BD%EB%84%A4%EC%B9%98%ED%82%A8%202%EC%84%B8%20%EC%9D%98%ED%98%B9",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "음주운전 고경표 식스센스",
+          "keyword": "김완선 당장 결혼",
           "change": "up",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%9D%8C%EC%A3%BC%EC%9A%B4%EC%A0%84%20%EA%B3%A0%EA%B2%BD%ED%91%9C%20%EC%8B%9D%EC%8A%A4%EC%84%BC%EC%8A%A4",
+          "url": "https://search.daum.net/nate?q=%EA%B9%80%EC%99%84%EC%84%A0%20%EB%8B%B9%EC%9E%A5%20%EA%B2%B0%ED%98%BC",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "굽네치킨 2세 회사",
+          "keyword": "2026년 16일 운세",
           "change": "same",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EA%B5%BD%EB%84%A4%EC%B9%98%ED%82%A8%202%EC%84%B8%20%ED%9A%8C%EC%82%AC",
+          "url": "https://search.daum.net/nate?q=2026%EB%85%84%2016%EC%9D%BC%20%EC%9A%B4%EC%84%B8",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "2026년 16일",
+          "keyword": "멜론뮤직어워드 레드카펫 참석",
           "change": "same",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=2026%EB%85%84%2016%EC%9D%BC",
+          "url": "https://search.daum.net/nate?q=%EB%A9%9C%EB%A1%A0%EB%AE%A4%EC%A7%81%EC%96%B4%EC%9B%8C%EB%93%9C%20%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB%20%EC%B0%B8%EC%84%9D",
           "news": []
         }
       ]
@@ -600,82 +600,82 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "“교도소 꽉 차서 올해 말까지 2500명 조기 석방” 발칵…난리 난 ‘이 나라’ [월드픽]",
+          "keyword": "[단독] 국가시험 ‘AI 커닝’ 작년에도 있었다… 챗GPT로 정답 확인 수법",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/081/0003699466?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001885248?ntype=RANKING",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "“혓바늘 오래 가네” 방치?…25세女 결국 혀 절제, ‘이 암’이었다 [월드픽]",
+          "keyword": "‘깃발’ 놓고 고민하는 정청래… 신천지로 반전 노리지만 역부족",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/081/0003699514?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001885249?ntype=RANKING",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "“새벽에 나스닥 보다 공황발작” 병원行…“뇌 마비” 3억 잃은 의사의 경고 [내가샀다]",
+          "keyword": "머스크 이어 미래에셋 회장도 서명…젠슨 황 복귀 청원 확산",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/081/0003699503?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001885238?ntype=RANKING",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "“잠깐! 식탁 위 ‘이것’부터 치우세요”…동안 피부·몸매 관리해도 소용없는 이유 [헬스픽]",
+          "keyword": "‘세무사 진짜 수석’은 이 사람…부정행위 자수 뒤 차석 재조명",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/081/0003699511?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001885184?ntype=RANKING",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "“월 1000만원도 번다”…중국서 단 70명뿐인 ‘이색 직업’ 도전한 대학생 [월드픽]",
+          "keyword": "[단독] 금감원 “AI 부정행위 세무사 수석, 회계사 1차 시험 불합격”",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/081/0003699516?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001885154?ntype=RANKING",
           "news": []
         },
         {
           "rank": 6,
-          "keyword": "“젠슨 황 겸손은 연출, 반대하면 1시간 폭언” 전기 작가의 폭로",
+          "keyword": "세무사 2등 손때 묻은 ‘형광펜 수험서’…AI 자수 나오자 “찐 수석”",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003565288?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/028/0002832246?ntype=RANKING",
           "news": []
         },
         {
           "rank": 7,
-          "keyword": "마이크 켜진 줄 모르고…“XX 때문이냐” 호주 총리 또 성적 농담",
+          "keyword": "‘한동훈 장인’ 진형구 별세…생전 “검찰이 파업 유도” 폭탄발언도",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003565289?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/028/0002832257?ntype=RANKING",
           "news": []
         },
         {
           "rank": 8,
-          "keyword": "102세 엄마, 섬망 사라졌다…80세 아들이 쓴 ‘달력’ 비밀",
+          "keyword": "‘현백코어’ 입고 ‘재벌 3세 아이돌’ 열광…‘세습된 부티’ 좇는 청년들",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003565247?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/028/0002832325?ntype=RANKING",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "‘절대 안 걸리는 법’ 진짜였다…5초마다 정답, 기막힌 AI커닝",
+          "keyword": "대법원 ‘내란 혐의’ 첫 판단 나오나…한덕수 구속만료 전 선고 가능성",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003565267?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/028/0002832324?ntype=RANKING",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "“인성 문제라니…” 차예련 20년 지기 미용실 원장이 쓴 댓글",
+          "keyword": "‘엔비디아 탄생지’ 자랑하던 미 식당…젠슨 황 사퇴 즉시 기념판 뗐다",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003565198?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/028/0002832291?ntype=RANKING",
           "news": []
         }
       ]
@@ -735,18 +735,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 7,
-          "keyword": "카리나 건강해보여서 예쁜건데",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375720143",
-          "news": []
-        },
-        {
-          "rank": 8,
           "keyword": "아파서 김장 못간다했더니 시댁에서 ㅋㅋㅋ...",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375720452",
+          "news": []
+        },
+        {
+          "rank": 8,
+          "keyword": "카리나 건강해보여서 예쁜건데",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375720143",
           "news": []
         },
         {
@@ -767,14 +767,6 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 11,
-          "keyword": "많이 보고싶어요",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375720232",
-          "news": []
-        },
-        {
-          "rank": 12,
           "keyword": "마이크 높이가 너무 낮았던 안유진 ㅋㅋㅋ",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -782,19 +774,27 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 13,
-          "keyword": "안유진 곧 샤넬 앰버서더 될듯?",
+          "rank": 12,
+          "keyword": "많이 보고싶어요",
           "change": "hot",
           "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375720170",
+          "url": "https://pann.nate.com/talk/375720232",
           "news": []
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "리즈 요즘 운동하나? 몸매 개이쁨",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375720429",
+          "news": []
+        },
+        {
+          "rank": 14,
+          "keyword": "안유진 곧 샤넬 앰버서더 될듯?",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375720170",
           "news": []
         },
         {
@@ -814,14 +814,22 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "노동부 “올해 국가자격시험 AI 부정행위 전수조사…제보도 받을 것”",
+          "keyword": "세무사 시험도 ‘AI 커닝’, 공정성 무너져… 수능 사흘앞 비상",
           "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BQWlFTXUzMFRnbTNMekFmaVNDSlFQSk5tUUlXMjB6bkR2cVZyNmVRWFYycmZCSjJaamZsWkxnNm9LN2JkdzBXQ1o4SUpQMGphTWh4ajl2bEpyaFVkSXFXN2N5a1g?oc=5",
+          "traffic": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9BWGtXS2UxVUxkSXZUOVNEaFJfVmNNV0w5OXFjQXc2X1dOUmliUTd0TFZyRS1RNktqYmthX3ZIbTVGOFI1OENqVHBiUWpGd3lVX1hITVIwR184YTZrN1ZUQUNfQ3JxRUM0bGF4a2lmVkVUREdqdWc?oc=5",
           "news": []
         },
         {
           "rank": 2,
+          "keyword": "미중러 정상 핵담판… ‘新 얄타회담’ 그림자",
+          "change": "new",
+          "traffic": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PSkRINWpaZFJDaElCbTFvOUt6RHhkMGZXZXNXOXNZaXVBVjlERDEyRVl6R1NjS1EzQ1ozRVVQeG95MmVDd05DZHR5dzAxSlBNaEtZal82UE4wdENOaVp2b056cHJwckRzOUhUcTUyT0xmcEtoalhj0gFmQVVfeXFMTjJmbTc2Z01MeVBtWWpQY3dsOFpCYndJTHdtQjZjQ1F2MWpPQjBEX096Z2pkbUo0Vi1FZElmWmZZbUZuX1lzVVg1cEpoYU55aVU1Z2ppV2M0S1k2bVhZUFUyS0ljODBB?oc=5",
+          "news": []
+        },
+        {
+          "rank": 3,
           "keyword": "대법원 ‘내란 혐의’ 첫 판단 나오나…한덕수 구속만료 전 선고 가능성",
           "change": "new",
           "traffic": "한겨레",
@@ -829,43 +837,35 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 3,
-          "keyword": "김민석, ‘발언 논란’ 최민희 징계 속도…중징계 땐 친명-친청 전면전",
-          "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsN1JMcklvMHhyM01lbWZldERKRzNVekdFRFA2d2NhQU50MENZRS1uckEyWDlLd2pZNVgwcmprN2I0UU1rVDNKZ1lSWW5BQzQ5OEh1Q25MYnNYYUdEamtIN2JuZEZ6SXBXeE9VZURJcWpLV1dI?oc=5",
-          "news": []
-        },
-        {
           "rank": 4,
-          "keyword": "국힘, ‘조작기소 특검법’ 국무회의 앞두고 청와대 앞 현장 최고위",
+          "keyword": "\"李가 尹탄핵 반대\" \"통일교, 김민석 밀어\"… 내분 불붙인 최민희 입",
           "change": "new",
-          "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aY01HYXJpOXIxbWVfR1NBZ3d2VzREcVNfa0Fod0N6Qy1QT0pHanY1eVhPYmhxM1Atd054dUFSVkYyRi1rekdPOHBuNEVINGlKMV9NZnRwdUw4N0k?oc=5",
+          "traffic": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOall3aGwwbG1DNEdGNnk0VW4zZFBlalVta0t3Z2NMQ0NfSmFJOXZiVk5rS2JWTHplUE5kanhKVG55VDdNWmJVRWhOUk5Pa29YOE5kMkVzbUNUdzh2eTlkQ3pTMnZtTGR1SlpZRVdfNDB3b21HOEhreTdCV0xJVkJLQjJfczd5UQ?oc=5",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "미 ‘핵군축’ 러 ‘우크라전’ 중 ‘관망’…세 정상의 ‘동상삼몽’",
+          "keyword": "‘조작기소 특검’ 尹 겨냥설 제기… 대통령기록물 열람 특례 주목",
           "change": "new",
-          "traffic": "경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCXzF0Ym0ta1pfbWx5NFNiY3ZZeGwyQnMyTzlqWE1zN2hTWWtjUDlvcWJ1dGZJYzYyZDVIOW1DOU1qc0w0UmduXzhWdFU3bUt5SDl6MlRXcU9SQdIBX0FVX3lxTE13WmZPVFBjWTFxdTR3bVhuZkRSUURWVTlIUE1nOExHYm5TWEI1LUU0QnM3ODNFRFNHcDJwYk9FekZmaTlETHdMVVRTenBkNjhuRlY5Qkt1NlVucF9KRlZZ?oc=5",
+          "traffic": "천지일보",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91dVBrM3hhUkcwX1NlM1JZVnF1V0hoVUNjRmQ4YkRNWTF6Y0JEWlJsOVpIX1VEQlB3YjlLVllGX3hwN1FYTWV0TGEzVE1qb0FOUG1uUVllOURnbkVHa29jNTVuV1dCTnFoM0E?oc=5",
           "news": []
         },
         {
           "rank": 6,
-          "keyword": "러시아, 우크라 종전협상 유럽 참여에 전향적 입장",
+          "keyword": "‘한동훈 의원 장인’ 진형구 전 대전고검장 별세···생전 ‘조폐공사 파업 유도’ 발언 파문",
           "change": "new",
-          "traffic": "연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UZWQzd2JsZ3dORmVzYVkwU2Q5c3BkOXlKdnQycVBJOWZNSllEWFY4bXZwLU56aGtQWFo2UFF3ZFJUU0R0VkU3WkxRVWt0UWQ1UGpVVmxDSmU3bWFEa2dFMFZFUWsyUkk?oc=5",
+          "traffic": "경향신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MUC01QWxGRXpjeGgxSjQzb0s0bmNsRFRiRmROMGpDbHh1RXlYSUhXNzhDS0NRTEEzZUFWbEQ3aDY0S3prajducTROTXo3VDRORklqWlRLQXJMUdIBX0FVX3lxTFA2RWxHc09aNlYtVHJtOUFKckJhbzY5Sml5Q2kxeU8yVjVwckNtSm1NeDJmTG1wWEtyZjdud2xmLTYxdm9KclZZaUdJSWtNZndDOXMxdDRjRzdUdHVxeERr?oc=5",
           "news": []
         },
         {
           "rank": 7,
-          "keyword": "\"광주 터미널 폭발\" 예고 글 올린 20대 2명 자수",
+          "keyword": "광주 터미널 '폭파 예고' 20대 2명 경찰 자수",
           "change": "new",
-          "traffic": "연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MVzRkbURlN25DcjZfYllPYlFCSkNlZGdqVXBBYURYaUo3X1h4Y09PU1Z0OHhwRTQ2d29KZXRWcG5qeS0tSTZQREpzSDN5aTlDbTB3alY1NldQdU91SVI2Z2ZBLXEtT28?oc=5",
+          "traffic": "MBC 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE43d2JPNVJtWGdYNzFfcHNaLUZGOVY4VkFBSFJyVExITUtqQUZsV3lkdFFWNnNmUTJ0Z1lmOGVTTU9lcHp2SF9qN1ZCMDJCUV9RWk9HWWE2aEhub25aaVVHY2RweWxiZEtWZlhDNnFMYk1yeGoyZG5Z0gF3QVVfeXFMUDFfa0NHUkxZTmhQWXFnOEM2SHFRTFdYR1V6RTJZRjZ6bkd3WEp0NE5PVHBWbGJxQ01xYmVtZzdNMTNDSXhYMGdYX05XMmZPZFR2c1NzOUhraEEzVnQ5cVAwRlZZUThsV0tVWVQ1b0ZQRkJ6eXBERW8?oc=5",
           "news": []
         },
         {
@@ -878,18 +878,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 9,
-          "keyword": "‘광주 방화’ 주민 대피 도운 70대 경비원 숨져",
+          "keyword": "[단독] 내연녀, 빚 갚으려 성매매 시켰나… \"사업하며 못낸 월세 수천만원\"",
           "change": "new",
           "traffic": "조선일보",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd285bjQ2ZjJ4cjhhdDhMY0FrOUVaaVgzOG9tZm92bmpqWmVsVENwZ0picEJiX0Zoam8xUzc1dlUzcnBJVXhuZ1RzbmxFSlpYd3NVbDR1VmlRSThQMjFvTW5tQWZyQjlzWjR2VlBRMF9yaDNSX3pRb3A3OGhocHJtb0tMSmhwbEtlNDRlejdB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2hYRGFWZ29CSHJtVlZ0c24yRWZzMmxTU0hvaFlDcjJxQzFaWlI3QkZ1SXliV3B0c2VEaDhKaEhCNnYzUjFzVWJlcXh3TGVJUFlGVDZtZ3prejJNcVBiUXNsdzB5SHNVTmpId0Q1d1lFRG9oWG5oUTFEZUxsb1UyWGUyMWJ6RkY1c194OFhiMzA?oc=5",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "친한계 ‘가처분 카드’ 만지작…국힘, 2차 ‘장·한 대전’ 발발 예고",
+          "keyword": "“죽고 싶다” 아파트에 불 지른 40대 구속···1명 사망·13명 부상",
           "change": "new",
           "traffic": "경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tQjVmUGd4RkFhNThlLU5MWE9yWXhsbzhHMUI0dXlWTVNENDR0LXpYZHVQUjdVc0gxakl5cFl1T2pVUTJZRFRZd3RSU1RmSVI5TENjMXpDTy1TUQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zOFoyY3RBaDdsWUxtQ01KaDdJX1VkMW00SGJVQkphcXRBMkRrQXJmTXRIV2k1TklxTVEtWnJYUGpmci1qZDJiTmVfbDZteDJwV2VLWkhZOS0wZ9IBX0FVX3lxTE5XNDBnRXZmVTk1eEFhS3VxeXlfaTJRSGI2MkdnRjFnc1BQZ0lWdFVaQTh1c3dWdUJOSkgtU3ZOOEJPM0FraVlfc0ltSGFCRUU3azFmUlRkZk4tYWtvNXRF?oc=5",
           "news": []
         },
         {
@@ -902,14 +902,22 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 12,
-          "keyword": "“美中 정상회담서 ‘젠슨 황’ 사태 언급 안할 듯… 반도체 수출 규제 대상 아냐”",
+          "keyword": "젤렌스키 “미, 나토 가입 대가로 돈바스 포기 제안”…러, 거부할 듯",
           "change": "new",
-          "traffic": "동아일보",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ESm1JUkQwQlYwVVVfSWpkWGYyVmNIX2ptSlZTVFNkenZYNlRmZG1VSjU4c0szanJFUGVyYWRvRGlGc1RkZlRpS2tWSkJCblRlOEdndUZsLVZwdFZXbExRUTNRZkpmSzd0cmRVUE1scHRUNnfSAWZBVV95cUxOTTZMeDNFOF9qbkx0SlpZNE83aHgwMXQyTkZYZEluMlBrZVlaQ2RtalZpRTlhQ0ZzRWhZRXhoX3BnOHgwajRzZzNqTzZ1VFQxbUtYSXRNcDNoalI4QXZDdXEzT1NHR0E?oc=5",
+          "traffic": "한겨레",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MOFNQTWRTREV3aVhSN3pwUHE4XzBmaVlyam1HZDFnTnFEamMyMjZXWFc3azE2dVRoLWphUDhXcm9NMWpRSkdVc2dMdHJxaDV5WlgtMjJCa2JSLXNXZ29NbDdwUXR0OXZ0VXN4bEN3?oc=5",
           "news": []
         },
         {
           "rank": 13,
+          "keyword": "北도 움직인다… 김정은 최측근, 美·中·러 회담 앞두고 모스크바행",
+          "change": "new",
+          "traffic": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcGVsTXZtandZQW5yWnNVYm9fV2hOVWFtOXE3YkJOcE9rbGRyOUVfMHloZkRZbXpseVJDel94WjV2ZVhxdXpWa3AyM091YXRkNi1ZQmxqZVFxZEpZenVlaHpIcHpJQ1VsVXZuWGpYX0FBd1NiWUlKZGpDYy1FWXpHdVN4aGJ2clJrX1E?oc=5",
+          "news": []
+        },
+        {
+          "rank": 14,
           "keyword": "아세안 정상들 역내 단결 강조... 한국·중국과 연쇄 정상회담 예정",
           "change": "new",
           "traffic": "VOA 한국어 홈페이지",
@@ -917,19 +925,11 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 14,
-          "keyword": "미·이란전 협상 주도했는데 “손 떼라”…밴스 궁지 몰아넣는 트럼프",
-          "change": "new",
-          "traffic": "경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPNGtoT29GVkVLNGJiYnI1WUNFb2VCdmJySXNRdzgxTzFCdlZuV0gxbWo5aVZ4V3Q1b202anFRZGpLRjNtOTRwS3ZCTTJsbW9NUHVkLWl6enY2d9IBX0FVX3lxTE51aXV3Uk54SnpkRkVDVlJBX2xvRUJlSFRQdC1WNjFubmY5TllVbnVUbjhQUDh2U25LSU9GbjFuTUZGN0dlQi12X3lYUEM0WnJSdkZ1Vmg5SDRMOGsyRlc4?oc=5",
-          "news": []
-        },
-        {
           "rank": 15,
-          "keyword": "엔비디아 실적·앤트로픽 상장…이번주 증시 향방 최대 가늠자",
+          "keyword": "박현주 미래에셋 회장도 젠슨황 복귀 청원 동참…\"AI 생태계·투자자 우선\"",
           "change": "new",
-          "traffic": "경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SZVdJWHN6ckFBUF9ZX3FSaF9IODdhcXVac0RBSnpaUWM1WUlNSzNJeXBYQlhwb1NjV3VZcDRFbmo5WkVBY0Q5ejNiUFhhWmxGNmdiRlZKWUMyUdIBX0FVX3lxTE1TbVBySFpmcnV2TXBIVzJ3RGw2cU43NC0xNV9vbENuZlpDbW85cVdfUE1HRm5nOVlIZ1NpMl8zenZESkpDUngwTTNGVDhON2dVeFhROHpuWDhYWjNGTl9B?oc=5",
+          "traffic": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NS3VhaERTc0hPaC01cVBZUHlubjY0Q0JGSmMwVVZuLVI5ZUVsSl9OZzR3bXpxX3J2c3hpNkstRTR6NUtlaVRLNDlRbUFoMDBvbGVzM18yRFQwQUtOdS1DS0tDYWJOa2t5UURVQkloMmQ?oc=5",
           "news": []
         }
       ]
