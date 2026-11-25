@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 19:54:37",
+  "updated_at": "2026-11-25 20:53:57",
   "next_update_in_seconds": 3600,
   "platforms": {
     "all": {
@@ -8,26 +8,26 @@
       "items": [
         {
           "rank": 1,
-          "keyword": "미국 과잉생산 관세 조사",
-          "change": "s",
+          "keyword": "미국 10월 PCE 물가",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%AF%B8%EA%B5%AD%20%EA%B3%BC%EC%9E%89%EC%83%9D%EC%82%B0%20%EA%B4%80%EC%84%B8%20%EC%A1%B0%EC%82%AC",
+          "url": "https://search.naver.com/search.naver?query=%EB%AF%B8%EA%B5%AD%2010%EC%9B%94%20PCE%20%EB%AC%BC%EA%B0%80",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "빗썸 해킹 추가 피해",
-          "change": "+",
+          "keyword": "관세 15% 유지",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%B9%97%EC%8D%B8%20%ED%95%B4%ED%82%B9%20%EC%B6%94%EA%B0%80%20%ED%94%BC%ED%95%B4",
+          "url": "https://search.naver.com/search.naver?query=%EA%B4%80%EC%84%B8%2015%25%20%EC%9C%A0%EC%A7%80",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "도로공사 6연승 선두",
-          "change": "+",
+          "keyword": "클뤼프 브뤼허 대 리버풀",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%8F%84%EB%A1%9C%EA%B3%B5%EC%82%AC%206%EC%97%B0%EC%8A%B9%20%EC%84%A0%EB%91%90",
+          "url": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%A4%BC%ED%94%84%20%EB%B8%8C%EB%A4%BC%ED%97%88%20%EB%8C%80%20%EB%A6%AC%EB%B2%84%ED%92%80",
           "news": []
         },
         {
@@ -56,52 +56,52 @@
         },
         {
           "rank": 1,
-          "keyword": "슬라비아 프라하 대 비야레알",
+          "keyword": "사과",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EC%8A%AC%EB%9D%BC%EB%B9%84%EC%95%84%20%ED%94%84%EB%9D%BC%ED%95%98%20%EB%8C%80%20%EB%B9%84%EC%95%BC%EB%A0%88%EC%95%8C",
+          "traffic": "2000+",
+          "url": "https://www.google.com/search?q=%EC%82%AC%EA%B3%BC",
           "news": [
             {
-              "title": "Slavia Prague vs Villarreal: UEFA Champions League stats & head-to-head",
-              "url": "https://www.bbc.com/sport/football/live/cmdx121dxr1zt"
+              "title": "포천사과, 경기 품평회서 농가 3곳 수상",
+              "url": "https://www.kyeonggi.com/article/20261125580398"
             },
             {
-              "title": "Licensable picture: UEFA Champions League - Slavia Prague v Villarreal",
-              "url": "https://www.reutersconnect.com/item/uefa-champions-league-slavia-prague-v-villarreal/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxRk80Q1U"
+              "title": "포천 사과 2026년 경기도 사과·배 품평회서 우수한 품질 입증",
+              "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3042063"
             }
           ]
         },
         {
           "rank": 2,
-          "keyword": "삼성전기",
+          "keyword": "김가영",
           "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EA%B9%80%EA%B0%80%EC%98%81",
           "news": [
             {
-              "title": "삼성전기, 1.7조원 자사주 소각…주가 상승에 규모 12배↑",
-              "url": "https://www.yna.co.kr/view/AKR20261125166100003"
+              "title": "산체스, 2009년생 한민준 완파…PBA 6차 투어 64강 진출",
+              "url": "https://www.yna.co.kr/view/AKR20261125044600007"
             },
             {
-              "title": "삼성전기, 11년 보유한 보통주 200만주 소각… 우선주 포함 1조7319억원 규모",
-              "url": "https://biz.chosun.com/it-science/ict/2026/11/25/FLRU4Q4W6JGSTLAOY34K5NEBPM/"
+              "title": "'NH농협카드 듀오' 정수빈-김보미, '우승 기운'으로 동반 16강... 김민아도 장가연에 승부치기 신승 [PBA] - 머니투데이",
+              "url": "https://www.mt.co.kr/sports/2026/11/25/2026112422172689895"
             }
           ]
         },
         {
           "rank": 3,
-          "keyword": "한국여자프로골프협회",
+          "keyword": "윤이나",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%ED%95%9C%EA%B5%AD%EC%97%AC%EC%9E%90%ED%94%84%EB%A1%9C%EA%B3%A8%ED%94%84%ED%98%91%ED%9A%8C",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EC%9C%A4%EC%9D%B4%EB%82%98",
           "news": [
             {
-              "title": "김민솔 대상·상금·신인왕... 신지애 이후 20년만에 ‘신인이 3관왕’",
-              "url": "https://www.chosun.com/sports/golf/2026/11/25/QJUYHZ2MDRFERINWQJFM3T7D7A/"
+              "title": "윤이나, 여자 스크린골프리그 데뷔전‥소속팀 첫 승 합작",
+              "url": "https://imnews.imbc.com/news/2026/sports/article/6868492_36946.html"
             },
             {
-              "title": "김민솔, 3관왕…KLPGA 최고의 별로 우뚝",
-              "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8722684"
+              "title": "스크린 골프에서도 빛난 윤이나…데뷔전서 승리 견인",
+              "url": "https://www.yonhapnewstv.co.kr/news/MYH20261126051854a9O"
             }
           ]
         },
@@ -150,7 +150,7 @@
           "keyword": "다시 온화한 날씨…서울 16℃",
           "change": "new",
           "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4wOUVpNElib3JHdVNONjdHYmpvOThZZFJ1blNpTjM0QnVMQ0lkdmxaVHhTVTA2cEludV91czljeUR1cXFFYVNRMk9Id2F5QzVGY3hRWm1mS1Rsa3c?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9udVd2a25Yd01rTmk3cks1UHRJMHhfSjYzNFNONlNBU3dhQ2ZXWjRRUGhnd0N3b3BDOGJJa3BzY1VydjZtQWstVWp0ODFfbkd6cUx5aVNrSUowUUE?oc=5",
           "news": []
         }
       ]
@@ -258,14 +258,6 @@
         },
         {
           "rank": 13,
-          "keyword": "무지개리코",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%EB%AC%B4%EC%A7%80%EA%B0%9C%EB%A6%AC%EC%BD%94",
-          "news": []
-        },
-        {
-          "rank": 14,
           "keyword": "봄툰 시그",
           "change": "hot",
           "traffic": "실시간",
@@ -273,11 +265,19 @@
           "news": []
         },
         {
-          "rank": 15,
+          "rank": 14,
           "keyword": "공감 제로",
           "change": "hot",
           "traffic": "실시간",
           "url": "https://x.com/search?q=%EA%B3%B5%EA%B0%90%20%EC%A0%9C%EB%A1%9C",
+          "news": []
+        },
+        {
+          "rank": 15,
+          "keyword": "세계의 주인",
+          "change": "hot",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EC%84%B8%EA%B3%84%EC%9D%98%20%EC%A3%BC%EC%9D%B8",
           "news": []
         }
       ]
@@ -289,14 +289,38 @@
       "items": [
         {
           "rank": 1,
-          "keyword": "미국 과잉생산 관세 조사",
-          "change": "s",
+          "keyword": "미국 10월 PCE 물가",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%AF%B8%EA%B5%AD%20%EA%B3%BC%EC%9E%89%EC%83%9D%EC%82%B0%20%EA%B4%80%EC%84%B8%20%EC%A1%B0%EC%82%AC",
+          "url": "https://search.naver.com/search.naver?query=%EB%AF%B8%EA%B5%AD%2010%EC%9B%94%20PCE%20%EB%AC%BC%EA%B0%80",
           "news": []
         },
         {
           "rank": 2,
+          "keyword": "관세 15% 유지",
+          "change": "n",
+          "traffic": "실시간",
+          "url": "https://search.naver.com/search.naver?query=%EA%B4%80%EC%84%B8%2015%25%20%EC%9C%A0%EC%A7%80",
+          "news": []
+        },
+        {
+          "rank": 3,
+          "keyword": "클뤼프 브뤼허 대 리버풀",
+          "change": "n",
+          "traffic": "실시간",
+          "url": "https://search.naver.com/search.naver?query=%ED%81%B4%EB%A4%BC%ED%94%84%20%EB%B8%8C%EB%A4%BC%ED%97%88%20%EB%8C%80%20%EB%A6%AC%EB%B2%84%ED%92%80",
+          "news": []
+        },
+        {
+          "rank": 4,
+          "keyword": "전도연 사랑 4관왕",
+          "change": "n",
+          "traffic": "실시간",
+          "url": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%8F%84%EC%97%B0%20%EC%82%AC%EB%9E%91%204%EA%B4%80%EC%99%95",
+          "news": []
+        },
+        {
+          "rank": 5,
           "keyword": "빗썸 해킹 추가 피해",
           "change": "+",
           "traffic": "실시간",
@@ -304,67 +328,43 @@
           "news": []
         },
         {
-          "rank": 3,
-          "keyword": "도로공사 6연승 선두",
-          "change": "+",
-          "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%8F%84%EB%A1%9C%EA%B3%B5%EC%82%AC%206%EC%97%B0%EC%8A%B9%20%EC%84%A0%EB%91%90",
-          "news": []
-        },
-        {
-          "rank": 4,
-          "keyword": "가능한 사랑 전도연 여우주연상",
+          "rank": 6,
+          "keyword": "한국투자저축은행 개인정보 유출",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%82%AC%EB%9E%91%20%EC%A0%84%EB%8F%84%EC%97%B0%20%EC%97%AC%EC%9A%B0%EC%A3%BC%EC%97%B0%EC%83%81",
+          "url": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C",
           "news": []
         },
         {
-          "rank": 5,
-          "keyword": "다나와",
-          "change": "+",
+          "rank": 7,
+          "keyword": "도로공사 6연승 달리다",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%8B%A4%EB%82%98%EC%99%80",
+          "url": "https://search.naver.com/search.naver?query=%EB%8F%84%EB%A1%9C%EA%B3%B5%EC%82%AC%206%EC%97%B0%EC%8A%B9%20%EB%8B%AC%EB%A6%AC%EB%8B%A4",
           "news": []
         },
         {
-          "rank": 6,
+          "rank": 8,
           "keyword": "나는 솔로",
-          "change": "-",
+          "change": "s",
           "traffic": "실시간",
           "url": "https://search.naver.com/search.naver?query=%EB%82%98%EB%8A%94%20%EC%86%94%EB%A1%9C",
           "news": []
         },
         {
-          "rank": 7,
-          "keyword": "美 10월 PCE 3.8% 상승",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%E7%BE%8E%2010%EC%9B%94%20PCE%203.8%25%20%EC%83%81%EC%8A%B9",
-          "news": []
-        },
-        {
-          "rank": 8,
-          "keyword": "김건희 매관매직 대법 선고",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B9%80%EA%B1%B4%ED%9D%AC%20%EB%A7%A4%EA%B4%80%EB%A7%A4%EC%A7%81%20%EB%8C%80%EB%B2%95%20%EC%84%A0%EA%B3%A0",
-          "news": []
-        },
-        {
           "rank": 9,
-          "keyword": "젠슨 황의 복귀와 영향",
+          "keyword": "황윤성",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%A0%A0%EC%8A%A8%20%ED%99%A9%EC%9D%98%20%EB%B3%B5%EA%B7%80%EC%99%80%20%EC%98%81%ED%96%A5",
+          "url": "https://search.naver.com/search.naver?query=%ED%99%A9%EC%9C%A4%EC%84%B1",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "매일경제",
-          "change": "-",
+          "keyword": "노소영 화해권고 거부",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EB%A7%A4%EC%9D%BC%EA%B2%BD%EC%A0%9C",
+          "url": "https://search.naver.com/search.naver?query=%EB%85%B8%EC%86%8C%EC%98%81%20%ED%99%94%ED%95%B4%EA%B6%8C%EA%B3%A0%20%EA%B1%B0%EB%B6%80",
           "news": []
         }
       ]
@@ -376,171 +376,171 @@
       "items": [
         {
           "rank": 1,
-          "keyword": "슬라비아 프라하 대 비야레알",
+          "keyword": "사과",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EC%8A%AC%EB%9D%BC%EB%B9%84%EC%95%84%20%ED%94%84%EB%9D%BC%ED%95%98%20%EB%8C%80%20%EB%B9%84%EC%95%BC%EB%A0%88%EC%95%8C",
+          "traffic": "2000+",
+          "url": "https://www.google.com/search?q=%EC%82%AC%EA%B3%BC",
           "news": [
             {
-              "title": "Slavia Prague vs Villarreal: UEFA Champions League stats & head-to-head",
-              "url": "https://www.bbc.com/sport/football/live/cmdx121dxr1zt"
+              "title": "포천사과, 경기 품평회서 농가 3곳 수상",
+              "url": "https://www.kyeonggi.com/article/20261125580398"
             },
             {
-              "title": "Licensable picture: UEFA Champions League - Slavia Prague v Villarreal",
-              "url": "https://www.reutersconnect.com/item/uefa-champions-league-slavia-prague-v-villarreal/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxRk80Q1U"
+              "title": "포천 사과 2026년 경기도 사과·배 품평회서 우수한 품질 입증",
+              "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3042063"
             }
           ]
         },
         {
           "rank": 2,
-          "keyword": "삼성전기",
+          "keyword": "김가영",
           "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EA%B9%80%EA%B0%80%EC%98%81",
           "news": [
             {
-              "title": "삼성전기, 1.7조원 자사주 소각…주가 상승에 규모 12배↑",
-              "url": "https://www.yna.co.kr/view/AKR20261125166100003"
+              "title": "산체스, 2009년생 한민준 완파…PBA 6차 투어 64강 진출",
+              "url": "https://www.yna.co.kr/view/AKR20261125044600007"
             },
             {
-              "title": "삼성전기, 11년 보유한 보통주 200만주 소각… 우선주 포함 1조7319억원 규모",
-              "url": "https://biz.chosun.com/it-science/ict/2026/11/25/FLRU4Q4W6JGSTLAOY34K5NEBPM/"
+              "title": "'NH농협카드 듀오' 정수빈-김보미, '우승 기운'으로 동반 16강... 김민아도 장가연에 승부치기 신승 [PBA] - 머니투데이",
+              "url": "https://www.mt.co.kr/sports/2026/11/25/2026112422172689895"
             }
           ]
         },
         {
           "rank": 3,
-          "keyword": "한국여자프로골프협회",
+          "keyword": "윤이나",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%ED%95%9C%EA%B5%AD%EC%97%AC%EC%9E%90%ED%94%84%EB%A1%9C%EA%B3%A8%ED%94%84%ED%98%91%ED%9A%8C",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EC%9C%A4%EC%9D%B4%EB%82%98",
           "news": [
             {
-              "title": "김민솔 대상·상금·신인왕... 신지애 이후 20년만에 ‘신인이 3관왕’",
-              "url": "https://www.chosun.com/sports/golf/2026/11/25/QJUYHZ2MDRFERINWQJFM3T7D7A/"
+              "title": "윤이나, 여자 스크린골프리그 데뷔전‥소속팀 첫 승 합작",
+              "url": "https://imnews.imbc.com/news/2026/sports/article/6868492_36946.html"
             },
             {
-              "title": "김민솔, 3관왕…KLPGA 최고의 별로 우뚝",
-              "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8722684"
+              "title": "스크린 골프에서도 빛난 윤이나…데뷔전서 승리 견인",
+              "url": "https://www.yonhapnewstv.co.kr/news/MYH20261126051854a9O"
             }
           ]
         },
         {
           "rank": 4,
-          "keyword": "다나와",
+          "keyword": "구급차",
           "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=%EB%8B%A4%EB%82%98%EC%99%80",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EA%B5%AC%EA%B8%89%EC%B0%A8",
           "news": [
             {
-              "title": "다나와, 챗GPT에 AI 쇼핑 서비스 연동…실시간 가격·사양 비교",
-              "url": "https://www.yna.co.kr/view/AKR20261125076400030"
+              "title": "\"목격자를 찾습니다!\" 마라톤 '돌연사' 20대 러닝 인플루언서 사건 [사건X파일]",
+              "url": "https://www.ytn.co.kr/_ln/0103_202611250040310061"
             },
             {
-              "title": "다나와 AI 쇼핑, 클로드 이어 챗GPT 연동",
-              "url": "https://www.etnews.com/20261125000440"
+              "title": "'구급차 유턴하는데 계속 달린 마라톤 참가자들' 영상…\"비켜줘야 하지 않나\" 논란",
+              "url": "https://www.newsis.com/view/NISX20261125_0003883507"
             }
           ]
         },
         {
           "rank": 5,
-          "keyword": "바르셀로나",
+          "keyword": "디지털 자산",
           "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EB%94%94%EC%A7%80%ED%84%B8%20%EC%9E%90%EC%82%B0",
           "news": [
             {
-              "title": "발다스 담브라우스카스, 바르셀로나전 앞두고 바쿠서 기자회견",
-              "url": "https://www.gukjenews.com/news/articleView.html?idxno=3763239"
+              "title": "복수제휴 불안… '1거래소 1은행' 안 푼다 - 머니투데이",
+              "url": "https://www.mt.co.kr/finance/2026/11/26/2026112519450564111"
             },
             {
-              "title": "“야말, 집에서 GTA 하려고 UCL 결장했나”…황당 질문에 헛웃음 터뜨렸다",
-              "url": "https://isplus.com/article/view/isp202611250071"
+              "title": "느리다던 일본도 토큰증권 3조 굴리는데…한국은 아직 걸음마 - 머니투데이",
+              "url": "https://www.mt.co.kr/index.php/stock/2026/11/26/2026112522101625519"
             }
           ]
         },
         {
           "rank": 6,
-          "keyword": "sabah vs barcelona",
+          "keyword": "uefa champions league",
           "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=sabah%20vs%20barcelona",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=uefa%20champions%20league",
           "news": [
             {
-              "title": "Sabah - FC Barcelona, en directo, el partido de la Champions League en vivo |El Barça golea al Sabah y logra su cuarta victoria en la Champions",
-              "url": "https://elpais.com/deportes/futbol/2026-11-25/sabah-fc-barcelona-en-directo-el-partido-de-la-champions-league-en-vivo.html"
+              "title": "Lee Kang-in Starts for Atlético Madrid, Eyes First UCL Goal",
+              "url": "https://www.chosun.com/english/sports-en/2026/11/26/PFTN7U2RQZEIHLXDZWYJSJYWNM/"
             },
             {
-              "title": "El Barça viaja a los confines de la UEFA para enfrentarse al Sabah en Champions",
-              "url": "https://www.rfi.fr/es/m%C3%A1s-noticias/20261125-el-bar%C3%A7a-viaja-a-los-confines-de-la-uefa-para-enfrentarse-al-sabah-en-champions"
+              "title": "Atletico Madrid vs Viking Confirmed Lineups",
+              "url": "https://www.whoscored.com/news/uXo9Ze2pHEOFuOglVm08vA/show/cng112-20261125-atletico-madrid-vs-viking-confirmed-lineup-1795632675"
             }
           ]
         },
         {
           "rank": 7,
-          "keyword": "sabah 대 바르셀로나",
+          "keyword": "champions league",
           "change": "new",
-          "traffic": "5000+",
-          "url": "https://www.google.com/search?q=sabah%20%EB%8C%80%20%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=champions%20league",
           "news": [
             {
-              "title": "Sabah 1-4 Barcelona: Anthony Gordon scores twice in visitors' comfortable Champions League win",
-              "url": "https://www.bbc.com/sport/football/live/c674232v2gv3t"
+              "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
+              "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t"
             },
             {
-              "title": "Champions League live updates: Barça take lead over Sabah",
-              "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates"
+              "title": "Pochettino returns to the Champions League after four and a half years, aiming to revive Manchester United",
+              "url": "https://www.dukagjini.com/en/2026/11/pochettino-returns-champions-league-aiming-revive-manchester-united/"
             }
           ]
         },
         {
           "rank": 8,
-          "keyword": "매일경제",
+          "keyword": "클뤼프 브뤼허 대 리버풀",
           "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EB%A7%A4%EC%9D%BC%EA%B2%BD%EC%A0%9C",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%ED%81%B4%EB%A4%BC%ED%94%84%20%EB%B8%8C%EB%A4%BC%ED%97%88%20%EB%8C%80%20%EB%A6%AC%EB%B2%84%ED%92%80",
           "news": [
             {
-              "title": "비트코인 파동으로 보기, 5만5천 달러 바닥선과 6만4천6백 달러 첫 관문",
-              "url": "https://contents.premium.naver.com/kkk0221/kkkk0321/contents/261125012829486am"
+              "title": "Club Brugge vs Liverpool: UEFA Champions League stats & head-to-head",
+              "url": "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t"
             },
             {
-              "title": "'항복국면' 본격화…비트코인 손절매, 4년전 FTX 사태 후 최대",
-              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=01964726645649328"
+              "title": "Club Brugge v Liverpool, Lille v Bayern Munich and more: Champions League clockwatch – live",
+              "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live"
             }
           ]
         },
         {
           "rank": 9,
-          "keyword": "정부",
+          "keyword": "psg 대 로마",
           "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EC%A0%95%EB%B6%80",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=psg%20%EB%8C%80%20%EB%A1%9C%EB%A7%88",
           "news": [
             {
-              "title": "“인공지능으로 지키는 제주”",
-              "url": "https://www.jemin.com/news/articleView.html?idxno=848455"
+              "title": "챔피언스리그: 로마는 PSG의 거품을 꺼트릴 수 있을까?",
+              "url": "https://sbotopkr.tistory.com/2701"
             },
             {
-              "title": "인천시, 정부 혁신 박람회서 ‘ABC+E’ 전략 알린다",
-              "url": "https://www.incheonilbo.com/news/articleView.html?idxno=1337863"
+              "title": "챔피언에게 주어진 도전.",
+              "url": "https://www.vietnam.vn/ko/thu-thach-cho-nha-vo-dich"
             }
           ]
         },
         {
           "rank": 10,
-          "keyword": "선수",
+          "keyword": "삼성물산",
           "change": "new",
-          "traffic": "500+",
-          "url": "https://www.google.com/search?q=%EC%84%A0%EC%88%98",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EB%AC%BC%EC%82%B0",
           "news": [
             {
-              "title": "훈련 중인 축구선수, 낙뢰 맞고 숨져…동료도 부상",
-              "url": "https://www.sportschosun.com/football/2026-11-25/202611250100153640014135"
+              "title": "삼성물산, 부사장 7명 등 22명 승진…2027년 정기 임원인사",
+              "url": "https://www.electimes.com/news/articleView.html?idxno=375254"
             },
             {
-              "title": "\"경기 중 머리에 공 맞고 사망\" 18세 유망주, '두개골 골절+내출혈' 비극...\"지금껏 가장 가슴 아픈 소식\" 아르헨 축구계 추모",
-              "url": "https://www.chosun.com/sports/world-football/2026/11/18/GI2TQMDGGBSTANZZHBRTSOJZMM/"
+              "title": "건설 사령탑 '70년대생이 온다'…외환위기 세대의 위기 돌파 실험대",
+              "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4446347"
             }
           ]
         }
@@ -553,42 +553,42 @@
       "items": [
         {
           "rank": 1,
-          "keyword": "전북 0-3 완패",
+          "keyword": "관세 15% 유지",
           "change": "up",
+          "traffic": "실시간",
+          "url": "https://search.daum.net/nate?q=%EA%B4%80%EC%84%B8%2015%25%20%EC%9C%A0%EC%A7%80",
+          "news": []
+        },
+        {
+          "rank": 2,
+          "keyword": "가능한 사랑 전도연",
+          "change": "up",
+          "traffic": "실시간",
+          "url": "https://search.daum.net/nate?q=%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%82%AC%EB%9E%91%20%EC%A0%84%EB%8F%84%EC%97%B0",
+          "news": []
+        },
+        {
+          "rank": 3,
+          "keyword": "나는 솔로",
+          "change": "up",
+          "traffic": "실시간",
+          "url": "https://search.daum.net/nate?q=%EB%82%98%EB%8A%94%20%EC%86%94%EB%A1%9C",
+          "news": []
+        },
+        {
+          "rank": 4,
+          "keyword": "전북 0-3 완패",
+          "change": "same",
           "traffic": "실시간",
           "url": "https://search.daum.net/nate?q=%EC%A0%84%EB%B6%81%200-3%20%EC%99%84%ED%8C%A8",
           "news": []
         },
         {
-          "rank": 2,
-          "keyword": "재혼 황후",
-          "change": "up",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%9E%AC%ED%98%BC%20%ED%99%A9%ED%9B%84",
-          "news": []
-        },
-        {
-          "rank": 3,
-          "keyword": "시즌 첫 연승",
-          "change": "up",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%8B%9C%EC%A6%8C%20%EC%B2%AB%20%EC%97%B0%EC%8A%B9",
-          "news": []
-        },
-        {
-          "rank": 4,
-          "keyword": "2030년까지 182조원 착공",
-          "change": "same",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=2030%EB%85%84%EA%B9%8C%EC%A7%80%20182%EC%A1%B0%EC%9B%90%20%EC%B0%A9%EA%B3%B5",
-          "news": []
-        },
-        {
           "rank": 5,
-          "keyword": "세계의 윤가은 감독상",
+          "keyword": "나인 투 식스",
           "change": "same",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%84%B8%EA%B3%84%EC%9D%98%20%EC%9C%A4%EA%B0%80%EC%9D%80%20%EA%B0%90%EB%8F%85%EC%83%81",
+          "url": "https://search.daum.net/nate?q=%EB%82%98%EC%9D%B8%20%ED%88%AC%20%EC%8B%9D%EC%8A%A4",
           "news": []
         }
       ]
@@ -600,82 +600,82 @@
       "items": [
         {
           "rank": 1,
-          "keyword": "[단독] 에스컬레이터에서 20㎏ 말통 '쿵'…80대 덮치기까지 '단 7초'",
+          "keyword": "서울에 동전 1만6000개 숨긴 작가…이번엔 말하는 다람쥐와 두꺼비",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/437/0000522455?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/003/0014345623?ntype=RANKING",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "[단독] \"오세훈 무죄 핵심 근거인 '첫 만남 날짜'부터 잘못됐다\"",
+          "keyword": "최태원 회장, 노소영 측 화해 거부에 \"진정성 폄훼 유감…원만한 해결 계속 모색\"",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/437/0000522439?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/003/0014345060?ntype=RANKING",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "[단독] 쯔양 협박 그 변호사…치매 노인 사건 개입 뒤 하이파이브 / 풀버전",
+          "keyword": "美, 14개국에 과잉생산 관세…\"한국 15% 상한 유지\"(종합)",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/437/0000522475?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/003/0014345596?ntype=RANKING",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "'이진우 과외교사' 경찰 출석하며 \"명복을 빕니다, 하지만\"",
+          "keyword": "이 대통령 \"서울 핵심지역 주택가격 하향 안정화…급격한 변동에도 대비\"",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/437/0000522442?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/003/0014345568?ntype=RANKING",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "미국 USTR \"한국, 일본, EU 등 관세 15% 상한 유지\"",
+          "keyword": "\"진짜 뇌관은 비상장 시장\"…연준·ECB도 경고한 'AI 빚폭탄'의 실체",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/437/0000522478?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/003/0014345613?ntype=RANKING",
           "news": []
         },
         {
           "rank": 6,
-          "keyword": "[단독] 박현주, 코스피 무너진날 “10조 증안펀드, 100조로 키우자” 제안",
+          "keyword": "\"배달음식은 받고 싶습니까?\"…오토바이 출입 막은 청담동 아파트",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/009/0005769004?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/001/0016463934?ntype=RANKING",
           "news": []
         },
         {
           "rank": 7,
-          "keyword": "“삼성전자 반값됐는데 망했나요?”…존 리가 개미들에게 던진 질문은",
+          "keyword": "2030년까지 수도권에 아파트 발주 182조원…50만호 착공(종합)",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/009/0005769098?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/001/0016463919?ntype=RANKING",
           "news": []
         },
         {
           "rank": 8,
-          "keyword": "한국인들 쓰레기 막 버리고 새치기까지…‘헐값’ 스시자로에 대마도 신음",
+          "keyword": "10조원대 증안펀드 확대되나…산은, 금융사 추가 출자 타진",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/009/0005769125?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/001/0016463938?ntype=RANKING",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "“음악 들으려고 산 게 아니에요”…‘꿀잠’까지 파고든 중국 이어폰",
+          "keyword": "美USTR, 14개 경제주체에 과잉생산 관세…韓 15% 상한 유지(종합)",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/009/0005768805?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/001/0016463973?ntype=RANKING",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "“하이닉스 2028년 이익 급감”…반도체 저승사자의 섬뜩한 예측[머니닥터 시장진단]",
+          "keyword": "화해권고 거부한 노소영 \"상고 취하해야\"…최태원 \"진정성 의심\"(종합3보)",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/009/0005769081?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/001/0016463692?ntype=RANKING",
           "news": []
         }
       ]
@@ -711,18 +711,18 @@
         },
         {
           "rank": 4,
-          "keyword": "축의금 누가 가져가냐로 엄마랑 싸웟는데..",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375736386",
-          "news": []
-        },
-        {
-          "rank": 5,
           "keyword": "아니 한국 점점 선진국됨",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375736355",
+          "news": []
+        },
+        {
+          "rank": 5,
+          "keyword": "축의금 누가 가져가냐로 엄마랑 싸웟는데..",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375736386",
           "news": []
         },
         {
@@ -775,6 +775,14 @@
         },
         {
           "rank": 12,
+          "keyword": "쥬얼리 박정아가 진짜 대단한 리더였던 이유",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375736579",
+          "news": []
+        },
+        {
+          "rank": 13,
           "keyword": "그사람은 사랑스러운데",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -782,19 +790,11 @@
           "news": []
         },
         {
-          "rank": 13,
+          "rank": 14,
           "keyword": "친정 김장은 일이고 시댁 김장은 효도래요",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375736472",
-          "news": []
-        },
-        {
-          "rank": 14,
-          "keyword": "쥬얼리 박정아가 진짜 대단한 리더였던 이유",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375736579",
           "news": []
         },
         {
@@ -833,7 +833,7 @@
           "keyword": "다시 온화한 날씨…서울 16℃",
           "change": "new",
           "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4wOUVpNElib3JHdVNONjdHYmpvOThZZFJ1blNpTjM0QnVMQ0lkdmxaVHhTVTA2cEludV91czljeUR1cXFFYVNRMk9Id2F5QzVGY3hRWm1mS1Rsa3c?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9udVd2a25Yd01rTmk3cks1UHRJMHhfSjYzNFNONlNBU3dhQ2ZXWjRRUGhnd0N3b3BDOGJJa3BzY1VydjZtQWstVWp0ODFfbkd6cUx5aVNrSUowUUE?oc=5",
           "news": []
         },
         {
@@ -870,26 +870,26 @@
         },
         {
           "rank": 8,
-          "keyword": "고속도로 곡선구간서 6대 연쇄 추돌…6명 사상",
+          "keyword": "'리트 만점자' 과외 교사, 25일 경찰 참고인 조사",
           "change": "new",
-          "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBLbnpEMzNhMVcxd1pnQ2UxdVBwQTNFWmtIc21JejM3ZFVNSVhKaUZ3MnUwOGxsNGtfNWNJUGt2UDJwZHVCV0FUWDdTV01ZaFVfNW4wMUltZEFEOVV0and6N1VQbWhLZw?oc=5",
+          "traffic": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVcnUydWlkQ1g5LWhHTjVDM2Z2SGFHY3llbVBEVXlidE9Jc2pkV29Qa3hFU3d6WVlnZDhLeTJzR0NhNlpScFc2MEdlUUJQTUF0TFVhRTNLMkR6UQ?oc=5",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "\"리트 만점자 근황 떴다\"…AI로 만든 조롱성 게시물 논란",
+          "keyword": "조희대 고향 간 장동혁 “이재명은 대한민국 무너뜨리는 독재자”",
           "change": "new",
-          "traffic": "한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lLUlNVU5aYXJIbi1CZDFjYW9aZjlTMmh2RktndXhUdXdIR3hIeXhLbHpDRkthcEdUUkRyUWl1ZU9DeURWRk9MWTVNanNXNXZoaUwxRnZEdzNkQQ?oc=5",
+          "traffic": "한겨레",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZWk93bnVLYlk1TXBuaXhOOWd3Vll3MnVFYkJENEwzaWxBWC01WnZmajMxa0RYNVpSdmhlN3FRVDBjeFF0eWF5WWRFMjlfUVFTLU42Z3ZjejBJNmdpdG1FYzlqNjhTd3RFcTZKU3MyNVVWU04y?oc=5",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "공소청, ‘노태우 비자금 의혹’ 노재헌 주중대사 소환통보",
+          "keyword": "\"69년생 직장인부터 달라진다\"…2037년 '정년 65세' 추진",
           "change": "new",
-          "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16UGdxWktRR2FWMVREQ0pnLXdxcGJyUFVyRHpTWlA2b3dfaG45b3o0cnoxTkdCODhNSGc5NjJaZ3dLMjdESzVZNUJJbFlDN1lnM1JjYXRKR1l3VHc?oc=5",
+          "traffic": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9laFdMVVA4Y1pTZFFfY0pWQ0MxTGgwT0c4c1h2OTZ0amE2WUtVa3BET0tQQmpqMjl1N0R6YVVuWnZMaGo3eXJXeG14bVA1Ym01N1I5UTU5Y1NpQQ?oc=5",
           "news": []
         },
         {
@@ -910,26 +910,26 @@
         },
         {
           "rank": 13,
-          "keyword": "트럼프 대통령 “김정은과 친서 교환 당장 재개 가능”",
+          "keyword": "우크라軍 \"국경서 700㎞ 떨어진 러 공군기지 타격… MiG-31 전투기 등 5대에 손상\"",
           "change": "new",
-          "traffic": "VOA 한국어 홈페이지",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB0ZnI4ajhQTFNIU2dwZlRwTjFaUkhQaFdVTWROb0JWRE9OdllZQVNZcWVZckpYRDUxM0FmQ0ZZX195YkVJUnhPaFVMaERkTGdKX0xWcGhPcVFqS2o1aDNCS3FkdGFaVUhWWXY4WXd6VmRVdWQwX1FFTtIBe0FVX3lxTE8wRnpESkFLMUp1dTA5NGx5Nm94SUlxUUg0MERjVGRvb2p6a2llVTktOVh1YkFla2xwdmF5UTVYT0lqWlZhQ2p4NVE2WG44TEt6Sm9fVjlEYWJoTEF6bFdaNGpWUmVlbmFTYzU5dUpfNE5haThQeDU2QVdPdw?oc=5",
+          "traffic": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hYU4wZnJYaGJCdlhZdlk1ZkNrUW5LU3dDNUN6Z1RkVE8zaGtqYkRGaXV0SHJTLXNXdGZQWnlrZmtVRkRvNDcwVThXRkVrZFh1SnctaE5taHNqZjhP?oc=5",
           "news": []
         },
         {
           "rank": 14,
-          "keyword": "우크라, 러시아 중부 공군기지 타격…\"군용기 5대 파손\" 주장",
+          "keyword": "후티 반군, 사우디아라비아 최대 정유시설 공격 주장",
           "change": "new",
-          "traffic": "뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1TN0x1UTg1LWhFTUVqWjV6ZzF1TElVaUVvMmNVaXZiamZVOHBWZDlwVnhiVWZ4MUt3d2xMdDk2TW01NXVkdmRuOWZEOUJoaUV5di13?oc=5",
+          "traffic": "VOA 한국어 홈페이지",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02TUxXV1hnWVdqczVpdEVGZmh4dUtXbHMyZzZQeEZ1X1RGS3JEdk52ZE9ZZ0lHMHBmU3NVSjdSY0dQakRzTDFwS3hBNmtMMk9W0gFTQVVfeXFMUEZ5c1N4aTJOVlJQUDdCYzBQQnA1bjROcFU5eWJfM3FXeGVVckUtVDc3NjhTa0dFa2dCbFdEYmFhblpidlh1Tk5IbXhSMW5NNUJfY0E?oc=5",
           "news": []
         },
         {
           "rank": 15,
-          "keyword": "美 10월 PCE 물가 3.8% 상승… 12월 금리 인상 전망에 힘 실려",
+          "keyword": "美 10월 근원 PCE 0.3% 상승·전망 부합…소비는 사실상 정체(상보)",
           "change": "new",
-          "traffic": "조선일보",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaUJrN0NjTVBMOFVNVHBCWXJ6U3B3YUxMVEpGNWtqLUZNLU12VHc1VWVBUFJ3UzVHN1FhS0xJaU4wNlNCRk5qTnZqbE5IVHZ4NkNMYTRmbWo2eVJZSUk2a00zZ0ZnX0tFU0QtRUdBckl2TmxCTnhlU25DbXN2Z3ljaC0ySUo4WXV6?oc=5",
+          "traffic": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1aMXZ5cFNWUkZrdkhTejhLLWxqbVRfMEpwUjVHcExyUDhqNDdaRDJwSmg4RXcySEl0QXJwN09sM3lZRVJlckhDck9Ud2kxS1lVRnpyVUZUOTJNVWFYbkdnZkFGc1AzY3VnUzlFRFQ4Wm4?oc=5",
           "news": []
         }
       ]
