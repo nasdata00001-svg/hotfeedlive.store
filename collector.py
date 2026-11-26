@@ -464,6 +464,24 @@ def collect_all():
     return payload
 
 
+def write_sitemap(out_dir, lastmod):
+    """Update sitemap.xml lastmod so search crawlers see hourly updates."""
+    sitemap_path = os.path.join(out_dir, "sitemap.xml")
+    xml_content = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        "  <url>\n"
+        "    <loc>https://hotfeedlive.store/</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        "    <changefreq>hourly</changefreq>\n"
+        "    <priority>1.0</priority>\n"
+        "  </url>\n"
+        "</urlset>\n"
+    )
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write(xml_content)
+
+
 def save_trends(data, out_dir=None):
     if out_dir is None:
         out_dir = os.path.dirname(os.path.abspath(__file__))
@@ -485,6 +503,9 @@ def save_trends(data, out_dir=None):
 
     with open(js_path, "w", encoding="utf-8") as f:
         f.write("window.INITIAL_TRENDS = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n")
+
+    lastmod = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
+    write_sitemap(out_dir, lastmod)
 
     print(f"[OK] Saved {total_items} trends to {out_path} and {js_path}")
     return True
