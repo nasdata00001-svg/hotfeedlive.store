@@ -1,3 +1,27 @@
+User-agent: Yeti
+Allow: /
+Disallow: /api/
+
+User-agent: Daum
+Allow: /
+Disallow: /api/
+
+User-agent: Daumoa
+Allow: /
+Disallow: /api/
+
+User-agent: ZumBot
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: bingbot
+Allow: /
+Disallow: /api/
+
 User-agent: *
 Allow: /
 Disallow: /api/

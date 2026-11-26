@@ -53,12 +53,29 @@ const IS_LOCAL_SERVER = ['localhost', '127.0.0.1'].includes(window.location.host
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialQuery = (urlParams.get('q') || '').trim();
+  const targetPlatform = (urlParams.get('platform') || '').trim();
+
+  if (initialQuery) {
+    searchInput.value = initialQuery;
+    searchQuery = initialQuery.toLowerCase();
+    updateSearchClearState();
+  }
+
   if (window.INITIAL_TRENDS) {
     applyTrendData(window.INITIAL_TRENDS);
   }
   fetchTrends();
   startCountdown();
   setupEventListeners();
+
+  if (targetPlatform) {
+    const cardEl = document.getElementById(`platform-${targetPlatform}`);
+    if (cardEl) {
+      cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 });
 
 function setupEventListeners() {
@@ -468,6 +485,7 @@ function renderGrid() {
 
     const card = document.createElement('section');
     card.className = 'platform-card';
+    card.id = `platform-${key}`;
 
     const listHtml = items
       .map((item) => {

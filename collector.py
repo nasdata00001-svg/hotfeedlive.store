@@ -11,6 +11,7 @@ Real-time Trend Collector for HOTFEED LIVE (hotfeedlive.store):
 """
 
 import datetime
+import email.utils
 import html
 import json
 import os
@@ -482,6 +483,76 @@ def write_sitemap(out_dir, lastmod):
         f.write(xml_content)
 
 
+def _xml_escape(text):
+    return html.escape(str(text), quote=False)
+
+
+def write_rss(data, out_dir):
+    """Write RSS 2.0 feed for Korean search engines (Naver Search Advisor, Daum, Zum)."""
+    rss_path = os.path.join(out_dir, "rss.xml")
+    iso_str = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
+    try:
+        dt = datetime.datetime.fromisoformat(iso_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=KST)
+    except ValueError:
+        dt = datetime.datetime.now(KST)
+
+    pub_date = email.utils.format_datetime(dt)
+    stamp_id = dt.strftime("%Y%m%d%H")
+    time_label = dt.strftime("%Y-%m-%d %H:%M KST")
+
+    items_xml = []
+    for key, pinfo in data.get("platforms", {}).items():
+        if key == "all" or not isinstance(pinfo, dict):
+            continue
+        p_items = pinfo.get("items") or []
+        if not p_items:
+            continue
+
+        pname = pinfo.get("name", key)
+        pdesc = pinfo.get("description", "")
+        summary_lines = [
+            f"{it.get('rank', idx)}. {it.get('keyword', '')}"
+            for idx, it in enumerate(p_items[:10], 1)
+            if it.get("keyword")
+        ]
+        title_text = f"[{pname}] {time_label} 실시간 트렌드"
+        desc_parts = [pdesc] if pdesc else []
+        if summary_lines:
+            desc_parts.append(" / ".join(summary_lines))
+        desc_text = " - ".join(desc_parts)
+        link_url = f"https://hotfeedlive.store/?platform={urllib.parse.quote(key)}&t={stamp_id}"
+        guid = f"hotfeedlive-{stamp_id}-{key}"
+
+        items_xml.append(
+            "    <item>\n"
+            f"      <title>{_xml_escape(title_text)}</title>\n"
+            f"      <link>{_xml_escape(link_url)}</link>\n"
+            f'      <guid isPermaLink="false">{_xml_escape(guid)}</guid>\n'
+            f"      <pubDate>{pub_date}</pubDate>\n"
+            f"      <description>{_xml_escape(desc_text)}</description>\n"
+            "    </item>"
+        )
+
+    rss_content = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        "  <channel>\n"
+        "    <title>HOTFEED LIVE | 대한민국 실시간 핫검색어 &amp; 핫토픽</title>\n"
+        "    <link>https://hotfeedlive.store/</link>\n"
+        '    <atom:link href="https://hotfeedlive.store/rss.xml" rel="self" type="application/rss+xml"/>\n'
+        "    <description>네이버, X(트위터), 구글, 네이트, 커뮤니티, 주요 언론사의 1시간 주기 실시간 검색어 및 핫토픽 피드</description>\n"
+        "    <language>ko</language>\n"
+        f"    <lastBuildDate>{pub_date}</lastBuildDate>\n"
+        + "\n".join(items_xml)
+        + "\n  </channel>\n"
+        "</rss>\n"
+    )
+    with open(rss_path, "w", encoding="utf-8") as f:
+        f.write(rss_content)
+
+
 def save_trends(data, out_dir=None):
     if out_dir is None:
         out_dir = os.path.dirname(os.path.abspath(__file__))
@@ -506,6 +577,7 @@ def save_trends(data, out_dir=None):
 
     lastmod = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
     write_sitemap(out_dir, lastmod)
+    write_rss(data, out_dir)
 
     print(f"[OK] Saved {total_items} trends to {out_path} and {js_path}")
     return True
