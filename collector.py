@@ -466,18 +466,43 @@ def collect_all():
 
 
 def write_sitemap(out_dir, lastmod):
-    """Update sitemap.xml lastmod so search crawlers see hourly updates."""
+    """Generate sitemap with main page + all archive pages."""
     sitemap_path = os.path.join(out_dir, "sitemap.xml")
+    base = "https://hotfeedlive.store"
+
+    urls = [
+        f'  <url>\n    <loc>{base}/</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>hourly</changefreq>\n    <priority>1.0</priority>\n  </url>',
+        f'  <url>\n    <loc>{base}/archive.html</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>hourly</changefreq>\n    <priority>0.8</priority>\n  </url>',
+    ]
+
+    # Add archive date/hour pages
+    archives_dir = os.path.join(out_dir, "archives")
+    if os.path.isdir(archives_dir):
+        for date_dir in sorted(os.listdir(archives_dir)):
+            date_path = os.path.join(archives_dir, date_dir)
+            if not os.path.isdir(date_path):
+                continue
+            # Daily archive page
+            urls.append(
+                f'  <url>\n    <loc>{base}/archive.html?date={date_dir}</loc>\n'
+                f'    <lastmod>{lastmod}</lastmod>\n    <changefreq>daily</changefreq>\n'
+                f'    <priority>0.6</priority>\n  </url>'
+            )
+            for fname in sorted(os.listdir(date_path)):
+                if not fname.endswith(".json"):
+                    continue
+                hour = fname.replace(".json", "")
+                urls.append(
+                    f'  <url>\n    <loc>{base}/archive.html?date={date_dir}&amp;hour={hour}</loc>\n'
+                    f'    <lastmod>{date_dir}T{hour}:00:00+09:00</lastmod>\n'
+                    f'    <changefreq>never</changefreq>\n    <priority>0.5</priority>\n  </url>'
+                )
+
     xml_content = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        "  <url>\n"
-        "    <loc>https://hotfeedlive.store/</loc>\n"
-        f"    <lastmod>{lastmod}</lastmod>\n"
-        "    <changefreq>hourly</changefreq>\n"
-        "    <priority>1.0</priority>\n"
-        "  </url>\n"
-        "</urlset>\n"
+        + "\n".join(urls)
+        + "\n</urlset>\n"
     )
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write(xml_content)
@@ -553,6 +578,78 @@ def write_rss(data, out_dir):
         f.write(rss_content)
 
 
+def save_archive(data, out_dir):
+    """Save hourly archive snapshot and update archive index."""
+    iso_str = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
+    try:
+        dt = datetime.datetime.fromisoformat(iso_str)
+    except ValueError:
+        dt = datetime.datetime.now(KST)
+
+    date_str = dt.strftime("%Y-%m-%d")
+    hour_str = dt.strftime("%H")
+
+    archive_dir = os.path.join(out_dir, "archives", date_str)
+    os.makedirs(archive_dir, exist_ok=True)
+
+    archive_path = os.path.join(archive_dir, f"{hour_str}.json")
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+
+    # Update master index
+    archives_root = os.path.join(out_dir, "archives")
+    index = {}
+    for d in sorted(os.listdir(archives_root)):
+        dp = os.path.join(archives_root, d)
+        if not os.path.isdir(dp):
+            continue
+        hours = sorted([fn.replace(".json", "") for fn in os.listdir(dp) if fn.endswith(".json")])
+        if hours:
+            index[d] = hours
+    with open(os.path.join(archives_root, "index.json"), "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False)
+
+    print(f"[OK] Archived {date_str}/{hour_str}.json ({len(index)} days total)")
+
+
+def generate_og_image(data, out_dir):
+    """Generate a simple SVG Open Graph image with top trending keywords."""
+    all_items = data.get("platforms", {}).get("all", {}).get("items", [])
+    if not all_items:
+        # Fallback: gather from other platforms
+        for key, pinfo in data.get("platforms", {}).items():
+            if key == "all":
+                continue
+            all_items.extend((pinfo.get("items") or [])[:3])
+
+    top_keywords = [it.get("keyword", "") for it in all_items[:8] if it.get("keyword")]
+    now_kst = datetime.datetime.now(KST)
+    time_label = now_kst.strftime("%Y.%m.%d %H:%M KST")
+
+    lines = []
+    for i, kw in enumerate(top_keywords):
+        y = 155 + i * 48
+        rank_color = "#ef4444" if i < 3 else "#6366f1"
+        lines.append(
+            f'<text x="80" y="{y}" font-size="28" fill="{rank_color}" font-weight="700">{i+1}</text>'
+            f'<text x="120" y="{y}" font-size="28" fill="#1e293b">{_xml_escape(kw[:20])}</text>'
+        )
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect width="1200" height="90" fill="#4f46e5"/>
+  <text x="60" y="58" font-size="40" fill="white" font-weight="800" font-family="sans-serif">🔥 HOTFEED LIVE</text>
+  <text x="600" y="58" font-size="22" fill="#c7d2fe" font-family="sans-serif">실시간 핫검색어 대시보드</text>
+  <text x="60" y="120" font-size="18" fill="#94a3b8" font-family="sans-serif">📅 {time_label} 기준 TOP {len(top_keywords)} 트렌드</text>
+  {chr(10).join(lines)}
+  <text x="60" y="600" font-size="16" fill="#94a3b8" font-family="sans-serif">hotfeedlive.store · 1시간마다 자동 갱신</text>
+</svg>'''
+
+    svg_path = os.path.join(out_dir, "og-image.svg")
+    with open(svg_path, "w", encoding="utf-8") as f:
+        f.write(svg)
+
+
 def save_trends(data, out_dir=None):
     if out_dir is None:
         out_dir = os.path.dirname(os.path.abspath(__file__))
@@ -576,8 +673,10 @@ def save_trends(data, out_dir=None):
         f.write("window.INITIAL_TRENDS = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n")
 
     lastmod = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
+    save_archive(data, out_dir)
     write_sitemap(out_dir, lastmod)
     write_rss(data, out_dir)
+    generate_og_image(data, out_dir)
 
     print(f"[OK] Saved {total_items} trends to {out_path} and {js_path}")
     return True

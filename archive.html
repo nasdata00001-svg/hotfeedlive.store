@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOTFEED LIVE 아카이브 | 과거 실시간 검색어 기록</title>
+  <meta name="description" content="대한민국 주요 플랫폼 실시간 검색어의 시간대별·일별 기록 아카이브. 과거 핫이슈를 되돌아볼 수 있습니다.">
+  <meta name="keywords" content="실시간 검색어 아카이브, 과거 실검, 실시간 검색어 기록, 핫검색어 히스토리">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hotfeedlive.store/archive.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="HOTFEED LIVE">
+  <meta property="og:title" content="HOTFEED LIVE 아카이브 | 과거 실시간 검색어 기록">
+  <meta property="og:description" content="대한민국 주요 플랫폼의 시간대별 실시간 검색어 기록 아카이브">
+  <meta property="og:url" content="https://hotfeedlive.store/archive.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "HOTFEED LIVE 실시간 검색어 아카이브",
+    "url": "https://hotfeedlive.store/archive.html",
+    "inLanguage": "ko-KR",
+    "isPartOf": { "@type": "WebSite", "name": "HOTFEED LIVE", "url": "https://hotfeedlive.store/" },
+    "description": "대한민국 주요 플랫폼의 시간대별·일별 실시간 검색어 기록 아카이브"
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='36'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css?v=20261126-3">
+  <style>
+    .archive-nav { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .archive-nav label { font-weight: 600; font-size: 14px; color: var(--text-muted); }
+    .archive-nav select, .archive-nav input[type="date"] {
+      padding: 8px 14px; border: 1.5px solid var(--border); border-radius: 10px;
+      font-size: 14px; background: white; color: var(--text-primary);
+      font-family: 'Pretendard Variable', sans-serif;
+    }
+    .hour-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .hour-chip {
+      padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;
+      cursor: pointer; border: 1.5px solid var(--border); background: white;
+      color: var(--text-secondary); transition: all 0.15s;
+    }
+    .hour-chip:hover { border-color: var(--primary); color: var(--primary); }
+    .hour-chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .archive-header { margin-bottom: 20px; }
+    .archive-header h2 { font-size: 22px; font-weight: 700; color: var(--text-primary); }
+    .archive-header p { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-weight: 600; font-size: 14px; text-decoration: none; margin-bottom: 16px; }
+    .back-link:hover { text-decoration: underline; }
+    .no-data { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 15px; }
+    .date-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .date-card {
+      padding: 16px; border-radius: 12px; border: 1.5px solid var(--border);
+      background: white; cursor: pointer; transition: all 0.15s;
+    }
+    .date-card:hover { border-color: var(--primary); box-shadow: 0 2px 8px rgba(79,70,229,0.1); }
+    .date-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .date-card p { font-size: 13px; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;">
+          <div class="logo-badge notranslate" aria-hidden="true">🔥</div>
+          <div class="brand-text">
+            <h1 class="notranslate">HOTFEED LIVE</h1>
+            <p>실시간 검색어 아카이브</p>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <a href="/" class="back-link">← 실시간 대시보드로 돌아가기</a>
+
+    <div id="archiveContent">
+      <div class="no-data">아카이브 데이터를 불러오고 있습니다...</div>
+    </div>
+
+    <main class="trends-grid" id="trendsGrid" style="display:none;"></main>
+
+    <footer>
+      <p>© 2026 <span class="notranslate">HOTFEED LIVE (hotfeedlive.store)</span> · 실시간 검색어 아카이브</p>
+    </footer>
+  </div>
+
+  <script>
+  const SITE = 'https://hotfeedlive.store';
+  const archiveContent = document.getElementById('archiveContent');
+  const trendsGrid = document.getElementById('trendsGrid');
+  const params = new URLSearchParams(window.location.search);
+  let selectedDate = params.get('date');
+  let selectedHour = params.get('hour');
+
+  async function init() {
+    if (selectedDate && selectedHour) {
+      await loadHourData(selectedDate, selectedHour);
+    } else if (selectedDate) {
+      await loadDateView(selectedDate);
+    } else {
+      await loadIndexView();
+    }
+  }
+
+  async function loadIndexView() {
+    try {
+      const res = await fetch(`archives/index.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error('No archive index');
+      const index = await res.json();
+      const dates = Object.keys(index).sort().reverse();
+
+      if (dates.length === 0) {
+        archiveContent.innerHTML = '<div class="no-data">📂 아직 아카이브 데이터가 없습니다.<br>매시간 자동으로 기록이 쌓입니다.</div>';
+        return;
+      }
+
+      const weekday = ['일', '월', '화', '수', '목', '금', '토'];
+
+      let html = '<div class="archive-header"><h2>📅 날짜별 아카이브</h2><p>날짜를 선택하면 해당일의 시간대별 검색어를 확인할 수 있습니다.</p></div>';
+      html += '<div class="date-list">';
+      dates.forEach(date => {
+        const hours = index[date];
+        const d = new Date(date + 'T00:00:00+09:00');
+        const dayName = weekday[d.getDay()];
+        html += `<div class="date-card" onclick="location.href='archive.html?date=${date}'">
+          <h4>📆 ${date} (${dayName})</h4>
+          <p>${hours.length}개 시간대 기록 · ${hours[0]}시~${hours[hours.length-1]}시</p>
+        </div>`;
+      });
+      html += '</div>';
+      archiveContent.innerHTML = html;
+
+      document.title = 'HOTFEED LIVE 아카이브 | 과거 실시간 검색어 기록';
+    } catch (err) {
+      archiveContent.innerHTML = '<div class="no-data">📂 아카이브 데이터를 불러올 수 없습니다.</div>';
+    }
+  }
+
+  async function loadDateView(date) {
+    try {
+      const res = await fetch(`archives/index.json?t=${Date.now()}`, { cache: 'no-store' });
+      const index = await res.json();
+      const hours = index[date] || [];
+
+      if (hours.length === 0) {
+        archiveContent.innerHTML = `<div class="no-data">📂 ${date} 날짜에 기록된 데이터가 없습니다.</div>`;
+        return;
+      }
+
+      let html = `<div class="archive-header"><h2>📅 ${date} 실시간 검색어 기록</h2><p>시간대를 선택하세요</p></div>`;
+      html += '<div class="hour-chips">';
+      hours.forEach(h => {
+        html += `<button class="hour-chip" onclick="location.href='archive.html?date=${date}&hour=${h}'">${h}:00</button>`;
+      });
+      html += '</div>';
+      archiveContent.innerHTML = html;
+
+      document.title = `${date} 실시간 검색어 아카이브 | HOTFEED LIVE`;
+      updateMeta('description', `${date} 대한민국 주요 플랫폼 실시간 검색어 시간대별 기록`);
+    } catch (err) {
+      archiveContent.innerHTML = '<div class="no-data">데이터를 불러올 수 없습니다.</div>';
+    }
+  }
+
+  async function loadHourData(date, hour) {
+    try {
+      const res = await fetch(`archives/${date}/${hour}.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error('Archive not found');
+      const data = await res.json();
+
+      archiveContent.innerHTML = `
+        <div class="archive-header">
+          <h2>📅 ${date} ${hour}:00 KST 실시간 검색어</h2>
+          <p>수집 시각: ${data.updated_at || `${date} ${hour}:00:00`}</p>
+        </div>
+        <div class="archive-nav">
+          <a href="archive.html?date=${date}" class="back-link">← ${date} 전체 보기</a>
+        </div>
+      `;
+
+      trendsGrid.style.display = '';
+      renderTrends(data, trendsGrid);
+
+      document.title = `${date} ${hour}시 실시간 검색어 | HOTFEED LIVE 아카이브`;
+      updateMeta('description', `${date} ${hour}시 대한민국 실시간 검색어 순위. 네이버, 구글, X(트위터), 네이트 등`);
+    } catch (err) {
+      archiveContent.innerHTML = `<div class="no-data">📂 ${date} ${hour}시 데이터를 찾을 수 없습니다.</div>`;
+    }
+  }
+
+  function renderTrends(data, container) {
+    container.innerHTML = '';
+    const platforms = data.platforms || {};
+    Object.keys(platforms).filter(k => k !== 'all').forEach(key => {
+      const pInfo = platforms[key];
+      if (!pInfo) return;
+      const items = pInfo.items || [];
+      if (items.length === 0) return;
+
+      const card = document.createElement('section');
+      card.className = 'platform-card';
+
+      const listHtml = items.map(item => {
+        const kw = esc(item.keyword || '');
+        const href = esc(item.url && (item.url.startsWith('http') ? item.url : '#'));
+        const badge = item.change ? getStateBadge(item.change) : '';
+        const traffic = item.traffic ? `<span class="traffic-pill">${esc(item.traffic)}</span>` : '';
+        return `<li>
+          <a href="${href}" target="_blank" rel="noopener noreferrer" class="trend-item" title="${kw}">
+            <div class="trend-item-left">
+              <span class="rank-badge notranslate">${esc(item.rank)}</span>
+              <span class="trend-keyword">${kw}</span>
+            </div>
+            <div class="trend-item-right">${traffic}${badge}</div>
+          </a>
+        </li>`;
+      }).join('');
+
+      card.innerHTML = `
+        <div class="card-header">
+          <div class="platform-title">
+            <span class="platform-icon notranslate" aria-hidden="true">${esc(pInfo.icon || '📌')}</span>
+            <div><h3>${esc(pInfo.name)}</h3>${pInfo.description ? `<p class="platform-desc">${esc(pInfo.description)}</p>` : ''}</div>
+          </div>
+          <span class="platform-tag notranslate">${items.length}개</span>
+        </div>
+        <ul class="trend-list">${listHtml}</ul>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  function getStateBadge(change) {
+    const c = String(change).trim().toLowerCase();
+    if (c === '+' || c === 'up') return '<span class="state-badge state-up notranslate">▲ 상승</span>';
+    if (c === '-' || c === 'down') return '<span class="state-badge state-down notranslate">▼ 하강</span>';
+    if (c === 'new' || c === 'n') return '<span class="state-badge state-new notranslate">NEW</span>';
+    if (c === 'hot') return '<span class="state-badge state-hot notranslate">HOT</span>';
+    if (c === 'same' || c === 's') return '<span class="state-badge state-same notranslate">-</span>';
+    return '';
+  }
+
+  function esc(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+  }
+
+  function updateMeta(name, content) {
+    let el = document.querySelector(`meta[name="${name}"]`);
+    if (el) el.setAttribute('content', content);
+  }
+
+  init();
+  </script>
+</body>
+</html>

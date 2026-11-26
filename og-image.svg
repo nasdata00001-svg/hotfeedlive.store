@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect width="1200" height="90" fill="#4f46e5"/>
+  <text x="60" y="58" font-size="40" fill="white" font-weight="800" font-family="sans-serif">🔥 HOTFEED LIVE</text>
+  <text x="600" y="58" font-size="22" fill="#c7d2fe" font-family="sans-serif">실시간 핫검색어 대시보드</text>
+  <text x="60" y="120" font-size="18" fill="#94a3b8" font-family="sans-serif">📅 2026.11.26 14:45 KST 기준 TOP 8 트렌드</text>
+  <text x="80" y="155" font-size="28" fill="#ef4444" font-weight="700">1</text><text x="120" y="155" font-size="28" fill="#1e293b">신현송 한은 총재 간담회</text>
+<text x="80" y="203" font-size="28" fill="#ef4444" font-weight="700">2</text><text x="120" y="203" font-size="28" fill="#1e293b">조희대 탄핵 여론조사</text>
+<text x="80" y="251" font-size="28" fill="#ef4444" font-weight="700">3</text><text x="120" y="251" font-size="28" fill="#1e293b">안덕수 후보자 인사청문회 출석</text>
+<text x="80" y="299" font-size="28" fill="#6366f1" font-weight="700">4</text><text x="120" y="299" font-size="28" fill="#1e293b">꼬들 1790</text>
+<text x="80" y="347" font-size="28" fill="#6366f1" font-weight="700">5</text><text x="120" y="347" font-size="28" fill="#1e293b">#우리의하나뿐인별우영데이</text>
+<text x="80" y="395" font-size="28" fill="#6366f1" font-weight="700">6</text><text x="120" y="395" font-size="28" fill="#1e293b">꼬들 1789</text>
+<text x="80" y="443" font-size="28" fill="#6366f1" font-weight="700">7</text><text x="120" y="443" font-size="28" fill="#1e293b">신동엽</text>
+<text x="80" y="491" font-size="28" fill="#6366f1" font-weight="700">8</text><text x="120" y="491" font-size="28" fill="#1e293b">경찰</text>
+  <text x="60" y="600" font-size="16" fill="#94a3b8" font-family="sans-serif">hotfeedlive.store · 1시간마다 자동 갱신</text>
+</svg>
