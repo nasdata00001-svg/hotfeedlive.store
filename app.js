@@ -5,6 +5,36 @@ let searchQuery = '';
 let remainingSeconds = 3600;
 let timerInterval = null;
 let isRefreshing = false;
+let searchAnalyticsTimer = null;
+let lastRenderedPlatforms = 0;
+
+function sanitizeAnalyticsParams(params = {}) {
+  const clean = {};
+  Object.entries(params).forEach(([key, val]) => {
+    if (val === undefined || val === null || val === '') return;
+    if (typeof val === 'number') {
+      if (Number.isFinite(val)) clean[key] = val;
+    } else if (typeof val === 'boolean') {
+      clean[key] = val;
+    } else {
+      clean[key] = String(val).slice(0, 100);
+    }
+  });
+  return clean;
+}
+
+function trackEvent(eventName, params = {}) {
+  if (!eventName) return;
+  const cleanParams = sanitizeAnalyticsParams(params);
+  if (typeof window.trackAnalyticsEvent === 'function') {
+    window.trackAnalyticsEvent(eventName, cleanParams);
+    return;
+  }
+  window.__pendingAnalyticsEvents = window.__pendingAnalyticsEvents || [];
+  if (window.__pendingAnalyticsEvents.length < 50) {
+    window.__pendingAnalyticsEvents.push({ name: eventName, params: cleanParams });
+  }
+}
 
 const timerDisplay = document.getElementById('timerDisplay');
 const btnRefresh = document.getElementById('btnRefresh');
@@ -36,6 +66,19 @@ function setupEventListeners() {
     searchQuery = e.target.value.trim().toLowerCase();
     updateSearchClearState();
     renderGrid();
+
+    clearTimeout(searchAnalyticsTimer);
+    if (searchQuery.length > 0) {
+      const capturedQuery = searchQuery;
+      searchAnalyticsTimer = setTimeout(() => {
+        if (searchQuery === capturedQuery) {
+          trackEvent('search', {
+            search_term: capturedQuery,
+            result_platforms: lastRenderedPlatforms,
+          });
+        }
+      }, 800);
+    }
   });
 
   searchInput.addEventListener('keydown', (e) => {
@@ -52,17 +95,46 @@ function setupEventListeners() {
     triggerRefresh();
   });
 
-  // Delegated click handler for keyword copy buttons (safe against quotes/special chars)
+  // Delegated click handler for keyword copy buttons and trend links
   trendsGrid.addEventListener('click', (e) => {
     const copyBtn = e.target.closest('.copy-btn');
-    if (!copyBtn) return;
-    e.preventDefault();
-    e.stopPropagation();
-    const keyword = copyBtn.dataset.keyword || '';
-    if (keyword) {
-      copyKeyword(keyword);
+    if (copyBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const keyword = copyBtn.dataset.keyword || '';
+      const platform = copyBtn.dataset.platform || '';
+      if (keyword) {
+        copyKeyword(keyword, platform);
+      }
+      return;
+    }
+
+    const trendLink = e.target.closest('.trend-item');
+    if (trendLink) {
+      const keyword = trendLink.dataset.keyword || '';
+      const platform = trendLink.dataset.platform || '';
+      const rankNum = Number(trendLink.dataset.rank);
+      trackEvent('select_content', {
+        content_type: 'trend_keyword',
+        item_id: keyword,
+        platform,
+        rank: Number.isFinite(rankNum) ? rankNum : undefined,
+      });
     }
   });
+
+  const mediaGrid = document.querySelector('.media-grid');
+  if (mediaGrid) {
+    mediaGrid.addEventListener('click', (e) => {
+      const card = e.target.closest('.link-card');
+      if (!card) return;
+      const titleEl = card.querySelector('h4');
+      trackEvent('select_media_hub', {
+        media_name: titleEl ? titleEl.textContent.trim() : '',
+        link_url: card.href,
+      });
+    });
+  }
 
   setupTranslation();
 }
@@ -144,6 +216,10 @@ function setupTranslation() {
       setExpanded(false);
 
       updateExternalLink(targetLang);
+      trackEvent('change_language', {
+        language: targetLang,
+        language_name: langName,
+      });
       translatePageTo(targetLang);
       showToast(`🌐 ${langName} 번역이 적용되었습니다.`, '🌐');
     });
@@ -313,13 +389,17 @@ async function triggerRefresh() {
     }
     const ok = await fetchTrends();
     if (!ok) {
+      trackEvent('refresh_trends', { status: 'error' });
       showToast('⚠️ 서버 연결 상태를 확인해 주세요.', '⚠️');
     } else if (prevTimestamp && trendData && trendData.updated_at === prevTimestamp && !IS_LOCAL_SERVER) {
+      trackEvent('refresh_trends', { status: 'up_to_date' });
       showToast('✅ 현재 최신 수집 데이터로 동기화되어 있습니다.', '✅');
     } else {
+      trackEvent('refresh_trends', { status: 'updated' });
       showToast('🚀 최신 실시간 검색어가 갱신되었습니다!', '🚀');
     }
   } catch {
+    trackEvent('refresh_trends', { status: 'error' });
     showToast('⚠️ 갱신 중 오류가 발생했습니다.', '⚠️');
   } finally {
     setTimeout(() => {
@@ -397,18 +477,20 @@ function renderGrid() {
           : '';
         const href = escapeHtml(safeUrl(item.url));
         const kwEscaped = escapeHtml(item.keyword || '');
+        const keyEscaped = escapeHtml(key);
+        const rankEscaped = escapeHtml(item.rank);
 
         return `
           <li>
-            <a href="${href}" target="_blank" rel="noopener noreferrer" class="trend-item" title="${kwEscaped}">
+            <a href="${href}" target="_blank" rel="noopener noreferrer" class="trend-item" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" data-rank="${rankEscaped}" title="${kwEscaped}">
               <div class="trend-item-left">
-                <span class="rank-badge notranslate">${escapeHtml(item.rank)}</span>
+                <span class="rank-badge notranslate">${rankEscaped}</span>
                 <span class="trend-keyword">${kwEscaped}</span>
               </div>
               <div class="trend-item-right">
                 ${trafficPill}
                 ${stateBadge}
-                <button type="button" class="copy-btn notranslate" data-keyword="${kwEscaped}" title="키워드 복사" aria-label="${kwEscaped} 복사">📋</button>
+                <button type="button" class="copy-btn notranslate" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" title="키워드 복사" aria-label="${kwEscaped} 복사">📋</button>
               </div>
             </a>
           </li>
@@ -434,6 +516,8 @@ function renderGrid() {
 
     trendsGrid.appendChild(card);
   });
+
+  lastRenderedPlatforms = totalRendered;
 
   if (totalRendered === 0) {
     trendsGrid.innerHTML = `
@@ -466,18 +550,23 @@ function getStateBadge(change) {
   return `<span class="state-badge state-same notranslate">${escapeHtml(c)}</span>`;
 }
 
-function copyKeyword(kw) {
+function copyKeyword(kw, platform = '') {
+  const onCopied = () => {
+    trackEvent('copy_keyword', { keyword: kw, platform });
+    showToast(`"${kw}" 키워드가 복사되었습니다!`, '📋');
+  };
+
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard
       .writeText(kw)
-      .then(() => showToast(`"${kw}" 키워드가 복사되었습니다!`, '📋'))
-      .catch(() => fallbackCopyText(kw));
+      .then(onCopied)
+      .catch(() => fallbackCopyText(kw, platform));
   } else {
-    fallbackCopyText(kw);
+    fallbackCopyText(kw, platform);
   }
 }
 
-function fallbackCopyText(text) {
+function fallbackCopyText(text, platform = '') {
   try {
     const textarea = document.createElement('textarea');
     textarea.value = text;
@@ -487,6 +576,9 @@ function fallbackCopyText(text) {
     textarea.select();
     const ok = document.execCommand('copy');
     document.body.removeChild(textarea);
+    if (ok) {
+      trackEvent('copy_keyword', { keyword: text, platform });
+    }
     showToast(ok ? `"${text}" 키워드가 복사되었습니다!` : '복사에 실패했습니다.', ok ? '📋' : '⚠️');
   } catch {
     showToast('복사에 실패했습니다.', '⚠️');
