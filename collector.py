@@ -16,7 +16,10 @@ import html
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -465,8 +468,8 @@ def collect_all():
     return payload
 
 
-def write_sitemap(out_dir, lastmod):
-    """Generate sitemap with main page + all archive pages."""
+def write_sitemap(out_dir, lastmod, data=None):
+    """Generate sitemap with main page, archive pages, and top topic pages."""
     sitemap_path = os.path.join(out_dir, "sitemap.xml")
     base = "https://hotfeedlive.store"
 
@@ -475,14 +478,42 @@ def write_sitemap(out_dir, lastmod):
         f'  <url>\n    <loc>{base}/archive.html</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>hourly</changefreq>\n    <priority>0.8</priority>\n  </url>',
     ]
 
-    # Add archive date/hour pages
+    # Top trending keyword analysis pages (SEO programmatic pages)
+    if data:
+        seen_kw = set()
+        top_kws = []
+        for it in data.get("platforms", {}).get("all", {}).get("items", []):
+            kw = (it.get("keyword") or "").strip()
+            if kw and kw not in seen_kw:
+                seen_kw.add(kw)
+                top_kws.append(kw)
+            if len(top_kws) >= 10:
+                break
+        if len(top_kws) < 10:
+            for k, pinfo in data.get("platforms", {}).items():
+                if k == "all" or not isinstance(pinfo, dict):
+                    continue
+                for it in (pinfo.get("items") or [])[:3]:
+                    kw = (it.get("keyword") or "").strip()
+                    if kw and kw not in seen_kw:
+                        seen_kw.add(kw)
+                        top_kws.append(kw)
+                    if len(top_kws) >= 10:
+                        break
+        for kw in top_kws:
+            urls.append(
+                f'  <url>\n    <loc>{base}/topic.html?k={urllib.parse.quote(kw)}</loc>\n'
+                f'    <lastmod>{lastmod}</lastmod>\n    <changefreq>hourly</changefreq>\n'
+                f'    <priority>0.7</priority>\n  </url>'
+            )
+
+    # Archive date/hour pages
     archives_dir = os.path.join(out_dir, "archives")
     if os.path.isdir(archives_dir):
         for date_dir in sorted(os.listdir(archives_dir)):
             date_path = os.path.join(archives_dir, date_dir)
             if not os.path.isdir(date_path):
                 continue
-            # Daily archive page
             urls.append(
                 f'  <url>\n    <loc>{base}/archive.html?date={date_dir}</loc>\n'
                 f'    <lastmod>{lastmod}</lastmod>\n    <changefreq>daily</changefreq>\n'
@@ -612,42 +643,124 @@ def save_archive(data, out_dir):
     print(f"[OK] Archived {date_str}/{hour_str}.json ({len(index)} days total)")
 
 
+def _find_headless_browser():
+    for cmd in ["google-chrome", "chromium", "chromium-browser", "chrome", "msedge"]:
+        path = shutil.which(cmd)
+        if path:
+            return path
+    win_candidates = [
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    ]
+    for path in win_candidates:
+        if os.path.exists(path):
+            return path
+    return None
+
+
 def generate_og_image(data, out_dir):
-    """Generate a simple SVG Open Graph image with top trending keywords."""
+    """Generate 1200x630 Open Graph SVG and PNG card with TOP 10 trending keywords."""
     all_items = data.get("platforms", {}).get("all", {}).get("items", [])
     if not all_items:
-        # Fallback: gather from other platforms
+        all_items = []
         for key, pinfo in data.get("platforms", {}).items():
-            if key == "all":
+            if key == "all" or not isinstance(pinfo, dict):
                 continue
             all_items.extend((pinfo.get("items") or [])[:3])
 
-    top_keywords = [it.get("keyword", "") for it in all_items[:8] if it.get("keyword")]
+    top_keywords = []
+    seen = set()
+    for it in all_items:
+        kw = (it.get("keyword") or "").strip()
+        if kw and kw not in seen:
+            seen.add(kw)
+            top_keywords.append(kw)
+        if len(top_keywords) >= 10:
+            break
+
     now_kst = datetime.datetime.now(KST)
     time_label = now_kst.strftime("%Y.%m.%d %H:%M KST")
+    top1 = top_keywords[0] if top_keywords else "실시간 핫트렌드"
 
-    lines = []
+    # Build 2-column SVG rows (1-5 left, 6-10 right)
+    svg_rows = []
     for i, kw in enumerate(top_keywords):
-        y = 155 + i * 48
-        rank_color = "#ef4444" if i < 3 else "#6366f1"
-        lines.append(
-            f'<text x="80" y="{y}" font-size="28" fill="{rank_color}" font-weight="700">{i+1}</text>'
-            f'<text x="120" y="{y}" font-size="28" fill="#1e293b">{_xml_escape(kw[:20])}</text>'
+        col = 0 if i < 5 else 1
+        row = i if i < 5 else i - 5
+        x = 64 if col == 0 else 622
+        y = 248 + row * 68
+        display_kw = kw[:18] + ("..." if len(kw) > 18 else "")
+        badge_bg = "#ef4444" if i == 0 else ("#4f46e5" if i < 3 else "#e2e8f0")
+        badge_fg = "#ffffff" if i < 3 else "#475569"
+        svg_rows.append(
+            f'<rect x="{x}" y="{y - 34}" width="514" height="54" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>'
+            f'<rect x="{x + 12}" y="{y - 23}" width="32" height="32" rx="8" fill="{badge_bg}"/>'
+            f'<text x="{x + 28}" y="{y - 1}" text-anchor="middle" font-size="18" fill="{badge_fg}" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{i + 1}</text>'
+            f'<text x="{x + 58}" y="{y}" font-size="22" fill="#0f172a" font-weight="700" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(display_kw)}</text>'
         )
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
   <rect width="1200" height="630" fill="#f8fafc"/>
-  <rect width="1200" height="90" fill="#4f46e5"/>
-  <text x="60" y="58" font-size="40" fill="white" font-weight="800" font-family="sans-serif">🔥 HOTFEED LIVE</text>
-  <text x="600" y="58" font-size="22" fill="#c7d2fe" font-family="sans-serif">실시간 핫검색어 대시보드</text>
-  <text x="60" y="120" font-size="18" fill="#94a3b8" font-family="sans-serif">📅 {time_label} 기준 TOP {len(top_keywords)} 트렌드</text>
-  {chr(10).join(lines)}
-  <text x="60" y="600" font-size="16" fill="#94a3b8" font-family="sans-serif">hotfeedlive.store · 1시간마다 자동 갱신</text>
+  <rect width="1200" height="106" fill="url(#hdr)"/>
+  <text x="64" y="64" font-size="38" fill="#ffffff" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">HOTFEED LIVE</text>
+  <text x="360" y="62" font-size="20" fill="#e0e7ff" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">대한민국 실시간 핫검색어 TOP 10</text>
+  <text x="1136" y="62" text-anchor="end" font-size="18" fill="#c7d2fe" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{time_label}</text>
+  <rect x="64" y="128" width="1072" height="60" rx="14" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <rect x="82" y="141" width="76" height="34" rx="8" fill="#ef4444"/>
+  <text x="120" y="164" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">LIVE #1</text>
+  <text x="176" y="166" font-size="25" fill="#1e1b4b" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(top1[:34])}</text>
+  {chr(10).join(svg_rows)}
+  <text x="64" y="598" font-size="17" fill="#64748b" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">hotfeedlive.store · X · 네이버 · 구글 · 네이트 · 커뮤니티 1시간 자동 집계</text>
 </svg>'''
 
     svg_path = os.path.join(out_dir, "og-image.svg")
     with open(svg_path, "w", encoding="utf-8") as f:
         f.write(svg)
+
+    # Render PNG for KakaoTalk, X, Naver, Facebook OG compatibility
+    browser = _find_headless_browser()
+    if browser:
+        png_path = os.path.join(out_dir, "og-image.png")
+        html_wrapper = f'''<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>*{{margin:0;padding:0;}}body{{width:1200px;height:630px;overflow:hidden;}}</style></head>
+<body>{svg}</body></html>'''
+        tmp_html = None
+        try:
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".html", encoding="utf-8", delete=False) as tf:
+                tf.write(html_wrapper)
+                tmp_html = tf.name
+            file_url = "file:///" + tmp_html.replace(os.sep, "/").lstrip("/")
+            subprocess.run(
+                [
+                    browser,
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--hide-scrollbars",
+                    "--virtual-time-budget=2500",
+                    f"--screenshot={png_path}",
+                    "--window-size=1200,630",
+                    file_url,
+                ],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=20,
+                check=True,
+            )
+            print(f"[OK] Generated {png_path}")
+        except Exception as e:
+            print(f"[!] OG PNG generation notice: {e}", file=sys.stderr)
+        finally:
+            if tmp_html and os.path.exists(tmp_html):
+                os.unlink(tmp_html)
 
 
 def save_trends(data, out_dir=None):
@@ -674,7 +787,7 @@ def save_trends(data, out_dir=None):
 
     lastmod = data.get("updated_at_iso") or datetime.datetime.now(KST).isoformat(timespec="seconds")
     save_archive(data, out_dir)
-    write_sitemap(out_dir, lastmod)
+    write_sitemap(out_dir, lastmod, data)
     write_rss(data, out_dir)
     generate_og_image(data, out_dir)
 

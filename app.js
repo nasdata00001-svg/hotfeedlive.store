@@ -50,6 +50,35 @@ const toastIcon = document.getElementById('toastIcon');
 const toastMsg = document.getElementById('toastMsg');
 
 const IS_LOCAL_SERVER = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+const ALERT_STORAGE_KEY = 'hotfeed_alert_keywords';
+const LIKE_STORAGE_KEY = 'hotfeed_likes';
+const LAST_NOTIFIED_KEY = 'hotfeed_last_notified_at';
+
+const btnAlertToggle = document.getElementById('btnAlertToggle');
+const alertCountBadge = document.getElementById('alertCountBadge');
+const alertPanel = document.getElementById('alertPanel');
+const btnEnablePush = document.getElementById('btnEnablePush');
+const alertKeywordInput = document.getElementById('alertKeywordInput');
+const btnAddAlert = document.getElementById('btnAddAlert');
+const alertTags = document.getElementById('alertTags');
+
+function readJsonStorage(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || 'null') || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function getAlertKeywords() {
+  const list = readJsonStorage(ALERT_STORAGE_KEY, []);
+  return Array.isArray(list) ? list : [];
+}
+
+function getLikesMap() {
+  const map = readJsonStorage(LIKE_STORAGE_KEY, {});
+  return map && typeof map === 'object' ? map : {};
+}
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -62,6 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
     searchQuery = initialQuery.toLowerCase();
     updateSearchClearState();
   }
+
+  setupAlertSystem();
 
   if (window.INITIAL_TRENDS) {
     applyTrendData(window.INITIAL_TRENDS);
@@ -112,8 +143,29 @@ function setupEventListeners() {
     triggerRefresh();
   });
 
-  // Delegated click handler for keyword copy buttons and trend links
+  // Delegated click handler for action buttons and trend links
   trendsGrid.addEventListener('click', (e) => {
+    const likeBtn = e.target.closest('.like-btn');
+    if (likeBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const keyword = likeBtn.dataset.keyword || '';
+      const platform = likeBtn.dataset.platform || '';
+      if (keyword) {
+        toggleLike(keyword, platform, likeBtn);
+      }
+      return;
+    }
+
+    const topicLink = e.target.closest('.topic-btn');
+    if (topicLink) {
+      trackEvent('select_topic_detail', {
+        keyword: topicLink.dataset.keyword || '',
+        platform: topicLink.dataset.platform || '',
+      });
+      return;
+    }
+
     const copyBtn = e.target.closest('.copy-btn');
     if (copyBtn) {
       e.preventDefault();
@@ -389,6 +441,176 @@ function applyTrendData(data) {
 
   updateTimerDisplay();
   renderUI();
+  checkKeywordAlerts(data);
+}
+
+function setupAlertSystem() {
+  if (!btnAlertToggle || !alertPanel) return;
+
+  const updatePushStatusBtn = () => {
+    if (!btnEnablePush) return;
+    if (!('Notification' in window)) {
+      btnEnablePush.textContent = '알림 미지원 브라우저';
+      btnEnablePush.disabled = true;
+      return;
+    }
+    if (Notification.permission === 'granted') {
+      btnEnablePush.textContent = '✅ 브라우저 알림 켜짐';
+      btnEnablePush.classList.add('granted');
+    } else if (Notification.permission === 'denied') {
+      btnEnablePush.textContent = '브라우저 알림 차단됨';
+    } else {
+      btnEnablePush.textContent = '브라우저 알림 허용';
+      btnEnablePush.classList.remove('granted');
+    }
+  };
+
+  const renderAlertTags = () => {
+    const list = getAlertKeywords();
+    if (alertCountBadge) {
+      alertCountBadge.textContent = list.length;
+      alertCountBadge.classList.toggle('has-items', list.length > 0);
+    }
+    if (!alertTags) return;
+    if (list.length === 0) {
+      alertTags.innerHTML = '<span style="font-size:12px;color:var(--text-dim);">등록된 관심 키워드가 없습니다.</span>';
+      return;
+    }
+    alertTags.innerHTML = list
+      .map(
+        (kw, idx) =>
+          `<span class="alert-tag"># ${escapeHtml(kw)} <button type="button" data-alert-idx="${idx}" aria-label="${escapeHtml(kw)} 삭제">✕</button></span>`
+      )
+      .join('');
+  };
+
+  const addAlertKeyword = () => {
+    const kw = (alertKeywordInput?.value || '').trim();
+    if (!kw) return;
+    const list = getAlertKeywords();
+    if (list.some((x) => x.toLowerCase() === kw.toLowerCase())) {
+      showToast('이미 등록된 키워드입니다.', '🔔');
+      return;
+    }
+    list.push(kw);
+    localStorage.setItem(ALERT_STORAGE_KEY, JSON.stringify(list));
+    alertKeywordInput.value = '';
+    renderAlertTags();
+    renderGrid();
+    trackEvent('subscribe_keyword_alert', { keyword: kw });
+    showToast(`🔔 "${kw}" 알림 키워드가 등록되었습니다!`, '🔔');
+    checkKeywordAlerts(trendData, true);
+
+    if ('Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission().then(updatePushStatusBtn).catch(() => {});
+    }
+  };
+
+  btnAlertToggle.addEventListener('click', () => {
+    const isHidden = alertPanel.hidden;
+    alertPanel.hidden = !isHidden;
+    btnAlertToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    updatePushStatusBtn();
+  });
+
+  if (btnEnablePush) {
+    btnEnablePush.addEventListener('click', async () => {
+      if (!('Notification' in window)) return;
+      const perm = await Notification.requestPermission().catch(() => 'default');
+      updatePushStatusBtn();
+      if (perm === 'granted') {
+        showToast('✅ 브라우저 알림이 활성화되었습니다!', '🔔');
+      } else {
+        showToast('브라우저 설정에서 알림을 허용해 주세요.', '⚠️');
+      }
+    });
+  }
+
+  if (btnAddAlert) {
+    btnAddAlert.addEventListener('click', addAlertKeyword);
+  }
+
+  if (alertKeywordInput) {
+    alertKeywordInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        addAlertKeyword();
+      }
+    });
+  }
+
+  if (alertTags) {
+    alertTags.addEventListener('click', (e) => {
+      const rmBtn = e.target.closest('button[data-alert-idx]');
+      if (!rmBtn) return;
+      const idx = Number(rmBtn.dataset.alertIdx);
+      const list = getAlertKeywords();
+      if (Number.isInteger(idx) && idx >= 0 && idx < list.length) {
+        list.splice(idx, 1);
+        localStorage.setItem(ALERT_STORAGE_KEY, JSON.stringify(list));
+        renderAlertTags();
+        renderGrid();
+      }
+    });
+  }
+
+  updatePushStatusBtn();
+  renderAlertTags();
+}
+
+function checkKeywordAlerts(data, forceToastOnly = false) {
+  if (!data || !data.platforms) return;
+  const alerts = getAlertKeywords();
+  if (alerts.length === 0) return;
+
+  const stamp = data.updated_at || '';
+  if (!forceToastOnly && stamp && localStorage.getItem(LAST_NOTIFIED_KEY) === stamp) {
+    return;
+  }
+
+  const hits = [];
+  Object.entries(data.platforms).forEach(([key, pinfo]) => {
+    if (key === 'all' || !pinfo) return;
+    (pinfo.items || []).forEach((it) => {
+      const kw = it.keyword || '';
+      const matched = alerts.find((a) => kw.toLowerCase().includes(a.toLowerCase()));
+      if (matched) {
+        hits.push(`${pinfo.name} ${it.rank}위: ${kw}`);
+      }
+    });
+  });
+
+  if (hits.length === 0) return;
+  if (!forceToastOnly && stamp) {
+    localStorage.setItem(LAST_NOTIFIED_KEY, stamp);
+  }
+
+  showToast(`🔔 관심 키워드 ${hits.length}건 포착! (${hits[0]})`, '🔔');
+  if (!forceToastOnly && 'Notification' in window && Notification.permission === 'granted') {
+    try {
+      new Notification('HOTFEED LIVE 관심 키워드 포착!', {
+        body: hits.slice(0, 3).join('\n'),
+        icon: 'https://hotfeedlive.store/og-image.png',
+      });
+    } catch {}
+  }
+}
+
+function toggleLike(keyword, platform, btnEl) {
+  const likes = getLikesMap();
+  const cur = likes[keyword] || { liked: false, count: 0 };
+  const nextLiked = !cur.liked;
+  const nextCount = Math.max(0, (cur.count || 0) + (nextLiked ? 1 : -1));
+  likes[keyword] = { liked: nextLiked, count: nextCount };
+  localStorage.setItem(LIKE_STORAGE_KEY, JSON.stringify(likes));
+
+  btnEl.classList.toggle('liked', nextLiked);
+  btnEl.setAttribute('aria-pressed', nextLiked ? 'true' : 'false');
+  const countSpan = btnEl.querySelector('.like-count');
+  if (countSpan) {
+    countSpan.textContent = nextCount > 0 ? String(nextCount) : '';
+  }
+  trackEvent('like_keyword', { keyword, platform, liked: nextLiked });
 }
 
 async function triggerRefresh() {
@@ -487,6 +709,9 @@ function renderGrid() {
     card.className = 'platform-card';
     card.id = `platform-${key}`;
 
+    const alerts = getAlertKeywords();
+    const likes = getLikesMap();
+
     const listHtml = items
       .map((item) => {
         const stateBadge = getStateBadge(item.change);
@@ -494,12 +719,16 @@ function renderGrid() {
           ? `<span class="traffic-pill">${escapeHtml(item.traffic)}</span>`
           : '';
         const href = escapeHtml(safeUrl(item.url));
-        const kwEscaped = escapeHtml(item.keyword || '');
+        const kwRaw = item.keyword || '';
+        const kwEscaped = escapeHtml(kwRaw);
+        const kwUrl = encodeURIComponent(kwRaw);
         const keyEscaped = escapeHtml(key);
         const rankEscaped = escapeHtml(item.rank);
+        const isHit = alerts.some((a) => kwRaw.toLowerCase().includes(a.toLowerCase()));
+        const likeInfo = likes[kwRaw] || { liked: false, count: 0 };
 
         return `
-          <li>
+          <li class="trend-row${isHit ? ' alert-hit' : ''}">
             <a href="${href}" target="_blank" rel="noopener noreferrer" class="trend-item" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" data-rank="${rankEscaped}" title="${kwEscaped}">
               <div class="trend-item-left">
                 <span class="rank-badge notranslate">${rankEscaped}</span>
@@ -508,9 +737,13 @@ function renderGrid() {
               <div class="trend-item-right">
                 ${trafficPill}
                 ${stateBadge}
-                <button type="button" class="copy-btn notranslate" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" title="키워드 복사" aria-label="${kwEscaped} 복사">📋</button>
               </div>
             </a>
+            <div class="trend-actions">
+              <a href="topic.html?k=${kwUrl}" class="topic-btn notranslate" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" title="이슈 분석 · 순위 변동" aria-label="${kwEscaped} 이슈 분석">📊</a>
+              <button type="button" class="like-btn notranslate${likeInfo.liked ? ' liked' : ''}" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" aria-pressed="${likeInfo.liked ? 'true' : 'false'}" title="관심 있어요" aria-label="${kwEscaped} 관심">❤️<span class="like-count">${likeInfo.count > 0 ? likeInfo.count : ''}</span></button>
+              <button type="button" class="copy-btn notranslate" data-platform="${keyEscaped}" data-keyword="${kwEscaped}" title="키워드 복사" aria-label="${kwEscaped} 복사">📋</button>
+            </div>
           </li>
         `;
       })

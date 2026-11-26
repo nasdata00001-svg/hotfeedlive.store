@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 *.log
 *.bat
+*service_account*.json
+*service-account*.json
+*hotfeedlive-*.json
+.env

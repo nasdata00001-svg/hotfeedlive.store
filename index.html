@@ -18,13 +18,13 @@
   <meta property="og:title" content="HOTFEED LIVE | 실시간 핫검색어 &amp; 포털 실검 대시보드">
   <meta property="og:description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 커뮤니티 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
   <meta property="og:url" content="https://hotfeedlive.store/">
-  <meta property="og:image" content="https://hotfeedlive.store/og-image.svg">
+  <meta property="og:image" content="https://hotfeedlive.store/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HOTFEED LIVE | 실시간 핫검색어 &amp; 포털 실검 대시보드">
   <meta name="twitter:description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 커뮤니티 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
-  <meta name="twitter:image" content="https://hotfeedlive.store/og-image.svg">
+  <meta name="twitter:image" content="https://hotfeedlive.store/og-image.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="style.css?v=20261126-3">
+  <link rel="stylesheet" href="style.css?v=20261126-4">
 </head>
 <body>
   <div class="container">
@@ -118,15 +118,37 @@
       </div>
     </section>
 
-    <!-- Controls: Keyword Search -->
+    <!-- Controls: Keyword Search & Alert -->
     <div class="controls-bar">
-      <div class="search-box">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input type="text" id="searchInput" class="search-input" placeholder="실시간 키워드·언론사 통합 검색 (예: 금리, 야구, 엔비디아, 한겨레...)" autocomplete="off" aria-label="실시간 키워드 검색">
-        <button type="button" id="clearSearchBtn" class="search-clear-btn" title="검색어 지우기" aria-label="검색어 지우기">✕</button>
+      <div class="controls-row">
+        <div class="search-box">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="실시간 키워드·언론사 통합 검색 (예: 금리, 야구, 엔비디아, 한겨레...)" autocomplete="off" aria-label="실시간 키워드 검색">
+          <button type="button" id="clearSearchBtn" class="search-clear-btn" title="검색어 지우기" aria-label="검색어 지우기">✕</button>
+        </div>
+        <button type="button" id="btnAlertToggle" class="btn-alert" aria-expanded="false" aria-controls="alertPanel">
+          <span class="notranslate" aria-hidden="true">🔔</span>
+          <span>키워드 알림</span>
+          <span id="alertCountBadge" class="alert-count-badge notranslate">0</span>
+        </button>
+      </div>
+
+      <div id="alertPanel" class="alert-panel" hidden>
+        <div class="alert-panel-head">
+          <div>
+            <strong>🔔 관심 키워드 브라우저 푸시 알림</strong>
+            <p>등록한 키워드가 실시간 순위에 등장하면 웹 푸시 알림으로 알려드립니다.</p>
+          </div>
+          <button type="button" id="btnEnablePush" class="btn-enable-push">브라우저 알림 허용</button>
+        </div>
+        <div class="alert-input-row">
+          <input type="text" id="alertKeywordInput" class="alert-input" placeholder="알림 받을 키워드 입력 (예: 금리, 삼성, 손흥민)" maxlength="40" aria-label="알림 키워드 입력">
+          <button type="button" id="btnAddAlert" class="btn-add-alert">등록</button>
+        </div>
+        <div id="alertTags" class="alert-tags"></div>
       </div>
     </div>
 
@@ -283,8 +305,8 @@
   </script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
-  <script src="trends_data.js?v=20261126-3"></script>
-  <script type="module" src="firebase-analytics.js?v=20261126-3"></script>
-  <script src="app.js?v=20261126-3"></script>
+  <script src="trends_data.js?v=20261126-4"></script>
+  <script type="module" src="firebase-analytics.js?v=20261126-4"></script>
+  <script src="app.js?v=20261126-4"></script>
 </body>
 </html>

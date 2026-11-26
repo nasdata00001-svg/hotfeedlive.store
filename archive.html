@@ -14,6 +14,9 @@
   <meta property="og:title" content="HOTFEED LIVE 아카이브 | 과거 실시간 검색어 기록">
   <meta property="og:description" content="대한민국 주요 플랫폼의 시간대별 실시간 검색어 기록 아카이브">
   <meta property="og:url" content="https://hotfeedlive.store/archive.html">
+  <meta property="og:image" content="https://hotfeedlive.store/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://hotfeedlive.store/og-image.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,36 +31,36 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='36'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="style.css?v=20261126-3">
+  <link rel="stylesheet" href="style.css?v=20261126-4">
   <style>
     .archive-nav { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
     .archive-nav label { font-weight: 600; font-size: 14px; color: var(--text-muted); }
     .archive-nav select, .archive-nav input[type="date"] {
-      padding: 8px 14px; border: 1.5px solid var(--border); border-radius: 10px;
-      font-size: 14px; background: white; color: var(--text-primary);
-      font-family: 'Pretendard Variable', sans-serif;
+      padding: 8px 14px; border: 1.5px solid var(--border-subtle); border-radius: 10px;
+      font-size: 14px; background: white; color: var(--text-main);
+      font-family: var(--font-family);
     }
     .hour-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
     .hour-chip {
-      padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;
-      cursor: pointer; border: 1.5px solid var(--border); background: white;
+      padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600;
+      cursor: pointer; border: 1.5px solid var(--border-subtle); background: white;
       color: var(--text-secondary); transition: all 0.15s;
     }
-    .hour-chip:hover { border-color: var(--primary); color: var(--primary); }
-    .hour-chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .hour-chip:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+    .hour-chip.active { background: var(--accent-primary); color: white; border-color: var(--accent-primary); }
     .archive-header { margin-bottom: 20px; }
-    .archive-header h2 { font-size: 22px; font-weight: 700; color: var(--text-primary); }
+    .archive-header h2 { font-size: 22px; font-weight: 700; color: var(--text-main); }
     .archive-header p { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-weight: 600; font-size: 14px; text-decoration: none; margin-bottom: 16px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent-primary); font-weight: 600; font-size: 14px; text-decoration: none; margin-bottom: 16px; }
     .back-link:hover { text-decoration: underline; }
     .no-data { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 15px; }
-    .date-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .date-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
     .date-card {
-      padding: 16px; border-radius: 12px; border: 1.5px solid var(--border);
+      padding: 16px; border-radius: 12px; border: 1.5px solid var(--border-subtle);
       background: white; cursor: pointer; transition: all 0.15s;
     }
-    .date-card:hover { border-color: var(--primary); box-shadow: 0 2px 8px rgba(79,70,229,0.1); }
-    .date-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .date-card:hover { border-color: var(--accent-primary); box-shadow: 0 2px 8px rgba(79,70,229,0.1); }
+    .date-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; color: var(--text-main); }
     .date-card p { font-size: 13px; color: var(--text-muted); }
   </style>
 </head>
