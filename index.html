@@ -3,56 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOTFEED LIVE | 실시간 핫검색어 & 포털 실검 대시보드</title>
+  <title>HOTFEED LIVE | 실시간 핫검색어 &amp; 포털 실검 대시보드</title>
   <meta name="description" content="1시간마다 X(트위터), 네이버, 구글, 네이트, 커뮤니티 등 대한민국 주요 플랫폼의 실시간 핫검색어 및 랭킹 토픽을 자동 집계하는 대시보드">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='36'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css?v=20261126">
 </head>
 <body>
   <div class="container">
     <!-- Header -->
     <header>
       <div class="brand">
-        <div class="logo-badge">🔥</div>
+        <div class="logo-badge notranslate" aria-hidden="true">🔥</div>
         <div class="brand-text">
-          <h1>HOTFEED LIVE</h1>
-          <p>대한민국 대형 플랫폼 1시간 주기 실시간 검색어 & 핫토픽</p>
+          <h1 class="notranslate">HOTFEED LIVE</h1>
+          <p>대한민국 대형 플랫폼 1시간 주기 실시간 검색어 &amp; 핫토픽</p>
         </div>
       </div>
 
       <div class="header-status">
         <!-- Language Selector -->
         <div class="lang-selector-wrapper">
-          <button id="langBtn" class="lang-btn" title="언어 선택 / Translate">
-            <span class="lang-icon">🌐</span>
-            <span id="currentLangLabel">Language</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <button type="button" id="langBtn" class="lang-btn" title="언어 선택 / Translate" aria-haspopup="true" aria-expanded="false">
+            <span class="lang-icon notranslate" aria-hidden="true">🌐</span>
+            <span id="currentLangLabel">한국어</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
-          <div id="langDropdown" class="lang-dropdown">
+          <div id="langDropdown" class="lang-dropdown" role="menu">
             <div class="lang-dropdown-header">접속 국가별 전체 페이지 번역</div>
-            <button class="lang-option active" data-lang="ko" data-name="한국어">🇰🇷 한국어 (기본)</button>
-            <button class="lang-option" data-lang="en" data-name="English">🇺🇸 English</button>
-            <button class="lang-option" data-lang="ja" data-name="日本語">🇯🇵 日本語</button>
-            <button class="lang-option" data-lang="zh-CN" data-name="简体中文">🇨🇳 简体中文</button>
-            <button class="lang-option" data-lang="vi" data-name="Tiếng Việt">🇻🇳 Tiếng Việt</button>
-            <button class="lang-option" data-lang="es" data-name="Español">🇪🇸 Español</button>
-            <button class="lang-option" data-lang="fr" data-name="Français">🇫🇷 Français</button>
+            <button type="button" class="lang-option active" data-lang="ko" data-name="한국어">🇰🇷 한국어 (기본)</button>
+            <button type="button" class="lang-option" data-lang="en" data-name="English">🇺🇸 English</button>
+            <button type="button" class="lang-option" data-lang="ja" data-name="日本語">🇯🇵 日本語</button>
+            <button type="button" class="lang-option" data-lang="zh-CN" data-name="简体中文">🇨🇳 简体中文</button>
+            <button type="button" class="lang-option" data-lang="vi" data-name="Tiếng Việt">🇻🇳 Tiếng Việt</button>
+            <button type="button" class="lang-option" data-lang="es" data-name="Español">🇪🇸 Español</button>
+            <button type="button" class="lang-option" data-lang="fr" data-name="Français">🇫🇷 Français</button>
             <div class="lang-dropdown-divider"></div>
-            <a id="extTranslateLink" href="#" target="_blank" class="lang-ext-link">
+            <a id="extTranslateLink" href="https://translate.google.com" target="_blank" rel="noopener noreferrer" class="lang-ext-link">
               <span>🚀 구글 번역 새창으로 열기</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             </a>
           </div>
         </div>
 
         <div class="sync-badge">
-          <span class="pulse-dot"></span>
-          <span>다음 갱신: <strong id="timerDisplay">60:00</strong></span>
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>다음 갱신: <strong id="timerDisplay" class="notranslate">60:00</strong></span>
         </div>
-        <button id="btnRefresh" class="btn-refresh" title="수집 엔진 즉시 재실행">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+        <button type="button" id="btnRefresh" class="btn-refresh" title="최신 트렌드 데이터 다시 불러오기">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polyline points="23 4 23 10 17 10"></polyline>
             <polyline points="1 20 1 14 7 14"></polyline>
             <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
@@ -70,16 +71,16 @@
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-val" id="totalPlatformsVal">6</div>
+          <div class="stat-val notranslate" id="totalPlatformsVal">7</div>
           <div class="stat-lbl">감지 플랫폼</div>
         </div>
         <div class="stat-item">
-          <div class="stat-val" id="totalKeywordsVal">-</div>
+          <div class="stat-val notranslate" id="totalKeywordsVal">-</div>
           <div class="stat-lbl">수집 키워드</div>
         </div>
         <div class="stat-item">
           <div class="stat-val">1시간</div>
-          <div class="stat-lbl">크론 갱신주기</div>
+          <div class="stat-lbl">자동 갱신주기</div>
         </div>
       </div>
     </section>
@@ -87,62 +88,62 @@
     <!-- Controls: Keyword Search -->
     <div class="controls-bar">
       <div class="search-box">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" id="searchInput" class="search-input" placeholder="실시간 키워드 통합 검색 (예: 엔비디아, 야구, 여행, 뉴스...)" autocomplete="off">
+        <input type="text" id="searchInput" class="search-input" placeholder="실시간 키워드·언론사 통합 검색 (예: 금리, 야구, 엔비디아, 한겨레...)" autocomplete="off" aria-label="실시간 키워드 검색">
+        <button type="button" id="clearSearchBtn" class="search-clear-btn" title="검색어 지우기" aria-label="검색어 지우기">✕</button>
       </div>
-      <div id="tabsContainer" style="display:none;"></div>
     </div>
 
     <!-- Main Trend Cards Grid -->
     <main class="trends-grid" id="trendsGrid">
-      <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-dim);">
+      <div class="grid-placeholder">
         실시간 트렌드 데이터를 불러오고 있습니다...
       </div>
     </main>
 
     <!-- Legal Free Anime & Media Hub Section -->
-    <section class="sources-card" style="margin-top: 36px; border-color: rgba(139, 92, 246, 0.25);">
+    <section class="sources-card media-hub-card">
       <div class="sources-header">
-        <span class="sources-badge" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed; border-color: rgba(139, 92, 246, 0.2);">MEDIA HUB</span>
-        <h3>🎬 공식 무료 애니메이션 & 미디어 스트리밍</h3>
+        <span class="sources-badge media-badge">MEDIA HUB</span>
+        <h3>🎬 공식 무료 애니메이션 &amp; 미디어 스트리밍</h3>
       </div>
       <p class="sources-desc">
-        국내외 저작권사 및 대형 미디어사가 공식 운영하는 무료 시청 채널 및 합법 OTT 스트리밍 허브입니다.
+        국내외 저작권사 및 공식 방송사가 운영하는 합법 무료 시청 채널과 애니메이션 스트리밍 플랫폼입니다.
       </p>
 
-      <div class="sources-grid">
-        <a href="https://www.youtube.com/@MuseKorea" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
-          <span class="source-icon">📺</span>
+      <div class="media-grid">
+        <a href="https://www.youtube.com/@MuseKorea" target="_blank" rel="noopener noreferrer" class="source-item link-card">
+          <span class="source-icon notranslate" aria-hidden="true">📺</span>
           <div>
             <h4>뮤즈 코리아 (Muse Korea)</h4>
-            <p>공식 유튜브 채널 · 최신 인기 애니메이션 풀버전 무료 스트리밍</p>
+            <p>공식 유튜브 채널 · 인기 애니메이션 풀버전 무료 스트리밍</p>
           </div>
         </a>
 
-        <a href="https://www.youtube.com/@AniOneKorea" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
-          <span class="source-icon">✨</span>
+        <a href="https://www.youtube.com/@Anionetvs" target="_blank" rel="noopener noreferrer" class="source-item link-card">
+          <span class="source-icon notranslate" aria-hidden="true">✨</span>
           <div>
-            <h4>애니원 코리아 (Ani-One Korea)</h4>
-            <p>대원미디어 공식 채널 · 분기별 신작 애니 에피소드 무료 방영</p>
+            <h4>애니원 (ANIONE)</h4>
+            <p>대원방송 공식 유튜브 · 무료 애니메이션·스페셜 영상 공개</p>
           </div>
         </a>
 
-        <a href="https://laftel.net" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
-          <span class="source-icon">🍿</span>
+        <a href="https://www.youtube.com/@ANIPLUSINC" target="_blank" rel="noopener noreferrer" class="source-item link-card">
+          <span class="source-icon notranslate" aria-hidden="true">🎞️</span>
+          <div>
+            <h4>애니플러스 (ANIPLUS)</h4>
+            <p>공식 유튜브 채널 · 한일 동시방영 신작 PV 및 무료 에피소드</p>
+          </div>
+        </a>
+
+        <a href="https://laftel.net" target="_blank" rel="noopener noreferrer" class="source-item link-card">
+          <span class="source-icon notranslate" aria-hidden="true">🍿</span>
           <div>
             <h4>라프텔 (Laftel)</h4>
-            <p>국내 1위 애니 플랫폼 · 무료관 및 에피소드 무료 맛보기</p>
-          </div>
-        </a>
-
-        <a href="https://serieson.naver.com" target="_blank" rel="noopener noreferrer" class="source-item link-card" style="text-decoration: none;">
-          <span class="source-icon">🎬</span>
-          <div>
-            <h4>네이버 시리즈온 무료관</h4>
-            <p>네이버 공식 VOD · 정기 갱신되는 무료 애니메이션 & 영화관</p>
+            <p>국내 대표 애니 OTT · 무료관 및 에피소드 무료 감상</p>
           </div>
         </a>
       </div>
@@ -160,7 +161,7 @@
 
       <div class="sources-grid">
         <div class="source-item">
-          <span class="source-icon">𝕏</span>
+          <span class="source-icon notranslate" aria-hidden="true">𝕏</span>
           <div>
             <h4>X (구 트위터)</h4>
             <p>대한민국 실시간 트렌드 및 바이럴 해시태그</p>
@@ -168,7 +169,7 @@
         </div>
 
         <div class="source-item">
-          <span class="source-icon">🟢</span>
+          <span class="source-icon notranslate" aria-hidden="true">🟢</span>
           <div>
             <h4>네이버 실검 (Signal)</h4>
             <p>포털 검색 및 뉴스 빅데이터 실시간 급상승 키워드</p>
@@ -176,7 +177,7 @@
         </div>
 
         <div class="source-item">
-          <span class="source-icon">🌐</span>
+          <span class="source-icon notranslate" aria-hidden="true">🌐</span>
           <div>
             <h4>구글 트렌드 (Google)</h4>
             <p>구글 코리아 일간 및 실시간 급상승 검색어</p>
@@ -184,15 +185,23 @@
         </div>
 
         <div class="source-item">
-          <span class="source-icon">🔴</span>
+          <span class="source-icon notranslate" aria-hidden="true">🔴</span>
           <div>
             <h4>네이트 실검 (Nate)</h4>
-            <p>네이트 포털 실시간 이슈 및 검색 순위</p>
+            <p>네이트 포털 실시간 이슈 키워드 1~10위</p>
           </div>
         </div>
 
         <div class="source-item">
-          <span class="source-icon">💬</span>
+          <span class="source-icon notranslate" aria-hidden="true">📰</span>
+          <div>
+            <h4>네이버 랭킹 뉴스</h4>
+            <p>주요 언론사별 최다 조회 인기 뉴스 헤드라인</p>
+          </div>
+        </div>
+
+        <div class="source-item">
+          <span class="source-icon notranslate" aria-hidden="true">💬</span>
           <div>
             <h4>커뮤니티 핫토픽</h4>
             <p>대형 커뮤니티(네이트판) 실시간 인기 톡·이슈 게시글</p>
@@ -200,7 +209,7 @@
         </div>
 
         <div class="source-item">
-          <span class="source-icon">⚡</span>
+          <span class="source-icon notranslate" aria-hidden="true">⚡</span>
           <div>
             <h4>주요 언론 속보</h4>
             <p>국내 주요 방송사·언론사 실시간 헤드라인 속보</p>
@@ -215,13 +224,13 @@
 
     <!-- Footer -->
     <footer>
-      <p>© 2026 HOTFEED LIVE (hotfeedlive.store) · 대한민국 실시간 검색어 & 핫토픽 허브</p>
+      <p>© 2026 <span class="notranslate">HOTFEED LIVE (hotfeedlive.store)</span> · 대한민국 실시간 검색어 &amp; 핫토픽 허브</p>
     </footer>
   </div>
 
   <!-- Toast Notification -->
-  <div id="toast" class="toast">
-    <span id="toastIcon">📋</span>
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span id="toastIcon" class="notranslate" aria-hidden="true">📋</span>
     <span id="toastMsg">클립보드에 복사되었습니다!</span>
   </div>
 
@@ -229,16 +238,18 @@
   <div id="google_translate_element" style="display:none;"></div>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'ko',
-        includedLanguages: 'ko,en,ja,zh-CN,vi,es,fr,de,th,ru',
-        autoDisplay: false
-      }, 'google_translate_element');
+      if (window.google && google.translate) {
+        new google.translate.TranslateElement({
+          pageLanguage: 'ko',
+          includedLanguages: 'ko,en,ja,zh-CN,vi,es,fr,de,th,ru',
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
     }
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
-  <script src="trends_data.js"></script>
-  <script src="app.js"></script>
+  <script src="trends_data.js?v=20261126"></script>
+  <script src="app.js?v=20261126"></script>
 </body>
 </html>
