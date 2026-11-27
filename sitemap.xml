@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hotfeedlive.store/</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/archive.html</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hotfeedlive.store/topic.html?k=%ED%99%8D%EB%AF%BC%EA%B8%B0%20%EC%A0%84%20%EC%97%AC%EC%9E%90%EC%B9%9C%EA%B5%AC%20%EC%8B%A4%EC%A2%85</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hotfeedlive.store/topic.html?k=%EB%85%B8%ED%83%9C%EC%95%85%20%EC%95%95%EC%88%98%EC%88%98%EC%83%89</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <loc>https://hotfeedlive.store/topic.html?k=%ED%99%8D%EB%AF%BC%EA%B8%B0%20%E5%89%8D%20%EC%97%AC%EC%B9%9C%20%EC%8B%A4%EC%A2%85</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/topic.html?k=%EA%B9%80%EB%B2%94%EC%88%98%20%EB%AC%B4%EC%A3%84%20%ED%99%95%EC%A0%95</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hotfeedlive.store/topic.html?k=%EB%82%A8%EA%B2%BD%EC%A3%BC%20%EA%B5%AD%EB%AF%BC%EC%B0%B8%EC%97%AC%EC%9E%AC%ED%8C%90</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/topic.html?k=%23AngelBite2ndWin</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hotfeedlive.store/topic.html?k=%23%EC%B5%9C%EC%95%A0_%EC%9D%B4%EB%A6%84%EC%9D%84_%EB%88%88%EA%B0%90%EA%B3%A0_5%EB%B2%88_%EC%8D%A8%EB%B3%B4%EC%9E%90</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/topic.html?k=%EC%9C%A0%EC%9A%B0%EC%8B%9C%20%ED%9D%91%EB%B0%9C</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hotfeedlive.store/topic.html?k=%EC%84%B8%EA%B3%B5%EB%8F%84%EA%B5%AC</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <loc>https://hotfeedlive.store/topic.html?k=jyp%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hotfeedlive.store/topic.html?k=%ED%99%A9%EA%B5%90%EC%95%88</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <loc>https://hotfeedlive.store/topic.html?k=%EB%86%8D%ED%98%91%EC%9D%80%ED%96%89</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hotfeedlive.store/topic.html?k=%ED%8C%8C%EA%B8%B0%20%ED%99%98%EC%86%A1</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hotfeedlive.store/topic.html?k=bangladesh%20a%20vs%20pakistan%20a</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <loc>https://hotfeedlive.store/topic.html?k=%EB%B0%95%ED%9B%88%EC%A0%95</loc>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/topic.html?k=%ED%95%9C%EB%8B%AC%EC%A7%B8%20%EA%B8%B0%EC%B9%A8%ED%95%98%EB%8A%94%20%EC%98%86%EC%9E%90%EB%A6%AC%20%EC%A7%81%EC%9B%90</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hotfeedlive.store/archive.html?date=2026-11-26</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://hotfeedlive.store/archive.html?date=2026-11-27</loc>
-    <lastmod>2026-11-27T20:52:55+09:00</lastmod>
+    <lastmod>2026-11-27T22:02:53+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -135,6 +135,12 @@
   <url>
     <loc>https://hotfeedlive.store/archive.html?date=2026-11-27&amp;hour=20</loc>
     <lastmod>2026-11-27T20:00:00+09:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hotfeedlive.store/archive.html?date=2026-11-27&amp;hour=22</loc>
+    <lastmod>2026-11-27T22:00:00+09:00</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
