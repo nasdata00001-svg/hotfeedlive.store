@@ -1,6 +1,6 @@
 window.INITIAL_TRENDS = {
-  "updated_at": "2026-11-27 11:04:26",
-  "updated_at_iso": "2026-11-27T11:04:26+09:00",
+  "updated_at": "2026-11-27 11:07:43",
+  "updated_at_iso": "2026-11-27T11:07:43+09:00",
   "timezone": "KST",
   "next_update_in_seconds": 3600,
   "platforms": {
@@ -98,12 +98,12 @@ window.INITIAL_TRENDS = {
           "url": "https://www.google.com/search?q=lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98",
           "news": [
             {
-              "title": "[단독] LG에너지솔루션 빠진 3차 ESS 중앙계약시장, 삼성SDI가 웃었다.",
-              "url": "https://www.electimes.com/news/articleView.html?idxno=375356"
+              "title": "[단독] 3차 ESS 중앙계약시장, 이지스·KGP·에퀴스·SK이터닉스 ‘설욕’ 성공",
+              "url": "https://www.electimes.com/news/articleView.html?idxno=375355"
             },
             {
-              "title": "역대 최대 3차 ESS 정부 입찰서 삼성SDI 63%·SK온 37% 수주",
-              "url": "https://www.yna.co.kr/view/AKR20261127043500003"
+              "title": "삼성SDI·SK온, 역대 최대 3차 ESS 입찰서 각각 63%·37% 수주",
+              "url": "https://www.viva100.com/article/20261127500230"
             }
           ]
         },
@@ -149,10 +149,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 15,
-          "keyword": "초고령사회, 뇌·신경계 질환 부담 확대 어떻게 대응할까",
+          "keyword": "대한신경과학회 “전문의 상시 대기 보상 절실”",
           "change": "new",
-          "traffic": "의협신문",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAyY1RDRXM2VDZHbF9HYWNnSDFzSXh1UDJUcW8zaElKcXhGcTVidVNwVkxEMzlVRnZVdHF2MDZNLWwyTEVGZWNIWDhGSTVERmc4Q0VnMFdFNUQ5aTNjWWFjbS1HN043b3VDZkgzZjlJbWtIdw?oc=5",
+          "traffic": "데일리메디",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1uYWZIOG5tZUhyamlqaWc5RkF2alIyQVdyZmk3Tm50blhxdktycFViZzQtb0NrbnAzb3pqd0JMaS1pay1RV1JYOEdMbUh1YjZiY2JTWE01UTBjY21vb09GdXpPSQ?oc=5",
           "news": []
         }
       ]
@@ -418,12 +418,12 @@ window.INITIAL_TRENDS = {
           "url": "https://www.google.com/search?q=lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98",
           "news": [
             {
-              "title": "[단독] LG에너지솔루션 빠진 3차 ESS 중앙계약시장, 삼성SDI가 웃었다.",
-              "url": "https://www.electimes.com/news/articleView.html?idxno=375356"
+              "title": "[단독] 3차 ESS 중앙계약시장, 이지스·KGP·에퀴스·SK이터닉스 ‘설욕’ 성공",
+              "url": "https://www.electimes.com/news/articleView.html?idxno=375355"
             },
             {
-              "title": "역대 최대 3차 ESS 정부 입찰서 삼성SDI 63%·SK온 37% 수주",
-              "url": "https://www.yna.co.kr/view/AKR20261127043500003"
+              "title": "삼성SDI·SK온, 역대 최대 3차 ESS 입찰서 각각 63%·37% 수주",
+              "url": "https://www.viva100.com/article/20261127500230"
             }
           ]
         },
@@ -633,22 +633,14 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "\"KTX 입석 못 타겠다\"…서울-세종 통근버스 5년 만에 재시동 [김익환의 부처 핸즈업]",
+          "keyword": "중국 다녀온 장관의 아찔한 발언... 그 시간 서울 한복판서 벌어진 일 [반도체 특별과외]",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/015/0005358869?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/047/0002537419?ntype=RANKING",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "“생지옥 도입뒤 살인율 역대 최저”…중남미 핫플 된 교도소",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/020/0003765508?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 3,
           "keyword": "“지하철 3호선 옥수역이잖아”…멕시코에 갑자기 등장한 까닭",
           "change": "hot",
           "traffic": "랭킹뉴스",
@@ -656,59 +648,67 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 4,
-          "keyword": "[비즈톡톡] 삼립, 중국산 천원빵 공습에 ‘무보존료·100% 국내제조’ 포장으로 맞불",
+          "rank": 3,
+          "keyword": "“아빠는 출근, 아들은 백수?”…‘65세 정년 연장’ 추진 논란 [잇슈 머니]",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/366/0001207655?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/056/0012302323?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 4,
+          "keyword": "[단독] 이진우 '리트' 본 이유 \"책 내려는데 마침 만점자 없길래\"",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/437/0000522689?ntype=RANKING",
           "news": []
         },
         {
           "rank": 5,
-          "keyword": "2000만원→100억 만든 95년생…'폭락 직전' 하닉 팔고 50억 아파트 샀다",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/008/0005447189?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 6,
-          "keyword": "'제자 성폭행 혐의' 뮤지컬 배우 남경주 오늘 국민참여재판",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/001/0016466753?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 7,
-          "keyword": "‘16년 공백기’ 원빈…알고 보니, 빌딩 투자로 잇따라 ‘대박’?",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/016/0002729187?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 8,
-          "keyword": "최태원 \"7일내 전액 지급\" 제안에 노소영 '반대'",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/422/0000930325?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 9,
-          "keyword": "\"제가 9급 고졸이에요\" 폭발한 김선태‥댓글에는 '명퇴라니!' 분노",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/214/0001538293?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 10,
           "keyword": "건물 한 층에 3700명분… 서울 한복판 친구집은 ‘대마 공장’이었다",
           "change": "hot",
           "traffic": "랭킹뉴스",
           "url": "https://n.news.naver.com/article/023/0004012037?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 6,
+          "keyword": "“양치할 때 귀찮아서 건너뛰었는데”…사망 위험 23% 차이 난 ‘이 습관’ [헬시타임]",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/011/0004686752?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 7,
+          "keyword": "대만은 전날 종가, 한국은 직전 체결가…공매도 규제 뭐가 다르나",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/648/0000053035?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 8,
+          "keyword": "\"음료 챙겨드렸더니\"…단체 예약 손님들 정체 '감동'",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/055/0001406220?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 9,
+          "keyword": "‘제자 성폭행 혐의’ 뮤지컬 배우 남경주 오늘 배심원 앞에 선다",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/005/0001887802?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 10,
+          "keyword": "\"기름 넣었는데 차 멈춰\" 대구서 주유한 차량 18대 이상… 물 섞인 것으로 추정",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/082/0001409228?ntype=RANKING",
           "news": []
         }
       ]
@@ -752,18 +752,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 5,
-          "keyword": "그녀는",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375738151",
-          "news": []
-        },
-        {
-          "rank": 6,
           "keyword": "제가 단톡방에 실수한건가요",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375738387",
+          "news": []
+        },
+        {
+          "rank": 6,
+          "keyword": "그녀는",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375738151",
           "news": []
         },
         {
@@ -800,14 +800,6 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 11,
-          "keyword": "최예나 올해 스케줄표 공개해 줬는데...",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375737991",
-          "news": []
-        },
-        {
-          "rank": 12,
           "keyword": "상견례 장소 한정식이 무난하다는데 다들 어디서 했는지",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -815,15 +807,15 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 13,
-          "keyword": "그녀가",
+          "rank": 12,
+          "keyword": "최예나 올해 스케줄표 공개해 줬는데...",
           "change": "hot",
           "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375738176",
+          "url": "https://pann.nate.com/talk/375737991",
           "news": []
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "아내 접촉사고 처리 다 해줬는데 서운하다네요",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -831,11 +823,19 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 15,
-          "keyword": "알게 되면 진심 개소름이겠다",
+          "rank": 14,
+          "keyword": "그녀가",
           "change": "hot",
           "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375738063",
+          "url": "https://pann.nate.com/talk/375738176",
+          "news": []
+        },
+        {
+          "rank": 15,
+          "keyword": "애 낳아보니까 엄마가 왜 그랬는지 알겠음",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375738127",
           "news": []
         }
       ]
@@ -863,14 +863,22 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 3,
-          "keyword": "초고령사회, 뇌·신경계 질환 부담 확대 어떻게 대응할까",
+          "keyword": "대한신경과학회 “전문의 상시 대기 보상 절실”",
           "change": "new",
-          "traffic": "의협신문",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAyY1RDRXM2VDZHbF9HYWNnSDFzSXh1UDJUcW8zaElKcXhGcTVidVNwVkxEMzlVRnZVdHF2MDZNLWwyTEVGZWNIWDhGSTVERmc4Q0VnMFdFNUQ5aTNjWWFjbS1HN043b3VDZkgzZjlJbWtIdw?oc=5",
+          "traffic": "데일리메디",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1uYWZIOG5tZUhyamlqaWc5RkF2alIyQVdyZmk3Tm50blhxdktycFViZzQtb0NrbnAzb3pqd0JMaS1pay1RV1JYOEdMbUh1YjZiY2JTWE01UTBjY21vb09GdXpPSQ?oc=5",
           "news": []
         },
         {
           "rank": 4,
+          "keyword": "[속보] ’尹 관저 이전 예산 전용’ 김대기 1심 징역형 집유…이상민 무죄",
+          "change": "new",
+          "traffic": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01RFViazNXU25xX3I5c29iVnVhTEdlWGk1ZEktMGRMRXhXaVVDa2t1Zkh5amtUZXRjLVBfQUZSNW1SNUVVb2l1Z2toOEx6Y3J5dkxTTkRJV0YtLUZTbER4QUdPWEpCQVE?oc=5",
+          "news": []
+        },
+        {
+          "rank": 5,
           "keyword": "미 추수감사절 덮친 폭풍…침수·강풍 피해 속출",
           "change": "new",
           "traffic": "KBS 뉴스",
@@ -878,19 +886,11 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 5,
+          "rank": 6,
           "keyword": "오늘 전국 2만명 ‘급식·돌봄 총파업’",
           "change": "new",
           "traffic": "조선일보",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb0FCcnhnYzdENllrc3NNblBpMVR1N3o3dXJaUVN2ZEhlbllqblE1bmYtazZTU0sxaDRVa25tNkxsajdseXVxMDAwejJJcWdVSDRMVm5rbWtuUmZQcTd5NFNWbldUamZIVElES1JRQlg2dlY1UFY3Nk0zM05NWEtRVTZKWjFqODFYZ2FBVXN1YkY5el9zb19J?oc=5",
-          "news": []
-        },
-        {
-          "rank": 6,
-          "keyword": "이란 외교장관, 조현에 “외국군 주둔은 분쟁 범위 확대” 경고",
-          "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5wRkc3NjhISWpnTlJ5MTNMRGlfaVRNbG5nRnpfbWJuZFE0UkRnbHZ6ZV8wanduUVFCdGxTNF9NeUVBeUs1cVBneHEzZU9icG9rSTN3dFRCZU9EcWpTWUpJb3lTdWFEWkNYNmY5MTBxUTFfY00?oc=5",
           "news": []
         },
         {
@@ -903,26 +903,26 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 8,
-          "keyword": "다시 관세버튼 누른 트럼프… 비과세 투자·노후 적립금도 문제 삼아",
+          "keyword": "물가 뛰는데 트럼프 관세 '부채질'…\"최악 시기 경제적 자해\"",
           "change": "new",
-          "traffic": "조선일보",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOHRwdjJMbU1kOG9WMzVjQ1ZlaC1yT05QV0l6bzdEYUowaW5PYjVpZnJXeUQ4aV9uSlJ0aXQzZXJfRWlpVHpwVFI1MVNMVWZabS1RTHdJMF9CY0ZfemF0eEpDTDFINFpEUXZHZE5kcHlJZXdXN2U1amJocFp1NGVLYnB1VWNVcm4tSXB1NmRRa2J5Rm5GaDdXWnlqQjBkZw?oc=5",
+          "traffic": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84UWhXLUVSTFNESF9rWlVSWW4zVDhXdGpXUXR3a0JxOWhJVkx0NlYtRm02RHJWXzBvRGJSZUNXeTBpM00xdkthTHJOSXZ2akluaTZoR196dHFpaW_SAWBBVV95cUxNNzJ0Qkx5aFF2WmlhNFgzdmpKLVBxOUdjUlpyb1dSS2tiTkhLZjZiSFdXZ3VEUWtIS1Z0RlZiQm5VcXdVS2NPalBNeEx5MEpDYUQwdEJaaWVlemNwRG1iUjg?oc=5",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "[속보] 김대기 전 비서실장, 윤석열 관저이전 예산전용 1심 '유죄'",
+          "keyword": "李대통령 지지율, 2주전보다 1%p 내린 43%…부정평가는 45%[NBS](종합)",
           "change": "new",
-          "traffic": "MBC 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1YbXhKaF90LXczWHJ5a1EyUHU2bjhQT2pLUFBKRWdieGZtTVNwNUZ2ZURjLWJoRkt0NFF3QnlkVldCOVY5UnkydkRaeGpPOTNlbE1fY2NlN205OVpZSEpCRlQ0ZW1PWWR1akZiUml2eHRsRUlCZ2ZF0gF3QVVfeXFMTWRfZFBCMUV1bnd6a2FaVEo2dVNHSmJ1aUxmSDEza2pvSnpjOFE3U1RRUnN4OVhQb194bkNwRGtuTF9vYTJoQmhWTkFMekN0YmhjUFZwRmo2SzhtOHFGVW9wX3U1V0tWajVOUkVIak9CLWFST2QwTDA?oc=5",
+          "traffic": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WS1dvTU11cVdrTTNKRzBQck94bC0wdnJPR0VaclN5VXRwZy1keFc0MHRINUdNaEpleHFwOXFYR3dtMDlydHF4dXUwUkE4R1YyQXIzam1jaFcyWUXSAWBBVV95cUxNUk8wS2l0R29SdXNJNDNPQm9QZHhIZUc3NGs0YUpNMV9wQzg2OVhzb3V4bnZxaUo4RlNFMHI4cWlFZkRjZlJETEgyTktDbDYzTzVOMmJLSWpMZTdOcUZEU2M?oc=5",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "금요일 약한 비에 온화한 날씨…주말 추위 대비해야",
+          "keyword": "강금실로 따져본 美 女정보수장… 성패 가른 건 전문성이었다",
           "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9UVmVobmpjXy1DNkJ6TWN4M2ZuVFRCMFdhM0liRGU0ZzdWcVd0MHZWbklkUlJWWnV4d1BFeGhDdjRmbHBLQ09DNXNNaHoxUjFQRDhOc1VLU21wTFdGSEtCanFwbWpZWjVnRzRETFRsNEZFQQ?oc=5",
+          "traffic": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeWRoWGVVbENmYWVXTkNBYzdtUVpWS3ZFMU5mVk9jNVE4cHNxbUQxa3Z2QW1oRHk0c2lRbTFOdW1Xb1VCNHlZcGVDOEFuRXVkaHJ6a1l3MG1sbEtBWS03SDFaNEt2cW9KVVdlRUhBN0hTcmJacFpFX1JxSVk1WDFkS1dleTI?oc=5",
           "news": []
         },
         {
@@ -951,18 +951,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 14,
-          "keyword": "[특징주] 사우디 정유시설 피격에 방산·에너지株 '강세'",
+          "keyword": "후티 반군, 사우디 정유시설 또 공격…연합군 발표",
           "change": "new",
-          "traffic": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96aU5ZN3R5MGZET2RPbFcxQXJCakkzZVJEenBlaHRMYkdCbjNNV3FxOC1zY3hoS0poOFRTaEpsbTcyNTZlRkxIR19NcjE0S2lxYVRDZ1RBLVdPRFFG?oc=5",
+          "traffic": "VOA 한국어 홈페이지",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9HMVRqQ1Q4UTlOM0VBSXVVWkRuZWpYU0FuVjJvelRGNnRnbHE3UDg3YXVVcUg3OVFNNUFfeWRxZWExWm9QOWUzZFdrWkhIZUliODJaQkY3WGw3d0dYbjBZLVJBUjFpZ9IBaEFVX3lxTFBCbHZoSlNQZ096Z2Y2NWdLSWpFMmVpMmlkdk9WZ3FtaEVCc2lpZ0tMOUFmUy1EVk9HWjJnNkZoUmc5ZkRfRVhFZ1pUZGpWVlBfZFpxREF3SmhVQ09kTnp1SVJxWFpxSFhC?oc=5",
           "news": []
         },
         {
           "rank": 15,
-          "keyword": "\"반도체 호황發 소비 회복은 시간문제\"…금통위 내부선 회의론도",
+          "keyword": "코스피, 소폭 상승 출발‥코스닥 장 초반 2%대 오름세",
           "change": "new",
-          "traffic": "한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uZ1BoZFJ0X3pYSG9xUUsxOEFQalBJQkhQb19TSlN6cUNsWFBIb3FNdlV4Ti1YandoOGZTaXdMWWdqbmRsYjdRekhhVjYtWElPSnVWODBXREhUUQ?oc=5",
+          "traffic": "MBC 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9OSTZKazVKZzI5X3Fob1pMbTRFTUJiUFdNdXNPZVVjQzY2UHREd096Vk1VY043OHVBdDdkejJZMlZ1Zk00dm84eUJNU2V0WUhzazF3LWp2MWg1RVh6eGdPNXk2eU4zUHNTQm5HZWx3TDhTanA40gF0QVVfeXFMT01DQjh4aUEyVFRLeXAzRlh1TnhVSnp5QWZtTEZITXZsblVmOUpOQ2NyNGJCS0RFTXJKQldkdDh0Q3RXOFc0UzNWbEhjY19mTkZrSjFCczhNSHg5T1B4UEZkOTN1RlRzRTFoWm5vZWJOTkZFYWw?oc=5",
           "news": []
         }
       ]
