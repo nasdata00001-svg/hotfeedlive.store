@@ -696,8 +696,8 @@ def generate_og_image(data, out_dir):
         svg_rows.append(
             f'<rect x="{x}" y="{y - 34}" width="514" height="54" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>'
             f'<rect x="{x + 12}" y="{y - 23}" width="32" height="32" rx="8" fill="{badge_bg}"/>'
-            f'<text x="{x + 28}" y="{y - 1}" text-anchor="middle" font-size="18" fill="{badge_fg}" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{i + 1}</text>'
-            f'<text x="{x + 58}" y="{y}" font-size="22" fill="#0f172a" font-weight="700" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(display_kw)}</text>'
+            f'<text x="{x + 28}" y="{y - 1}" text-anchor="middle" font-size="18" fill="{badge_fg}" font-weight="800" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{i + 1}</text>'
+            f'<text x="{x + 58}" y="{y}" font-size="22" fill="#0f172a" font-weight="700" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(display_kw)}</text>'
         )
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -709,15 +709,15 @@ def generate_og_image(data, out_dir):
   </defs>
   <rect width="1200" height="630" fill="#f8fafc"/>
   <rect width="1200" height="106" fill="url(#hdr)"/>
-  <text x="64" y="64" font-size="38" fill="#ffffff" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">HOTFEED LIVE</text>
-  <text x="360" y="62" font-size="20" fill="#e0e7ff" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">대한민국 실시간 핫검색어 TOP 10</text>
-  <text x="1136" y="62" text-anchor="end" font-size="18" fill="#c7d2fe" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{time_label}</text>
+  <text x="64" y="64" font-size="38" fill="#ffffff" font-weight="800" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">HOTFEED LIVE</text>
+  <text x="360" y="62" font-size="20" fill="#e0e7ff" font-weight="600" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">대한민국 실시간 핫검색어 TOP 10</text>
+  <text x="1136" y="62" text-anchor="end" font-size="18" fill="#c7d2fe" font-weight="600" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{time_label}</text>
   <rect x="64" y="128" width="1072" height="60" rx="14" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
   <rect x="82" y="141" width="76" height="34" rx="8" fill="#ef4444"/>
-  <text x="120" y="164" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">LIVE #1</text>
-  <text x="176" y="166" font-size="25" fill="#1e1b4b" font-weight="800" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(top1[:34])}</text>
+  <text x="120" y="164" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="800" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">LIVE #1</text>
+  <text x="176" y="166" font-size="25" fill="#1e1b4b" font-weight="800" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">{_xml_escape(top1[:34])}</text>
   {chr(10).join(svg_rows)}
-  <text x="64" y="598" font-size="17" fill="#64748b" font-weight="600" font-family="Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">hotfeedlive.store · X · 네이버 · 구글 · 네이트 · 커뮤니티 1시간 자동 집계</text>
+  <text x="64" y="598" font-size="17" fill="#64748b" font-weight="600" font-family="NanumGothic, Pretendard Variable, Noto Sans KR, Malgun Gothic, sans-serif">hotfeedlive.store · X · 네이버 · 구글 · 네이트 · 커뮤니티 1시간 자동 집계</text>
 </svg>'''
 
     svg_path = os.path.join(out_dir, "og-image.svg")

@@ -45,6 +45,7 @@ def _find_openssl():
 
 def _sign_rs256(message_bytes, private_key_pem):
     """Sign with RS256 using cryptography if installed, else openssl CLI."""
+    private_key_pem = private_key_pem.replace("\\n", "\n")
     try:
         from cryptography.hazmat.primitives import hashes, serialization
         from cryptography.hazmat.primitives.asymmetric import padding
@@ -129,13 +130,14 @@ def load_service_account(source=None):
         with open(source, "r", encoding="utf-8") as f:
             return json.load(f)
 
-    raw_env = os.environ.get("GOOGLE_INDEXING_SA_JSON", "").strip()
+    raw_env = os.environ.get("GOOGLE_INDEXING_SA_JSON", "").lstrip("\ufeff").strip()
     if raw_env:
         if raw_env.startswith("{"):
             return json.loads(raw_env)
         if os.path.exists(raw_env):
-            with open(raw_env, "r", encoding="utf-8") as f:
+            with open(raw_env, "r", encoding="utf-8-sig") as f:
                 return json.load(f)
+        raise ValueError("GOOGLE_INDEXING_SA_JSON is set but does not start with '{' (invalid JSON).")
 
     return None
 
