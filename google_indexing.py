@@ -137,7 +137,7 @@ def load_service_account(source=None):
             with open(raw_env, "r", encoding="utf-8") as f:
                 return json.load(f)
 
-    raise FileNotFoundError("Service account JSON not found (pass file path or set GOOGLE_INDEXING_SA_JSON).")
+    return None
 
 
 def get_default_urls(repo_dir=None):
@@ -165,6 +165,10 @@ def get_default_urls(repo_dir=None):
 def submit_urls(sa_source, urls):
     """Submit a list of URLs to Google Indexing API."""
     sa_info = load_service_account(sa_source)
+    if sa_info is None:
+        print("[SKIP] GOOGLE_INDEXING_SA_JSON not configured.")
+        return 0
+
     print(f"[*] Authenticating as {sa_info['client_email']}...")
     token = _get_access_token(sa_info)
     print("[OK] Access token obtained")
@@ -175,6 +179,8 @@ def submit_urls(sa_source, urls):
             success += 1
 
     print(f"[OK] Submitted {success}/{len(urls)} URLs to Google Indexing API")
+    if len(urls) > 0 and success == 0:
+        raise RuntimeError("All Google Indexing API URL submissions failed.")
     return success
 
 
