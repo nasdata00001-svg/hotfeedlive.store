@@ -1,6 +1,6 @@
 window.INITIAL_TRENDS = {
-  "updated_at": "2026-11-28 04:53:58",
-  "updated_at_iso": "2026-11-28T04:53:58+09:00",
+  "updated_at": "2026-11-28 05:50:05",
+  "updated_at_iso": "2026-11-28T05:50:05+09:00",
   "timezone": "KST",
   "next_update_in_seconds": 3600,
   "platforms": {
@@ -10,42 +10,42 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "조희대 탄핵 우려",
-          "change": "s",
+          "keyword": "조희대 탄핵 우려합니다",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%AC%EB%8C%80%20%ED%83%84%ED%95%B5%20%EC%9A%B0%EB%A0%A4",
+          "url": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%AC%EB%8C%80%20%ED%83%84%ED%95%B5%20%EC%9A%B0%EB%A0%A4%ED%95%A9%EB%8B%88%EB%8B%A4",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "실바 30점 GS칼텍스 5연승 선두",
+          "keyword": "삼성증권 개인정보 유출",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%8B%A4%EB%B0%94%2030%EC%A0%90%20GS%EC%B9%BC%ED%85%8D%EC%8A%A4%205%EC%97%B0%EC%8A%B9%20%EC%84%A0%EB%91%90",
+          "url": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EC%A6%9D%EA%B6%8C%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "인터넷우체국 해킹 11만명 유출",
+          "keyword": "이서진 블핑 지수 미모 예뻐",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9A%B0%EC%B2%B4%EA%B5%AD%20%ED%95%B4%ED%82%B9%2011%EB%A7%8C%EB%AA%85%20%EC%9C%A0%EC%B6%9C",
+          "url": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%84%9C%EC%A7%84%20%EB%B8%94%ED%95%91%20%EC%A7%80%EC%88%98%20%EB%AF%B8%EB%AA%A8%20%EC%98%88%EB%BB%90",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "꼬들 1792",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201792",
-          "news": []
-        },
-        {
-          "rank": 5,
           "keyword": "주야장천 하시는 분이심",
           "change": "hot",
           "traffic": "실시간",
           "url": "https://x.com/search?q=%EC%A3%BC%EC%95%BC%EC%9E%A5%EC%B2%9C%20%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EC%9D%B4%EC%8B%AC",
+          "news": []
+        },
+        {
+          "rank": 5,
+          "keyword": "꼬들 1792",
+          "change": "hot",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201792",
           "news": []
         },
         {
@@ -58,43 +58,52 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 7,
-          "keyword": "로스앤젤레스 fc",
+          "keyword": "google",
           "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=google",
           "news": [
             {
-              "title": "'벼랑 끝' LAFC 공식 인정! 손흥민이 못 해주면 탈락이다...\"슈퍼스타 SON이 계속 위협적인 모습 보여줘야 해\"",
-              "url": "https://www.chosun.com/sports/world-football/2026/11/26/MM4DIMBTGY4GGYLEMY2DCZJYGQ/"
+              "title": "As Google threatens to cut schools’ search access, Los Angeles blocks AI features",
+              "url": "https://apnews.com/article/google-artificial-intelligence-schools-search-engine-lausd-762a613b11bd316384430112cc223ed1"
             },
             {
-              "title": "“손흥민은 찾아볼 수 없었다” MLS 사무국 ‘공식 지적’···“LAFC, 부앙가·SON 활약 없으면 PO 2연...",
-              "url": "https://sports.khan.co.kr/article/202611272008003"
+              "title": "LAUSD blocks Google AI, despite tech giant’s move to pressure schools to go all in",
+              "url": "https://www.latimes.com/california/story/2026-11-27/lausd-blocks-google-ai-search"
             }
           ]
         },
         {
           "rank": 8,
-          "keyword": "국군간호사관학교",
+          "keyword": "준법투쟁",
           "change": "new",
-          "traffic": "200+",
-          "url": "https://www.google.com/search?q=%EA%B5%AD%EA%B5%B0%EA%B0%84%ED%98%B8%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90",
-          "news": []
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EC%A4%80%EB%B2%95%ED%88%AC%EC%9F%81",
+          "news": [
+            {
+              "title": "철도노조 준법투쟁으로 광역전철 445대 지연",
+              "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8724799"
+            },
+            {
+              "title": "철도노조 ‘준법투쟁’ 이틀째···광역전철 445대 지연·일반열차 2대 운행 중지",
+              "url": "https://www.khan.co.kr/article/202611271914001"
+            }
+          ]
         },
         {
           "rank": 9,
-          "keyword": "대한축구협회",
+          "keyword": "노팅엄 포레스트 대 첼시",
           "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EC%B6%95%EA%B5%AC%ED%98%91%ED%9A%8C",
+          "traffic": "2000+",
+          "url": "https://www.google.com/search?q=%EB%85%B8%ED%8C%85%EC%97%84%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EB%8C%80%20%EC%B2%BC%EC%8B%9C",
           "news": [
             {
-              "title": "FIFA-AFC, 공동 대표단 파견…회장 선거 다시 탄력받나?",
-              "url": "https://news.kbs.co.kr/news/view.do?ncd=8724848"
+              "title": "[if.preview] ‘11경기 9골 빈공’ 노팅엄 vs ‘20실점 수비 붕괴’ 첼시, 부진 탈출에 성공할 팀은?",
+              "url": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=101394"
             },
             {
-              "title": "FIFA·AFC 대표단 내달 방한…한국 축구 수장 선출 해법 모색",
-              "url": "http://www.jemin.com/news/articleView.html?idxno=848673"
+              "title": "프리미어 리그 12라운드: 첼시와 맨체스터 유나이티드는 위기에서 벗어날 방법을 모색한다.",
+              "url": "https://www.vietnam.vn/ko/vong-12-premier-league-chelsea-man-united-tim-duong-thoat"
             }
           ]
         },
@@ -132,10 +141,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 14,
-          "keyword": "해외서도 ‘조희대 탄핵’ 우려... 국제변호사협회 연대 성명",
+          "keyword": "與, 2037년 정년 65세로… 2029년부터 단계적 연장",
           "change": "new",
           "traffic": "조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQ3UtOUlnM3lHNUpSS0JySm1mNzltaS1lRU5uY2pZcDBzMW9YWEF3VkJrLU9BVE1LVEc5VVZDLWVEM0JscU45MWt4M0xDUGY5ZTJzeEF3Zm1NQTdpak9MNks3TkNTSG0tOWlUcVEzRUhBNWJxc3EzUnptMnoxN0lUN1JsdGFPaFE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUllsV2RxMi1zTFpTUkVyZG1nb0ljMXlicmI0NFhxT3YzMWJnT3N6cjkyZncwdEVpX05Xc3FiYThlQUJVYW1KOTFVRUplN0xhSVJDLWR0dW5FSkVxcFNWbFQ1cW9GdW5oMnJiVU55TXR1SzMzYnZ6QU9XaDlOLU1kMlBn?oc=5",
           "news": []
         },
         {
@@ -155,18 +164,18 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "꼬들 1792",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201792",
-          "news": []
-        },
-        {
-          "rank": 2,
           "keyword": "주야장천 하시는 분이심",
           "change": "hot",
           "traffic": "실시간",
           "url": "https://x.com/search?q=%EC%A3%BC%EC%95%BC%EC%9E%A5%EC%B2%9C%20%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EC%9D%B4%EC%8B%AC",
+          "news": []
+        },
+        {
+          "rank": 2,
+          "keyword": "꼬들 1792",
+          "change": "hot",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EA%BC%AC%EB%93%A4%201792",
           "news": []
         },
         {
@@ -179,6 +188,14 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 4,
+          "keyword": "#DasBiblischeWort",
+          "change": "hot",
+          "traffic": "18K",
+          "url": "https://x.com/search?q=%23DasBiblischeWort",
+          "news": []
+        },
+        {
+          "rank": 5,
           "keyword": "#요즘타쿠상",
           "change": "hot",
           "traffic": "실시간",
@@ -186,15 +203,23 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 5,
-          "keyword": "#DasBiblischeWort",
+          "rank": 6,
+          "keyword": "#mary_review",
           "change": "hot",
-          "traffic": "11K",
-          "url": "https://x.com/search?q=%23DasBiblischeWort",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%23mary_review",
           "news": []
         },
         {
-          "rank": 6,
+          "rank": 7,
+          "keyword": "부키 노래",
+          "change": "hot",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EB%B6%80%ED%82%A4%20%EB%85%B8%EB%9E%98",
+          "news": []
+        },
+        {
+          "rank": 8,
           "keyword": "#AngelBite2ndWin",
           "change": "hot",
           "traffic": "11K",
@@ -202,15 +227,7 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 7,
-          "keyword": "#데못죽최애이름대기",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%23%EB%8D%B0%EB%AA%BB%EC%A3%BD%EC%B5%9C%EC%95%A0%EC%9D%B4%EB%A6%84%EB%8C%80%EA%B8%B0",
-          "news": []
-        },
-        {
-          "rank": 8,
+          "rank": 9,
           "keyword": "카와 클리닉",
           "change": "hot",
           "traffic": "실시간",
@@ -218,7 +235,7 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 9,
+          "rank": 10,
           "keyword": "쿠테만테",
           "change": "hot",
           "traffic": "실시간",
@@ -226,27 +243,19 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 10,
-          "keyword": "나리 시간",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%EB%82%98%EB%A6%AC%20%EC%8B%9C%EA%B0%84",
-          "news": []
-        },
-        {
           "rank": 11,
-          "keyword": "최대 유사",
-          "change": "hot",
-          "traffic": "실시간",
-          "url": "https://x.com/search?q=%EC%B5%9C%EB%8C%80%20%EC%9C%A0%EC%82%AC",
-          "news": []
-        },
-        {
-          "rank": 12,
           "keyword": "추측 횟수",
           "change": "hot",
           "traffic": "실시간",
           "url": "https://x.com/search?q=%EC%B6%94%EC%B8%A1%20%ED%9A%9F%EC%88%98",
+          "news": []
+        },
+        {
+          "rank": 12,
+          "keyword": "최대 유사",
+          "change": "hot",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EC%B5%9C%EB%8C%80%20%EC%9C%A0%EC%82%AC",
           "news": []
         },
         {
@@ -259,18 +268,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 14,
-          "keyword": "Thanksgiving",
+          "keyword": "부키 목소리",
           "change": "hot",
-          "traffic": "2.4M",
-          "url": "https://x.com/search?q=Thanksgiving",
+          "traffic": "실시간",
+          "url": "https://x.com/search?q=%EB%B6%80%ED%82%A4%20%EB%AA%A9%EC%86%8C%EB%A6%AC",
           "news": []
         },
         {
           "rank": 15,
-          "keyword": "남자라면",
+          "keyword": "거룩한 교회",
           "change": "hot",
           "traffic": "실시간",
-          "url": "https://x.com/search?q=%EB%82%A8%EC%9E%90%EB%9D%BC%EB%A9%B4",
+          "url": "https://x.com/search?q=%EA%B1%B0%EB%A3%A9%ED%95%9C%20%EA%B5%90%ED%9A%8C",
           "news": []
         }
       ]
@@ -282,82 +291,82 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "조희대 탄핵 우려",
-          "change": "s",
+          "keyword": "조희대 탄핵 우려합니다",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%AC%EB%8C%80%20%ED%83%84%ED%95%B5%20%EC%9A%B0%EB%A0%A4",
+          "url": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%AC%EB%8C%80%20%ED%83%84%ED%95%B5%20%EC%9A%B0%EB%A0%A4%ED%95%A9%EB%8B%88%EB%8B%A4",
           "news": []
         },
         {
           "rank": 2,
-          "keyword": "실바 30점 GS칼텍스 5연승 선두",
+          "keyword": "삼성증권 개인정보 유출",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%8B%A4%EB%B0%94%2030%EC%A0%90%20GS%EC%B9%BC%ED%85%8D%EC%8A%A4%205%EC%97%B0%EC%8A%B9%20%EC%84%A0%EB%91%90",
+          "url": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EC%A6%9D%EA%B6%8C%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "인터넷우체국 해킹 11만명 유출",
+          "keyword": "이서진 블핑 지수 미모 예뻐",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9A%B0%EC%B2%B4%EA%B5%AD%20%ED%95%B4%ED%82%B9%2011%EB%A7%8C%EB%AA%85%20%EC%9C%A0%EC%B6%9C",
+          "url": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%84%9C%EC%A7%84%20%EB%B8%94%ED%95%91%20%EC%A7%80%EC%88%98%20%EB%AF%B8%EB%AA%A8%20%EC%98%88%EB%BB%90",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "트럼프 푸틴 유럽 공격 중단",
-          "change": "-",
-          "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%ED%8A%B8%EB%9F%BC%ED%94%84%20%ED%91%B8%ED%8B%B4%20%EC%9C%A0%EB%9F%BD%20%EA%B3%B5%EA%B2%A9%20%EC%A4%91%EB%8B%A8",
-          "news": []
-        },
-        {
-          "rank": 5,
           "keyword": "남경주 국민참여재판",
-          "change": "s",
+          "change": "-",
           "traffic": "실시간",
           "url": "https://search.naver.com/search.naver?query=%EB%82%A8%EA%B2%BD%EC%A3%BC%20%EA%B5%AD%EB%AF%BC%EC%B0%B8%EC%97%AC%EC%9E%AC%ED%8C%90",
           "news": []
         },
         {
-          "rank": 6,
-          "keyword": "국군간호사관학교",
+          "rank": 5,
+          "keyword": "이해란 삼성생명 신한은행 제압",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B5%AD%EA%B5%B0%EA%B0%84%ED%98%B8%EC%82%AC%EA%B4%80%ED%95%99%EA%B5%90",
+          "url": "https://search.naver.com/search.naver?query=%EC%9D%B4%ED%95%B4%EB%9E%80%20%EC%82%BC%EC%84%B1%EC%83%9D%EB%AA%85%20%EC%8B%A0%ED%95%9C%EC%9D%80%ED%96%89%20%EC%A0%9C%EC%95%95",
+          "news": []
+        },
+        {
+          "rank": 6,
+          "keyword": "팬레터 폐기 이동연 사과 논란",
+          "change": "n",
+          "traffic": "실시간",
+          "url": "https://search.naver.com/search.naver?query=%ED%8C%AC%EB%A0%88%ED%84%B0%20%ED%8F%90%EA%B8%B0%20%EC%9D%B4%EB%8F%99%EC%97%B0%20%EC%82%AC%EA%B3%BC%20%EB%85%BC%EB%9E%80",
           "news": []
         },
         {
           "rank": 7,
           "keyword": "중국 증시 부양 급등",
-          "change": "+",
+          "change": "-",
           "traffic": "실시간",
           "url": "https://search.naver.com/search.naver?query=%EC%A4%91%EA%B5%AD%20%EC%A6%9D%EC%8B%9C%20%EB%B6%80%EC%96%91%20%EA%B8%89%EB%93%B1",
           "news": []
         },
         {
           "rank": 8,
-          "keyword": "교사",
-          "change": "s",
+          "keyword": "2026년 11월 28일 운세",
+          "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B5%90%EC%82%AC",
+          "url": "https://search.naver.com/search.naver?query=2026%EB%85%84%2011%EC%9B%94%2028%EC%9D%BC%20%EC%9A%B4%EC%84%B8",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "김상혁, 유채련 운동복에 시선 집중",
+          "keyword": "홍익표",
           "change": "n",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%83%81%ED%98%81%2C%20%EC%9C%A0%EC%B1%84%EB%A0%A8%20%EC%9A%B4%EB%8F%99%EB%B3%B5%EC%97%90%20%EC%8B%9C%EC%84%A0%20%EC%A7%91%EC%A4%91",
+          "url": "https://search.naver.com/search.naver?query=%ED%99%8D%EC%9D%B5%ED%91%9C",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "파기환송",
-          "change": "s",
+          "keyword": "로스앤젤레스 fc",
+          "change": "-",
           "traffic": "실시간",
-          "url": "https://search.naver.com/search.naver?query=%ED%8C%8C%EA%B8%B0%ED%99%98%EC%86%A1",
+          "url": "https://search.naver.com/search.naver?query=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
           "news": []
         }
       ]
@@ -369,9 +378,94 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
+          "keyword": "google",
+          "change": "new",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=google",
+          "news": [
+            {
+              "title": "As Google threatens to cut schools’ search access, Los Angeles blocks AI features",
+              "url": "https://apnews.com/article/google-artificial-intelligence-schools-search-engine-lausd-762a613b11bd316384430112cc223ed1"
+            },
+            {
+              "title": "LAUSD blocks Google AI, despite tech giant’s move to pressure schools to go all in",
+              "url": "https://www.latimes.com/california/story/2026-11-27/lausd-blocks-google-ai-search"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "keyword": "준법투쟁",
+          "change": "new",
+          "traffic": "1000+",
+          "url": "https://www.google.com/search?q=%EC%A4%80%EB%B2%95%ED%88%AC%EC%9F%81",
+          "news": [
+            {
+              "title": "철도노조 준법투쟁으로 광역전철 445대 지연",
+              "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8724799"
+            },
+            {
+              "title": "철도노조 ‘준법투쟁’ 이틀째···광역전철 445대 지연·일반열차 2대 운행 중지",
+              "url": "https://www.khan.co.kr/article/202611271914001"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "keyword": "노팅엄 포레스트 대 첼시",
+          "change": "new",
+          "traffic": "2000+",
+          "url": "https://www.google.com/search?q=%EB%85%B8%ED%8C%85%EC%97%84%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EB%8C%80%20%EC%B2%BC%EC%8B%9C",
+          "news": [
+            {
+              "title": "[if.preview] ‘11경기 9골 빈공’ 노팅엄 vs ‘20실점 수비 붕괴’ 첼시, 부진 탈출에 성공할 팀은?",
+              "url": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=101394"
+            },
+            {
+              "title": "프리미어 리그 12라운드: 첼시와 맨체스터 유나이티드는 위기에서 벗어날 방법을 모색한다.",
+              "url": "https://www.vietnam.vn/ko/vong-12-premier-league-chelsea-man-united-tim-duong-thoat"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "keyword": "이효리",
+          "change": "new",
+          "traffic": "500+",
+          "url": "https://www.google.com/search?q=%EC%9D%B4%ED%9A%A8%EB%A6%AC",
+          "news": [
+            {
+              "title": "이효리, 요가원 '노쇼'에 결국 칼 빼들었다",
+              "url": "https://www.newsis.com/view/NISX20261127_0003886769"
+            },
+            {
+              "title": "‘노쇼도 오세요’라더니…이효리 요가원, 한 달 새 ‘페널티’ 꺼냈다",
+              "url": "https://www.mk.co.kr/news/entertain/12220451"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "keyword": "홍익표",
+          "change": "new",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%ED%99%8D%EC%9D%B5%ED%91%9C",
+          "news": [
+            {
+              "title": "홍익표, '직무관련성 판정' 주식 처분 피하려 소송했다 패소",
+              "url": "https://www.yna.co.kr/view/AKR20261127170000504"
+            },
+            {
+              "title": "[단독] '배우자 주식 백지신탁' 결정에 \"관련성 없다\" 소송",
+              "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008867272"
+            }
+          ]
+        },
+        {
+          "rank": 6,
           "keyword": "로스앤젤레스 fc",
           "change": "new",
-          "traffic": "200+",
+          "traffic": "1000+",
           "url": "https://www.google.com/search?q=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20fc",
           "news": [
             {
@@ -385,7 +479,24 @@ window.INITIAL_TRENDS = {
           ]
         },
         {
-          "rank": 2,
+          "rank": 7,
+          "keyword": "한화그룹",
+          "change": "new",
+          "traffic": "100+",
+          "url": "https://www.google.com/search?q=%ED%95%9C%ED%99%94%EA%B7%B8%EB%A3%B9",
+          "news": [
+            {
+              "title": "한화클래식 2026 막 내려…\"문화예술 향유 기회 확장\"",
+              "url": "https://www.yna.co.kr/view/AKR20261127027200003"
+            },
+            {
+              "title": "창원·거제서 첫 공연…‘한화클래식 2026’ 성료",
+              "url": "https://biz.heraldcorp.com/article/10951172"
+            }
+          ]
+        },
+        {
+          "rank": 8,
           "keyword": "국군간호사관학교",
           "change": "new",
           "traffic": "200+",
@@ -393,138 +504,36 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 3,
-          "keyword": "대한축구협회",
-          "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EC%B6%95%EA%B5%AC%ED%98%91%ED%9A%8C",
-          "news": [
-            {
-              "title": "FIFA-AFC, 공동 대표단 파견…회장 선거 다시 탄력받나?",
-              "url": "https://news.kbs.co.kr/news/view.do?ncd=8724848"
-            },
-            {
-              "title": "FIFA·AFC 대표단 내달 방한…한국 축구 수장 선출 해법 모색",
-              "url": "http://www.jemin.com/news/articleView.html?idxno=848673"
-            }
-          ]
-        },
-        {
-          "rank": 4,
-          "keyword": "교사",
-          "change": "new",
-          "traffic": "2000+",
-          "url": "https://www.google.com/search?q=%EA%B5%90%EC%82%AC",
-          "news": [
-            {
-              "title": "교실서 담임 머리채 폭행…\"누가 유출\" 학부모 진정 결국",
-              "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008866807"
-            },
-            {
-              "title": "‘교사 머리채 잡은 초등생’ 영상 유출…경찰 “혐의 없음” 종결",
-              "url": "https://www.kyeonggi.com/article/20261127580141"
-            }
-          ]
-        },
-        {
-          "rank": 5,
-          "keyword": "파기환송",
-          "change": "new",
-          "traffic": "5000+",
-          "url": "https://www.google.com/search?q=%ED%8C%8C%EA%B8%B0%ED%99%98%EC%86%A1",
-          "news": [
-            {
-              "title": "“12·3 계엄은 내란 아니다” 31%, 2년 새 내란인식 14%P 줄어···조희대 탄핵 찬성 35%·반대 42%[한국갤럽]",
-              "url": "https://www.khan.co.kr/article/202611271047001"
-            },
-            {
-              "title": "‘한덕수 파기환송’에 \"잘못됐다\" 46%, \"잘한 판결\" 31%",
-              "url": "https://news.jtbc.co.kr/article/NB12330163"
-            }
-          ]
-        },
-        {
-          "rank": 6,
-          "keyword": "연애남매2",
-          "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EC%97%B0%EC%95%A0%EB%82%A8%EB%A7%A42",
-          "news": [
-            {
-              "title": "만난 지 24시간도 안 됐는데 스킨십…‘연애남매2’ 오늘 첫 공개",
-              "url": "https://sports.donga.com/ent/article/all/20261127/135102776/1"
-            },
-            {
-              "title": "'연애남매2' CP \"한혜진, 연애에 좋은 인사이트 줘…제작진도 돌아보게 해\"",
-              "url": "https://www.fnnews.com/news/202611201432308496"
-            }
-          ]
-        },
-        {
-          "rank": 7,
-          "keyword": "신지아",
-          "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EC%8B%A0%EC%A7%80%EC%95%84",
-          "news": [
-            {
-              "title": "피겨 신지아, 개인 최고 75.31점으로 시니어 그랑프리 2위",
-              "url": "https://imnews.imbc.com/news/2026/sports/article/6869179_36946.html"
-            },
-            {
-              "title": "피겨 NHK 트로피 2026: 신지아, 유영 출전 여자 싱글 경기 일정 및 결과",
-              "url": "https://www.olympics.com/ko/news/team-korea-schedule-results-isu-figure-skating-grand-prix-nhk-trophy-2026"
-            }
-          ]
-        },
-        {
-          "rank": 8,
-          "keyword": "금새록",
-          "change": "new",
-          "traffic": "100+",
-          "url": "https://www.google.com/search?q=%EA%B8%88%EC%83%88%EB%A1%9D",
-          "news": [
-            {
-              "title": "연우 \"급격한 다이어트 면역력 떨어져…많이 울었다\"",
-              "url": "https://www.newsis.com/view/NISX20261127_0003885403"
-            },
-            {
-              "title": "‘무쇠소녀단3’ 한지현, 첫 회부터 ‘지트리버’ 활약… 3천 계단 48분 완주",
-              "url": "https://www.viva100.com/article/20261127500209"
-            }
-          ]
-        },
-        {
           "rank": 9,
-          "keyword": "박서진",
+          "keyword": "김승원",
           "change": "new",
-          "traffic": "2000+",
-          "url": "https://www.google.com/search?q=%EB%B0%95%EC%84%9C%EC%A7%84",
+          "traffic": "200+",
+          "url": "https://www.google.com/search?q=%EA%B9%80%EC%8A%B9%EC%9B%90",
           "news": [
             {
-              "title": "'장구의 신' 박서진, 하다하다 5억짜리 장구까지 연주 '초긴장'(살림남)",
-              "url": "https://www.chosun.com/entertainments/broadcast/2026/11/27/MM3TONLEMMYWMNLDGM3GMYZYHA/"
+              "title": "[단독] '한동훈 자료유출 의혹'‥법무부·공소청 압수수색",
+              "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6869062_36967.html"
             },
             {
-              "title": "박서진, 트로트가수 최초 국제 페스티벌…동방신기 섰던 자리",
-              "url": "https://www.newsis.com/view/NISX20261127_0003885977"
+              "title": "‘내부자료 유출’ 의혹에 공소청 압수수색 들어간 경찰…한동훈 \"국무회의서 잘못된 교육 받았나\"",
+              "url": "https://news.jtbc.co.kr/article/NB12330134"
             }
           ]
         },
         {
           "rank": 10,
-          "keyword": "온두라스 u-17 대 일본 u-17",
+          "keyword": "대한축구협회",
           "change": "new",
-          "traffic": "1000+",
-          "url": "https://www.google.com/search?q=%EC%98%A8%EB%91%90%EB%9D%BC%EC%8A%A4%20u-17%20%EB%8C%80%20%EC%9D%BC%EB%B3%B8%20u-17",
+          "traffic": "200+",
+          "url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EC%B6%95%EA%B5%AC%ED%98%91%ED%9A%8C",
           "news": [
             {
-              "title": "FIFA U-17 World Cup - Japan beat Honduras to advance",
-              "url": "https://www.the-afc.com/en/national/fifa_u-17_world_cup.html/news/japan-beat-honduras-to-advance"
+              "title": "모레노 감독 평가 마무리…정식 감독 선임 ’안갯속’",
+              "url": "https://www.yonhapnewstv.co.kr/news/MYH20261126212519WZ9"
             },
             {
-              "title": "U-17 World Cup: Japan and China both face elimination crisis = Chinese netizens: 'China is probably okay, but Japan...'",
-              "url": "https://www.recordchina.co.jp/en/b999179-s25-c50-d0192.html"
+              "title": "\"결정할 사람이 없다\"…5시간 마라톤 회의 끝에도 웃지 못한 전강위, 수장 없는 KFA의 '독박 행정'",
+              "url": "https://www.fnnews.com/news/202611271442107151"
             }
           ]
         }
@@ -545,74 +554,74 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 2,
-          "keyword": "실바 30점 GS칼텍스",
+          "keyword": "이해란 삼성생명 신한은행",
           "change": "s",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%8B%A4%EB%B0%94%2030%EC%A0%90%20GS%EC%B9%BC%ED%85%8D%EC%8A%A4",
+          "url": "https://search.daum.net/nate?q=%EC%9D%B4%ED%95%B4%EB%9E%80%20%EC%82%BC%EC%84%B1%EC%83%9D%EB%AA%85%20%EC%8B%A0%ED%95%9C%EC%9D%80%ED%96%89",
           "news": []
         },
         {
           "rank": 3,
-          "keyword": "이서진 지수 보조개",
+          "keyword": "이서진 블핑 지수",
           "change": "s",
           "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%9D%B4%EC%84%9C%EC%A7%84%20%EC%A7%80%EC%88%98%20%EB%B3%B4%EC%A1%B0%EA%B0%9C",
+          "url": "https://search.daum.net/nate?q=%EC%9D%B4%EC%84%9C%EC%A7%84%20%EB%B8%94%ED%95%91%20%EC%A7%80%EC%88%98",
           "news": []
         },
         {
           "rank": 4,
-          "keyword": "김상혁 유채련 질투",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EA%B9%80%EC%83%81%ED%98%81%20%EC%9C%A0%EC%B1%84%EB%A0%A8%20%EC%A7%88%ED%88%AC",
-          "news": []
-        },
-        {
-          "rank": 5,
           "keyword": "남경주",
           "change": "+",
-          "traffic": "+1",
+          "traffic": "+3",
           "url": "https://search.daum.net/nate?q=%EB%82%A8%EA%B2%BD%EC%A3%BC",
           "news": []
         },
         {
-          "rank": 6,
-          "keyword": "팬레터 폐기 이동연",
-          "change": "+",
-          "traffic": "+2",
-          "url": "https://search.daum.net/nate?q=%ED%8C%AC%EB%A0%88%ED%84%B0%20%ED%8F%90%EA%B8%B0%20%EC%9D%B4%EB%8F%99%EC%97%B0",
-          "news": []
-        },
-        {
-          "rank": 7,
+          "rank": 5,
           "keyword": "홍민기",
           "change": "+",
-          "traffic": "+1",
+          "traffic": "+10",
           "url": "https://search.daum.net/nate?q=%ED%99%8D%EB%AF%BC%EA%B8%B0",
           "news": []
         },
         {
-          "rank": 8,
-          "keyword": "최민정 월드투어 1위",
+          "rank": 6,
+          "keyword": "2026년 28일 운세",
+          "change": "-",
+          "traffic": "-2",
+          "url": "https://search.daum.net/nate?q=2026%EB%85%84%2028%EC%9D%BC%20%EC%9A%B4%EC%84%B8",
+          "news": []
+        },
+        {
+          "rank": 7,
+          "keyword": "대한항공 3연승 질주",
           "change": "+",
           "traffic": "+1",
-          "url": "https://search.daum.net/nate?q=%EC%B5%9C%EB%AF%BC%EC%A0%95%20%EC%9B%94%EB%93%9C%ED%88%AC%EC%96%B4%201%EC%9C%84",
+          "url": "https://search.daum.net/nate?q=%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5%203%EC%97%B0%EC%8A%B9%20%EC%A7%88%EC%A3%BC",
+          "news": []
+        },
+        {
+          "rank": 8,
+          "keyword": "100일의 거짓말",
+          "change": "+",
+          "traffic": "+55",
+          "url": "https://search.daum.net/nate?q=100%EC%9D%BC%EC%9D%98%20%EA%B1%B0%EC%A7%93%EB%A7%90",
           "news": []
         },
         {
           "rank": 9,
-          "keyword": "양홍원 약물 뽑아",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EC%96%91%ED%99%8D%EC%9B%90%20%EC%95%BD%EB%AC%BC%20%EB%BD%91%EC%95%84",
+          "keyword": "나 혼자 산다",
+          "change": "+",
+          "traffic": "+17",
+          "url": "https://search.daum.net/nate?q=%EB%82%98%20%ED%98%BC%EC%9E%90%20%EC%82%B0%EB%8B%A4",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "러시아 항공유 수출",
-          "change": "n",
-          "traffic": "실시간",
-          "url": "https://search.daum.net/nate?q=%EB%9F%AC%EC%8B%9C%EC%95%84%20%ED%95%AD%EA%B3%B5%EC%9C%A0%20%EC%88%98%EC%B6%9C",
+          "keyword": "그냥 사람 친구",
+          "change": "+",
+          "traffic": "+22",
+          "url": "https://search.daum.net/nate?q=%EA%B7%B8%EB%83%A5%20%EC%82%AC%EB%9E%8C%20%EC%B9%9C%EA%B5%AC",
           "news": []
         }
       ]
@@ -624,38 +633,6 @@ window.INITIAL_TRENDS = {
       "items": [
         {
           "rank": 1,
-          "keyword": "\"나도 당했다\" 쏟아진 제보…국악계 성폭력 파문",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/055/0001406429?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 2,
-          "keyword": "국민연금, 석 달 만에 202조원 사라져… 3분기 수익률 13%",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/366/0001207873?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 3,
-          "keyword": "손연재 부부, 연세의료원에 30억원 기부…연재태아협진센터 설립",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/001/0016467470?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 4,
-          "keyword": "30대 북한이탈여성 철원 민통선 이북 지역서 철책 방향으로 북상하다 군 당국에 적발",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/087/0001233919?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 5,
           "keyword": "“양치할 때 귀찮아서 건너뛰었는데”…사망 위험 23% 차이 난 ‘이 습관’ [헬시타임]",
           "change": "hot",
           "traffic": "랭킹뉴스",
@@ -663,7 +640,55 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
+          "rank": 2,
+          "keyword": "'올해 55세' 이서진, 한지민에 \"중년 여성 같아\"… 선 넘은 농담 결국 구설",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/469/0000968177?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 3,
+          "keyword": "이상민도 구속기간 만료 임박… 김어준 \"대체 뭘했나\" 대법원 답변은",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/006/0000138993?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 4,
+          "keyword": "“노인 10명 모습에 경악”…20대女 숨진 그 집에서 생긴 일",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/025/0003568429?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 5,
+          "keyword": "강유정 문체장관 후보, 재산 46억 신고…3월보다 8억 늘어",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/028/0002834330?ntype=RANKING",
+          "news": []
+        },
+        {
           "rank": 6,
+          "keyword": "[단독] 이부진 아들, 고2때 엄마 성 따르기로 결심…“내 정체성은 엄마에게”",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/009/0005770143?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 7,
+          "keyword": "\"나도 당했다\" 쏟아진 제보…국악계 성폭력 파문",
+          "change": "hot",
+          "traffic": "랭킹뉴스",
+          "url": "https://n.news.naver.com/article/055/0001406429?ntype=RANKING",
+          "news": []
+        },
+        {
+          "rank": 8,
           "keyword": "[단독] 남경필 장남, 스토킹 혐의 체포...성관계 영상 유포 협박도",
           "change": "hot",
           "traffic": "랭킹뉴스",
@@ -671,35 +696,19 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 7,
-          "keyword": "“12·3 계엄은 내란 아니다” 31%, 2년 새 내란인식 14%P 줄어···조희대 탄핵 찬성 35%·반대 42%[한국갤럽]",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/032/0003485492?ntype=RANKING",
-          "news": []
-        },
-        {
-          "rank": 8,
-          "keyword": "'배송기사 음료' 챙겨주던 고깃집…단체회식으로 '돈쭐'[뉴스럽다]",
-          "change": "hot",
-          "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/079/0004214717?ntype=RANKING",
-          "news": []
-        },
-        {
           "rank": 9,
-          "keyword": "“미남과 등산 20만원”…여성 지갑 여는 2000조 ‘미남 산업’",
+          "keyword": "목포서 심정지 6개월 영아…병원 찾아 서울로 헬기 이송",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/018/0006416647?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/005/0001887920?ntype=RANKING",
           "news": []
         },
         {
           "rank": 10,
-          "keyword": "“노인 10명 모습에 경악”…20대女 숨진 그 집에서 생긴 일",
+          "keyword": "지적장애 딸이 성폭행당해 낳은 손주…할아버지 홀로 '피눈물'",
           "change": "hot",
           "traffic": "랭킹뉴스",
-          "url": "https://n.news.naver.com/article/025/0003568429?ntype=RANKING",
+          "url": "https://n.news.naver.com/article/437/0000522864?ntype=RANKING",
           "news": []
         }
       ]
@@ -735,6 +744,14 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 4,
+          "keyword": "좋아하고 사랑해요.",
+          "change": "hot",
+          "traffic": "커뮤니티",
+          "url": "https://pann.nate.com/talk/375740424",
+          "news": []
+        },
+        {
+          "rank": 5,
           "keyword": "그거 알아?",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -742,7 +759,7 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 5,
+          "rank": 6,
           "keyword": "응급실 혼자 다녀온 다음날 이혼 서류를 식탁에 올려...",
           "change": "hot",
           "traffic": "커뮤니티",
@@ -750,19 +767,11 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
-          "rank": 6,
+          "rank": 7,
           "keyword": "예쁜 그 사람",
           "change": "hot",
           "traffic": "커뮤니티",
           "url": "https://pann.nate.com/talk/375739318",
-          "news": []
-        },
-        {
-          "rank": 7,
-          "keyword": "좋아하고 사랑해요.",
-          "change": "hot",
-          "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375740424",
           "news": []
         },
         {
@@ -815,10 +824,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 14,
-          "keyword": "오늘 새벽 하늘 보신 분? 진짜 신기한 우주쇼 찍었습니다",
+          "keyword": "코드쿤스트가 정국이 보고...",
           "change": "hot",
           "traffic": "커뮤니티",
-          "url": "https://pann.nate.com/talk/375739188",
+          "url": "https://pann.nate.com/talk/375739453",
           "news": []
         },
         {
@@ -846,10 +855,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 2,
-          "keyword": "해외서도 ‘조희대 탄핵’ 우려... 국제변호사협회 연대 성명",
+          "keyword": "與, 2037년 정년 65세로… 2029년부터 단계적 연장",
           "change": "new",
           "traffic": "조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQ3UtOUlnM3lHNUpSS0JySm1mNzltaS1lRU5uY2pZcDBzMW9YWEF3VkJrLU9BVE1LVEc5VVZDLWVEM0JscU45MWt4M0xDUGY5ZTJzeEF3Zm1NQTdpak9MNks3TkNTSG0tOWlUcVEzRUhBNWJxc3EzUnptMnoxN0lUN1JsdGFPaFE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUllsV2RxMi1zTFpTUkVyZG1nb0ljMXlicmI0NFhxT3YzMWJnT3N6cjkyZncwdEVpX05Xc3FiYThlQUJVYW1KOTFVRUplN0xhSVJDLWR0dW5FSkVxcFNWbFQ1cW9GdW5oMnJiVU55TXR1SzMzYnZ6QU9XaDlOLU1kMlBn?oc=5",
           "news": []
         },
         {
@@ -862,10 +871,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 4,
-          "keyword": "헛도는 ‘정년 연장’ 논의…노동계 “65살 연장” 재계 “60살 퇴직 뒤 재고용”",
+          "keyword": "해외서도 ‘조희대 탄핵’ 우려... 국제변호사협회 연대 성명",
           "change": "new",
-          "traffic": "한겨레",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TQ1RBVGg3UFIyZmZhQzFEVG1nd2gyM3dlV1BEVDUwOUFLZi1aOWE2dE1mT2tCZnNjcjhMY2ZRVzhKMnI1blpDWWJxRXFJb2lxNUljbUlHYzlNbTdNOC1aV2NDTXo?oc=5",
+          "traffic": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQ3UtOUlnM3lHNUpSS0JySm1mNzltaS1lRU5uY2pZcDBzMW9YWEF3VkJrLU9BVE1LVEc5VVZDLWVEM0JscU45MWt4M0xDUGY5ZTJzeEF3Zm1NQTdpak9MNks3TkNTSG0tOWlUcVEzRUhBNWJxc3EzUnptMnoxN0lUN1JsdGFPaFE?oc=5",
           "news": []
         },
         {
@@ -878,10 +887,10 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 6,
-          "keyword": "11월 하순에 '20℃↑' 겨울 앞두고 초봄?...주말엔 찬 바람",
+          "keyword": "초대형 만조에 잠긴 미 서부…기차 멈추고 부두 붕괴",
           "change": "new",
-          "traffic": "YTN",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zOWJvYVN2dGRJTlIyUVNzVEV6eHF1LWZPTkNfVC1razB3VkRTb2JRU19OcDhJTmFTZksyMmw1dHBJZVBEMHd4NU9FUEUyN3UyUUR4OHRhMU9xazlzMnc?oc=5",
+          "traffic": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VeGtQZWt0eTFMX0hVaVdfTUZGOEk0NUpvdk1PX1ZCdFhaekFGZkNjY3Z3ci1LMHMtWW02WVBZc1N6b3lsTkllU29uV3V4Q1phdW9LQlpwVGtZUm8?oc=5",
           "news": []
         },
         {
@@ -902,18 +911,18 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 9,
-          "keyword": "이 대통령 요청한 ‘판다 한 쌍’…‘대만관’ 논란에 무산",
-          "change": "new",
-          "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91TzVOOW0tTXJjZlN2eXJVQk9HaWtpRUV6VnJQaEtGSlJCNDhZSm91bUtsN3V1S2s3bFJJV1BZcEdyZHFZeWVLeUktV1phOS1vYTZvQi1tOXFrUTA?oc=5",
-          "news": []
-        },
-        {
-          "rank": 10,
           "keyword": "김승수 “강유정 후보자 논문 자기 표절”…강 후보자 쪽 “연구윤리 위반 아냐”",
           "change": "new",
           "traffic": "한겨레",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2dFl2WTdSQmlJRWc0VnFadG53V2EyMV9jYk5OV2swdzFuX25MZG5IUkFsbFdJYnJmOFBNNXE1SlNmMXFZdlIzUE1BcUZBN3BEa2xEcUU4WWNWdVB4cTU0ZWwwenlLZl91Um9yb1FnZ1NOdw?oc=5",
+          "news": []
+        },
+        {
+          "rank": 10,
+          "keyword": "수도권 곳곳에 ‘초미세먼지 주의보’ 발령",
+          "change": "new",
+          "traffic": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LSnJ3anB3dmh3RUp1Z0hkcG1VUzdvV011eG9kQmMtejFCS3RYWFEzejNKVUFiMUtwMHBicmt3Z2lNV3F1SG9nM2Vxc3ZVVzIyWnM5MldUN3lraGs?oc=5",
           "news": []
         },
         {
@@ -926,22 +935,6 @@ window.INITIAL_TRENDS = {
         },
         {
           "rank": 12,
-          "keyword": "美추수감사절 덮친 시속 112km ‘괴물 강풍’… 90만여 곳 전기 끊기고 항공기 400편 결항",
-          "change": "new",
-          "traffic": "동아일보",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CU09NN1ktckg0X2VGQTZsZDV5MzJydnplSHZIUEVyN09RUXFpUmNTTkZ6eXJXRW9DOVhldkJZT0R6cEtCNklJSWVzTGtjb0plRkpQNk9KRHN0b1ZwVEVPcy1CT0FNaXRWYmJMZlpvYXRscTDSAWZBVV95cUxOdlFkeEFLZmZ3dnR3OFVrYlhqaV8wcmd0X0pIV3hjQk9HbWxEdVJfZ2MyZUx0SmpMU3I4bjlsbi1WLVN3a0RGLUdSekQ0S05xeFFwLXJab2tMSndudUoxYk5wZXBpYVE?oc=5",
-          "news": []
-        },
-        {
-          "rank": 13,
-          "keyword": "'프렉시트' 주장했던 르펜, EU 통합 최대 위기 맞나",
-          "change": "new",
-          "traffic": "연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Uem5xN1BEdGQ1MG1kaDJtTmVfWW5IRHB1M1NoQ3hxRTlXak9ZREdPT1p1TzJnM05aNTh2dER6elhMZ2k3TkR4V1R1eUtqMkJSQm5lc1gxUEV2SWfSAWBBVV95cUxOTFkyLURpOThCMmZnZ2VRcWlzQUhGWDZXM1ZPR01rUkVad2xpQnlBOS1BaXBLbVJYcnRJSVVpRTJZSzMyZTBqdFg0b1VzX3lEMGN4SmZRdmY0NHY5NmF5T3M?oc=5",
-          "news": []
-        },
-        {
-          "rank": 14,
           "keyword": "젤렌스키, 푸틴 ‘친구’라 부른 트럼프에 “히틀러 친구라는 것과 같다”",
           "change": "new",
           "traffic": "한겨레",
@@ -949,11 +942,27 @@ window.INITIAL_TRENDS = {
           "news": []
         },
         {
+          "rank": 13,
+          "keyword": "이란 혁명수비대, 美 해상봉쇄 돌파 결의…\"공중·해상서 행동\"",
+          "change": "new",
+          "traffic": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwRjZxYXNoZmJodEF1T0xCRzJZdEpXZjdqa0I3aXhHTm5LbnM0eW5VT05UTmJRQmdtb2FEcTR4cElXdEJzVWNaN3dsbFZsMnd1NXphLXBoSl9KU03SAWBBVV95cUxNeExYRWViaEZrRFNrc3pDOEFLblhFdXRLZVd1Ri1zVjdubl9obm0xRDNNZVUxa1pmRXFCcDZNd3BqZEtWY0dVUFQtZkhkbDNVWE1vOFVCeDBseFBBUEoyQS0?oc=5",
+          "news": []
+        },
+        {
+          "rank": 14,
+          "keyword": "국제유가 3주 하락세 마침표…중동긴장 악화에 공급 우려",
+          "change": "new",
+          "traffic": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYcy1SUkZ2ckxoMkFLTGN6YzhER0hyMnVEUmNDcTRPT0hYSHhETDQ5X2xLbmhCc05kOGx0YjcwMTFzZV9lcm9OcVp6aGUtYk1UaXR4RktMVXlCdWdVZldmM2xrUW90UVU?oc=5",
+          "news": []
+        },
+        {
           "rank": 15,
-          "keyword": "국민연금 적립금 석 달 만에 202조 원↓…1~3분기 수익률 13%",
+          "keyword": "코스피·코스닥 동반 급등…외국인 순매수",
           "change": "new",
           "traffic": "KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBZN00yRURyY1lYMGdqUFFYUnVJTGFjcmM2bkxSTnNnR0NCRlBmTTlZQmVxc09Sd0RPeWdUd0xsRnp5a0o1b1gtSWtWT0NTMlo3cFZlODJiTHlDQ3M?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9KWmpJNDZVZVBFWDBETjVpR0FaOXprVFdnSWtHSnFoOFBMQ2dMS2lNc01pQWtSeG5HUG5qa1AySVVtVGxrZHJkVG1fRTY2MTl0N3VPc2laMnVtTkk?oc=5",
           "news": []
         }
       ]
